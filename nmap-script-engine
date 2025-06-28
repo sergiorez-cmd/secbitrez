@@ -18,6 +18,8 @@ $sudo bash
 
 #nmap --script http-vuln-* -Pn -p 80 [Target_IP] -d
 
+#nmap --script http-robots.txt [Target_IP]
+
 #nmap --script ftp-anon -Pn -p 21 [Target_IP]
 
 #nmap --script smb-os-discovery -Pn -p 445 [Target_IP]
