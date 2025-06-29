@@ -1,0 +1,40 @@
+$sudo bash
+
+#sha256sum $(which nmap)
+
+#nmap --script-updatedb
+
+#nmap --script-help vuln
+
+#nmap -sC -Pn [Target_IP]
+
+#nmap --script=default -Pn [Target_IP]
+
+#nmap --script vuln -Pn [Target_IP]
+
+#nmap --script banner -Pn -sV [Target_IP]
+
+#nmap --script http-enum -Pn -p 80 [Target_IP]
+
+#nmap --script http-vuln-* -Pn -p 80 [Target_IP] -d
+
+#nmap --script http-robots.txt [Target_IP]
+
+#nmap --script ftp-anon -Pn -p 21 [Target_IP]
+
+#nmap --script smb-os-discovery -Pn -p 445 [Target_IP]
+
+#nmap --script smb-enum-shares -Pn -p 445 [Target_IP]
+
+#nmap --script smtp-enum-users -Pn -p 25 [Target_IP]
+
+#nmap --script dns-brute -Pn [Target_IP]
+
+#nmap --script dns-zone-transfer -Pn -p 53 [Target_IP]
+
+#nmap --script snmp-brute -Pn [Target_IP]
+
+---------------------------------------------------------------------------------
+Fonte: https://www.stationx.net/nmap-scripts
+
+Fonte: https://nmap.org/book/man-nse.html
