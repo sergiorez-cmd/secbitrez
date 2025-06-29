@@ -33,7 +33,7 @@ $proxychains curl ifconfig.so (seu_ip_via_TOR)
 https://check.torproject.org
 https://bgp.he.net
 https://ifconfig.me
-https://ipinfo.io
+https://ipinfo.io/what-is-my-ip
 https://en.utrace.me
 https://dnsleaktest.com
 
