@@ -37,7 +37,7 @@ If no port range is specified, Nmap scans the 1,000 most popular ports.
 
 ## Probing Options
 
-- `-Pn`: Don't probe (assume all hosts are up)
+- `-Pn`: Don't probe (no ping, assume all hosts are up)
 - `-PB`: Default probe (TCP 80, 445 & ICMP)
 - `-PS<portlist>` : Checks if ssytems are online by probing TCP ports
 - `-PE`: Using ICMP Echo Request
