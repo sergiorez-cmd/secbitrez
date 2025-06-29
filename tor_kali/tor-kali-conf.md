@@ -30,12 +30,12 @@ $proxychains curl ifconfig.so (seu_ip_via_TOR)
 
 “$proxychains firefox”
 
-“https://check.torproject.org”
-“https://bgp.he.net”
-“https://ifconfig.me”
-“https://ipinfo.io”
-"https://en.utrace.me/”
-“https://dnsleaktest.com/”
+https://check.torproject.org
+https://bgp.he.net
+https://ifconfig.me
+https://ipinfo.io
+https://en.utrace.me
+https://dnsleaktest.com
 
 ## Exemplos de comandos úteis para reconhecimento ativo de alvos
 
