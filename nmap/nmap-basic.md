@@ -65,3 +65,5 @@ If no port range is specified, Nmap scans the 1,000 most popular ports.
 - `-6`: Uses IPv6 only
 - `-A`: Uses several features, including OS Detection, Version Detection, Script Scanning (default), and traceroute
 - `--reason`: Displays the reason Nmap thinks that the port is open, closed, or filtered
+
+- https://nmap.org/book/man.html
