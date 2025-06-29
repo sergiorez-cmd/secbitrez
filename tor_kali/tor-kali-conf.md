@@ -49,4 +49,4 @@ $sudo proxychains whatweb https://example.com (verificar tecnologias do site)
 
 $sudo proxychains wpscan --url https://example.com (verificar vulnerabilidades wordpress)
 
-$sudo proxychains dirb https://example.com /usr/share/wordlists/dirb/common.txt (visualizar diretórios do webserver)
+$sudo proxychains dirb https://example.com /usr/share/wordlists/dirb/common.txt (visualizar conteúdo do webserver)
