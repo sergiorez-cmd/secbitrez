@@ -14,7 +14,7 @@ $sudo vim /etc/proxychains.conf
 
 ## 3° Inicializar o serviço tor: 
 
-#sudo service tor [status,start,stop]
+$sudo service tor [status,start,stop]
 
 $sudo systemctl [status,start,stop] tor
 
