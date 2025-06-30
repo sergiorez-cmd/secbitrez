@@ -1,4 +1,4 @@
-https://www.nslookup.io/
+https://www.nslookup.io
 
 https://dnsdumpster.com
 
