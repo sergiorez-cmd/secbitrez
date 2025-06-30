@@ -46,7 +46,7 @@ $sudo docker info (Informações detalhadas do Docker)
 
 $sudo docker compose down (Parar serviços configurados via arquivo compose.yml)
 
-$docker network create -d transparent --subnet=192.168.0.0/24 --gateway=192.168.0.1 redelocal
+$sudo docker network create -d transparent --subnet=192.168.0.0/24 --gateway=192.168.0.1 redelocal
 
-$docker run --network=redelocal --ip 192.168.0.45 -it microsoft/windowsservercore cmd
+$sudo docker run --network=redelocal --ip 192.168.0.45 -it microsoft/windowsservercore cmd
 
