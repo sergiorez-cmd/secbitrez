@@ -4,6 +4,6 @@ https://dnsdumpster.com
 
 https://search.dnslytics.com
 
-https://viewdns.info/
+https://viewdns.info
 
 https://hackertarget.com/dns-lookup
