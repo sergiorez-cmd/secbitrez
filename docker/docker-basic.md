@@ -28,9 +28,9 @@ $sudo docker run -d --name test-postgres -e POSTGRES_PASSWORD=mysecretpassword -
 
 $sudo docker run --detach --name test-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-password  mariadb:latest
 
-$sudo docker ps (Visualizar containers em execução)
+$sudo docker ps (Listar containers em execução)
 
-$sudo docker ps -a (Visualizar todos containers criados)
+$sudo docker ps -a (Listar todos containers criados)
 
 $sudo docker [stop,restart,start] [number_id] (Gerenciar estado de um container)
 
@@ -46,7 +46,6 @@ $sudo docker info (Informações detalhadas do Docker)
 
 $sudo docker compose down (Parar serviços configurados via arquivo compose.yml)
 
-$sudo docker network create -d transparent --subnet=192.168.0.0/24 --gateway=192.168.0.1 redelocal
+$sudo docker network ls (Listar redes do docker)
 
-$sudo docker run --network=redelocal --ip 192.168.0.45 -it microsoft/windowsservercore cmd
-
+$sudo docker network inspect bridge (Verificar configurações da rede)
