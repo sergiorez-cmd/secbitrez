@@ -66,4 +66,18 @@ If no port range is specified, Nmap scans the 1,000 most popular ports.
 - `-A`: Uses several features, including OS Detection, Version Detection, Script Scanning (default), and traceroute
 - `--reason`: Displays the reason Nmap thinks that the port is open, closed, or filtered
 
+## Stealth Example Using Nmap
+
+```bash
+nmap -sS -p 22,80,443 -T2 --scan-delay 100ms -D RND:10 -f -Pn target-ip
+```
+
+- **`-sS`**: SYN scan
+- **`-p 22,80,443`**: Scan only specific ports
+- **`-T2`**: Use the "Polite" timing template
+- **`--scan-delay 100ms`**: Introduce a 100 ms delay between probes
+- **`-D RND:10`**: Use 10 random decoy IP addresses
+- **`-f`**: Fragment packets
+- **`-Pn`**: Treat all hosts as online, skip host discovery
+
 - https://nmap.org/book/man.html
