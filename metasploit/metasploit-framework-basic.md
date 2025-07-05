@@ -1,6 +1,8 @@
 # Comandos básicos do Metasploit-Framework
 
-$searchsploit <name service> [smb, dns, http, smtp, ftp, Apache, ProFTPd, vsftpd, etc]
+## Listar base de exploits do Kali Linux
+
+$searchsploit <name service> [smb, dns, http, smtp, ftp, Apache, ProFTPd, vsftpd, samba, etc]
 
 ## Diretório do Metasploit-Framework
 
