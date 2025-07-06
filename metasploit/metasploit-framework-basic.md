@@ -78,9 +78,13 @@ msf > db_nmap -sn 192.168.1.0/24
 
 msf > hosts
 
-msf > db_nmap -v -sV -p0-65535 192.168.1.123
+msf > db_nmap -sV -p0-65535 192.168.1.123
 
 msf > services
+
+msf > db_nmap -sV -p 22 --script=vuln 192.168.1.123
+
+msf > vulns
 
 ## Run Exploit Sessions in Backgroung
 
