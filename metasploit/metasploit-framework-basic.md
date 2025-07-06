@@ -58,7 +58,7 @@ msf > nmap -sn 192.168.1.0/24
 
 msf > nmap 192.168.1.123
 
-msf > connect 192.168.1.123 23
+msf > connect 192.168.1.123 1524
 
 msf > exit
 
