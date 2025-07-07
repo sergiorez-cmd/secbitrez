@@ -4,6 +4,8 @@ https://www.wappalyzer.com/lookup
 
 https://top.nic.br
 
+https://pentest-tools.com
+
 https://crt.sh
 
 https://www.ssllabs.com/ssltest
