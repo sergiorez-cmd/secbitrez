@@ -21,7 +21,7 @@ $sudo bash
 
 #nmap -sn [Target_IP_Range] -oN scan_network.txt
 
-#nmap -sS -sV --top-ports [Target_IP] -oN port_scan.txt
+#nmap -sS -sV -p1-1024 [Target_IP] -oN port_scan.txt
 
 #nmap --script-updatedb
 
