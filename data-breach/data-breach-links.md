@@ -1,4 +1,4 @@
-https://databreach.com/
+https://databreach.com
 
 https://haveibeenpwned.com
 
