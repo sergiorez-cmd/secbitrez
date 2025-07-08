@@ -43,6 +43,8 @@ $sudo bash
 
 #nmap --script smb-enum-shares -Pn -p 445 [Target_IP]
 
+#nmap --script smb-brute -Pn -p 445 [Target_IP]
+
 #nmap --script smtp-enum-users -Pn -p 25 [Target_IP]
 
 #nmap --script dns-brute -Pn [Target_IP]
