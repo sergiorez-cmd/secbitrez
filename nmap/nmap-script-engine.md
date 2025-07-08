@@ -19,39 +19,43 @@ $sudo bash
 
 #sha256sum $(which nmap)
 
+#nmap -sn [Target_IP_Range] -oN scan_network.txt
+
+#nmap -sS -sV --top-ports [Target_IP] -oN port_scan.txt
+
 #nmap --script-updatedb
 
 #nmap --script-help vuln
 
 #nmap -sC -Pn [Target_IP]
 
-#nmap --script=default -Pn [Target_IP]
+#nmap -Pn --script=default [Target_IP]
 
-#nmap --script vuln -Pn [Target_IP]
+#nmap -Pn --script vuln [Target_IP]
 
-#nmap --script banner -Pn -sV [Target_IP]
+#nmap -Pn -sV --script banner [Target_IP]
 
-#nmap --script http-enum -Pn -p 80 [Target_IP]
+#nmap -Pn -p 80 --script http-enum [Target_IP]
 
-#nmap --script http-vuln-* -Pn -p 80 [Target_IP] -d
+#nmap -Pn -p 80 --script http-vuln-* [Target_IP] -d
 
-#nmap --script http-robots.txt [Target_IP]
+#nmap -Pn --script http-robots.txt [Target_IP]
 
-#nmap --script ftp-anon -Pn -p 21 [Target_IP]
+#nmap -Pn -p 21 --script ftp-anon [Target_IP]
 
-#nmap --script smb-os-discovery -Pn -p 445 [Target_IP]
+#nmap -Pn -p 445 --script smb-os-discovery [Target_IP]
 
-#nmap --script smb-enum-shares -Pn -p 445 [Target_IP]
+#nmap -Pn -p 445 --script smb-enum-shares [Target_IP]
 
-#nmap --script smb-brute -Pn -p 445 [Target_IP]
+#nmap -Pn -p 445 --script smb-brute [Target_IP]
 
-#nmap --script smtp-enum-users -Pn -p 25 [Target_IP]
+#nmap -Pn -p 25 --script smtp-enum-users [Target_IP]
 
-#nmap --script dns-brute -Pn [Target_IP]
+#nmap -Pn --script dns-brute [Target_IP]
 
-#nmap --script dns-zone-transfer -Pn -p 53 [Target_IP]
+#nmap -Pn -p 53 --script dns-zone-transfer [Target_IP]
 
-#nmap --script snmp-brute -Pn [Target_IP]
+#nmap -Pn --script snmp-brute [Target_IP]
 
 ---------------------------------------------------------------------------------
 Fonte: https://www.stationx.net/nmap-scripts
