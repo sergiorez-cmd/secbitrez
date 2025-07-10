@@ -13,3 +13,5 @@ https://www.ssllabs.com/ssltest
 https://domsignal.com/hsts-test
 
 https://wpscan.com
+
+https://web.archive.org
