@@ -43,6 +43,7 @@ If no port range is specified, Nmap scans the 1,000 most popular ports.
 - `-PE`: Using ICMP Echo Request
 - `-PP`: Using ICMP Timestamp Request
 - `-PM`: Using ICMP Netmask Request
+- `-PR`: Using ARP Request
 
 ## Timing Options
 - `-T0` (Paranoid): Very slow, used for IDS evasion
