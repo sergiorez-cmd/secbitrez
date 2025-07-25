@@ -61,3 +61,5 @@ $sudo bash
 Fonte: https://www.stationx.net/nmap-scripts
 
 Fonte: https://nmap.org/book/man-nse.html
+
+Fonte: https://nmap.org/nsedoc/categories/vuln.html
