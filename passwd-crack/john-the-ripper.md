@@ -14,7 +14,7 @@ $john --wordlist=/usr/share/wordlists/rockyou.txt --format=SSH crack-idrsa.txt
 
 $john --show crack-idrsa.txt
 
-## Crack Windows NT
+## Crack Windows LM/NTLM
 
 meterpreter>hashdump
 
