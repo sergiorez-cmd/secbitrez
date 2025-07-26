@@ -20,4 +20,12 @@ meterpreter>hashdump
 
 $john --wordlist=/usr/share/wordlists/rockyou.txt --format=NT hashdmp-blue.txt
 
+$john --wordlist=/usr/share/wordlists/rockyou.txt --format=LM hashdmp-blue.txt
+
 $john --show hashdmp-blue.txt
+
+## Crack ZIP files
+
+$zip2john file.zip > zip.hashes
+
+$john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
