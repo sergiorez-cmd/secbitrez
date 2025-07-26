@@ -1,6 +1,6 @@
 # JohnTheRipper
 
-## Crack PASSWD/SHADOW Linux
+## Crack Linux PASSWD/SHADOW
 
 $unshadow passwd shadow > crack-passwd.txt
 
@@ -14,7 +14,7 @@ $john --wordlist=/usr/share/wordlists/rockyou.txt --format=SSH crack-idrsa.txt
 
 $john --show crack-idrsa.txt
 
-## Crack NT Windows
+## Crack Windows NT
 
 meterpreter>hashdump
 
