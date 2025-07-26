@@ -4,7 +4,7 @@
 
 $unshadow passwd shadow > crack-passwd.txt
 
-$john crack-passwd.txt
+$john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt crack-passwd.txt
 
 ## Crack SSH ID_RSA
 
