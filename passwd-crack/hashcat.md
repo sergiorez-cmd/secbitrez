@@ -1,5 +1,7 @@
 # Hashcat
 
+$hashcat --help
+
 ## Verficar tipo de hash
 
 $hashid -m [hash-sequence]
@@ -30,7 +32,7 @@ $hashcat -a 0 -m 1000 hash-md5.txt /usr/share/wordlists/rockyou.txt
 
 ## Crack HMAC-SHA1 + salt
 
-$hashcat --help | grep HMAC
+$hashcat --help | grep HMAC-SHA
 
 $hashcat -a 0 -m 160 crack-hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.txt
 
@@ -54,6 +56,8 @@ $hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
 
 
 ## Crack bcrypt $2*$, Blowfish (Unix) com mascara de 4 letras minusculas
+
+$hashcat --help | grep Unix
 
 $hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
 
