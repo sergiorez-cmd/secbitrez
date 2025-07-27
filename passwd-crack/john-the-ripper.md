@@ -31,3 +31,5 @@ $zip2john file.zip > zip.hashes
 $john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
 
 Fonte: https://www.stationx.net/how-to-use-john-the-ripper
+
+Fonte: https://www.openwall.com/john/doc
