@@ -40,6 +40,8 @@ $ hydra -l <username> -P <full path to passlist.txt> <IP Address> rdp
 
 $ hydra -L <full/path_to_usernamelist.txt> -P <full/path_to_passlist.txt> -t 4 -W 3 rdp://IP_Address:3389/
 
+## Links
+
 Fonte: https://www.stationx.net/how-to-use-hydra
 
 Fonte: https://www.kali.org/tools/hydra
