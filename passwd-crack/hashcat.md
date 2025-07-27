@@ -30,7 +30,7 @@ $hashcat -a 0 -m 1000 hash-md5.txt /usr/share/wordlists/rockyou.txt
 
 $hashcat -a 0 -m 160 crack-hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.txt
 
-## Hash Brute Force
+## Crack Hash Brute Force
 
 hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
 
