@@ -4,6 +4,24 @@
 
 $hashid -m [hash-sequence]
 
+## Crack hash MD5
+
+#hashcat --help | grep MD5
+
+$hashcat -a 0 -m 0 hash-md5.txt /usr/share/wordlists/rockyou.txt
+
+## Crack hash Linux OS
+
+$hashcat --help | grep Unix
+
+$hashcat -a 0 -m 1800 hash-passwd-shadow.txt /usr/share/wordlists/rockyou.txt
+
+## Crack hash Windows OS
+
+$hashcat --help | grep NTLM
+
+$hashcat -a 0 -m 1000 hash-md5.txt /usr/share/wordlists/rockyou.txt
+
 Fonte: https://www.stationx.net/how-to-use-hashcat
 
 Fonte: https://www.kali.org/tools/hashcat
