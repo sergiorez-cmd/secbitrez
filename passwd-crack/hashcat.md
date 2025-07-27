@@ -2,7 +2,7 @@
 
 ## Verficar tipo de hash
 
-$hashid [hash-sequence]
+$hashid -m [hash-sequence]
 
 Fonte: https://www.stationx.net/how-to-use-hashcat
 
