@@ -36,7 +36,7 @@ $hashcat -a 0 -m 160 crack-hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.
 
 ## Crack Hash Brute Force
 
-hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
+$hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
 
 * Built-in charsets:
 
@@ -58,6 +58,8 @@ hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
 $hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
 
 ## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 numeros
+
+$hashcat --help | grep SHA512
 
 $hashcat -a 3 -m 1800 crack-hash-sha512.txt ?l?l?l?l?d?d
 
