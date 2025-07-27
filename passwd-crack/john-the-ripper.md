@@ -33,3 +33,5 @@ $john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
 Fonte: https://www.stationx.net/how-to-use-john-the-ripper
 
 Fonte: https://www.openwall.com/john/doc
+
+Fonte: https://www.kali.org/tools/john
