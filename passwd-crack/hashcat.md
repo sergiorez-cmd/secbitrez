@@ -6,11 +6,13 @@ $hashid -m [hash-sequence]
 
 ## Crack hash MD5
 
-#hashcat --help | grep MD5
+$hashcat --help | grep MD5
 
 $hashcat -a 0 -m 0 hash-md5.txt /usr/share/wordlists/rockyou.txt
 
 ## Crack hash SHA256
+
+$hashcat --help | grep SHA256
 
 hashcat -a -m 1400 crack-hash-sha256.txt /usr/share/wordlists/rockyou.txt
 
@@ -27,6 +29,8 @@ $hashcat --help | grep NTLM
 $hashcat -a 0 -m 1000 hash-md5.txt /usr/share/wordlists/rockyou.txt
 
 ## Crack HMAC-SHA1 + salt
+
+$hashcat --help | grep HMAC
 
 $hashcat -a 0 -m 160 crack-hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.txt
 
@@ -49,11 +53,15 @@ hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
    ?b = 0x00 - 0xff
 
 
-Crack bcrypt $2*$, Blowfish (Unix) com mascara de 4 letras minusculas
-hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
+## Crack bcrypt $2*$, Blowfish (Unix) com mascara de 4 letras minusculas
 
-Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 numeros
-hashcat -a 3 -m 1800 crack-hash-sha512.txt ?l?l?l?l?d?d
+$hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
+
+## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 numeros
+
+$hashcat -a 3 -m 1800 crack-hash-sha512.txt ?l?l?l?l?d?d
+
+## Links
 
 Fonte: https://www.stationx.net/how-to-use-hashcat
 
