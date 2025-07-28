@@ -55,13 +55,13 @@ $hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
    ?b = 0x00 - 0xff
 
 
-## Crack bcrypt $2*$, Blowfish (Unix) com mascara de 4 letras minusculas
+## Crack bcrypt $2*$, Blowfish (Unix) com mascara de 4 letras minúsculas
 
 $hashcat --help | grep Unix
 
 $hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
 
-## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 numeros
+## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 números
 
 $hashcat --help | grep SHA512
 
