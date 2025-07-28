@@ -83,11 +83,11 @@ $hashcat -a 3 -m 3200 hash-bcrypt.txt ?l?l?l?l
 
 $hashcat -m 3200 hash-bcrypt.txt --show
 
-## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 números
+## Crack sha512crypt $6$, SHA512 (Unix) com wordlist e mascara de 2 números
 
 $hashcat --help | grep SHA512
 
-$hashcat -a 3 -m 1800 hash-sha512.txt ?l?l?l?l?d?d
+$hashcat -a 6 -m 1800 hash-sha512.txt /dir/wordlist.txt ?d?d
 
 $hashcat -m 1800 hash-sha512.txt --show
 
