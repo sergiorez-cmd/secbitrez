@@ -22,11 +22,15 @@ $hashcat --help | grep MD5
 
 $hashcat -a 0 -m 0 hash-md5.txt /usr/share/wordlists/rockyou.txt
 
+$hashcat -m 0 hash.txt --show
+
 ## Crack hash SHA256
 
 $hashcat --help | grep SHA256
 
-hashcat -a -m 1400 crack-hash-sha256.txt /usr/share/wordlists/rockyou.txt
+hashcat -a -m 1400 hash-sha256.txt /usr/share/wordlists/rockyou.txt
+
+$hashcat -m 1400 hash-sha256.txt --show
 
 ## Crack hash Linux OS
 
@@ -34,17 +38,23 @@ $hashcat --help | grep Unix
 
 $hashcat -a 0 -m 1800 hash-passwd-shadow.txt /usr/share/wordlists/rockyou.txt
 
+$hashcat -m 1800 hash-passwd-shadow.txt --show
+
 ## Crack hash Windows OS
 
 $hashcat --help | grep NTLM
 
-$hashcat -a 0 -m 1000 hash-md5.txt /usr/share/wordlists/rockyou.txt
+$hashcat -a 0 -m 1000 hash-ntlm.txt /usr/share/wordlists/rockyou.txt
+
+$hashcat -m 0 hash-ntlm.txt --show
 
 ## Crack HMAC-SHA1 + salt
 
 $hashcat --help | grep HMAC-SHA
 
-$hashcat -a 0 -m 160 crack-hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.txt
+$hashcat -a 0 -m 160 hash-hmac-sha1-salt.txt /usr/share/wordlists/rockyou.txt
+
+$hashcat -m 160 hash-hmac-sha1-salt.txt --show
 
 ## Crack Hash Brute Force
 
@@ -69,13 +79,17 @@ $hashcat -a 3 -m 0 hash-md5.txt ?l?l?l?l
 
 $hashcat --help | grep Unix
 
-$hashcat -a 3 -m 3200 crack-hash-bcrypt.txt ?l?l?l?l
+$hashcat -a 3 -m 3200 hash-bcrypt.txt ?l?l?l?l
+
+$hashcat -m 3200 hash-bcrypt.txt --show
 
 ## Crack sha512crypt $6$, SHA512 (Unix) 2 com mascara de 4 letras minúsculas e 2 números
 
 $hashcat --help | grep SHA512
 
-$hashcat -a 3 -m 1800 crack-hash-sha512.txt ?l?l?l?l?d?d
+$hashcat -a 3 -m 1800 hash-sha512.txt ?l?l?l?l?d?d
+
+$hashcat -m 1800 hash-sha512.txt --show
 
 ## Links
 
