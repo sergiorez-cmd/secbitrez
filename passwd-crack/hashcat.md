@@ -2,6 +2,16 @@
 
 $hashcat --help
 
+$hashcat -a 0 -m 0 hash.txt /dir/worlist.txt [Ataque de dicionário]
+
+$hashcat -a 1 -m 0 hash.txt /dir/wordlist1.txt /dir/wordlist2.txt [Ataque combinado de dicionários]
+
+$hashcat -a 3 -m 0 hash.txt ?l?l?l?l [Ataque de força bruta com mascara de caracteres]
+
+$hashcat -a 6 -m 0 hash.txt /dir/worlist.txt ?d?d?d?d [Ataque híbrido combinando wordlist+mascara]
+
+$hashcat -a 7 -m 0  hash.txt ?d?d?d?d /dir/worlist.txt [Ataque híbrido combinando mascara+wordlist]
+
 ## Verficar tipo de hash
 
 $hashid -m [hash-sequence]
