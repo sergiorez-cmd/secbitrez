@@ -16,6 +16,8 @@ The most common Nmap scripting engine categories:
 - version: Measure the version of software or protocols on the target hosts.
 - vul: Measure whether target systems have a known vulnerability.
 
+## Search scripts
+
 $grep "ftp" /usr/share/nmap/scripts/script.db
 
 $grep "safe" /usr/share/nmap/scripts/script.db
