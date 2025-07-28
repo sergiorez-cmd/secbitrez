@@ -6,7 +6,7 @@ $hashcat -a 0 -m 0 hash.txt /dir/worlist.txt [Ataque de dicionário]
 
 $hashcat -a 1 -m 0 hash.txt /dir/wordlist1.txt /dir/wordlist2.txt [Ataque combinado de dicionários]
 
-$hashcat -a 3 -m 0 hash.txt ?l?l?l?l [Ataque de força bruta com mascara de caracteres]
+$hashcat -a 3 -m 0 --increment hash.txt ?l?l?l?l [Ataque de força bruta com mascara de caracteres]
 
 $hashcat -a 6 -m 0 hash.txt /dir/worlist.txt ?d?d?d?d [Ataque híbrido combinando wordlist+mascara]
 
