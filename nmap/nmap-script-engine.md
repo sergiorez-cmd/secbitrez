@@ -1,4 +1,5 @@
 ### Nmap Scripting Engine Categories
+
 The most common Nmap scripting engine categories:
 - auth: Utilize credentials or bypass authentication on target hosts.
 - broadcast: Discover hosts not included on command line by broadcasting on local network.
@@ -14,6 +15,10 @@ The most common Nmap scripting engine categories:
 - safe: Designed not to impact target in a negative fashion.
 - version: Measure the version of software or protocols on the target hosts.
 - vul: Measure whether target systems have a known vulnerability.
+
+$grep "ftp" /usr/share/nmap/scripts/script.db
+
+$grep "safe" /usr/share/nmap/scripts/script.db
 
 $sudo bash
 
@@ -57,6 +62,7 @@ $sudo bash
 
 #nmap -Pn --script snmp-brute [Target_IP]
 
+## Links
 ---------------------------------------------------------------------------------
 Fonte: https://www.stationx.net/nmap-scripts
 
