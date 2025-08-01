@@ -1,4 +1,4 @@
-Search Google generate hash online
+Search Google generate password hash online
 
 $mkpasswd -m sha-512 newpassword
 
