@@ -1,4 +1,8 @@
+# Online
+
 Search Google generate password hash online
+
+# Linux mkpasswd
 
 $mkpasswd -m help
 
