@@ -32,8 +32,20 @@ descrypt        standard 56 bit DES-based crypt(3)
 
 nt              NT-Hash
 
-$mkpasswd -m sha-512crypt <user-password>
+$mkpasswd -m sha-512crypt user-password
 
 # OpenSSL Passwd
 
-$openssl passwd user-password
+-1 MD5
+
+-5 SHA256
+
+-6 SHA512
+
+$openssl passwd -6 -salt 'customsalt' 'user-password'
+
+## Links
+
+https://man.archlinux.org/man/mkpasswd.1.en
+
+https://docs.openssl.org/1.0.2/man1/passwd
