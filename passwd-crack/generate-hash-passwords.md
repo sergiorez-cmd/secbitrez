@@ -32,8 +32,8 @@ descrypt        standard 56 bit DES-based crypt(3)
 
 nt              NT-Hash
 
-$mkpasswd -m sha-512crypt user-password
+$mkpasswd -m sha-512crypt <user-password>
 
 # OpenSSL Passwd
 
-$openssl passwd user-password
+$openssl passwd <user-password>
