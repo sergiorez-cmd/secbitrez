@@ -36,4 +36,4 @@ $mkpasswd -m sha-512crypt <user-password>
 
 # OpenSSL Passwd
 
-$openssl passwd <user-password>
+$openssl passwd [user-password]
