@@ -8,23 +8,23 @@ $mkpasswd -m help
 
 Available methods:
 
-yescrypt        Yescrypt
+yescrypt       
 
-gost-yescrypt   GOST Yescrypt
+gost-yescrypt  
 
-scrypt          scrypt
+scrypt         
 
-bcrypt          bcrypt
+bcrypt         
 
 bcrypt-a        bcrypt (obsolete $2a$ version)
 
-sha512crypt     SHA-512
+sha512crypt    
 
-sha256crypt     SHA-256
+sha256crypt     
 
-sunmd5          SunMD5
+sunmd5          
 
-md5crypt        MD5
+md5crypt       
 
 bsdicrypt       BSDI extended DES-based crypt(3)
 
