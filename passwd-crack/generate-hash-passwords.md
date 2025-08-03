@@ -42,7 +42,7 @@ $mkpasswd -m sha-512crypt user-password
 
 -6 SHA512
 
-$openssl passwd -6 -salt 'customsalt' 'user-password'
+$openssl passwd -6 -s 'customsalt' 'user-password'
 
 ## Links
 
