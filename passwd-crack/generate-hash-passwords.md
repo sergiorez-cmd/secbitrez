@@ -16,7 +16,7 @@ scrypt
 
 bcrypt         
 
-bcrypt-a        bcrypt (obsolete $2a$ version)
+bcrypt-a        -bcrypt (obsolete $2a$ version)
 
 sha512crypt    
 
@@ -26,11 +26,11 @@ sunmd5
 
 md5crypt       
 
-bsdicrypt       BSDI extended DES-based crypt(3)
+bsdicrypt       -BSDI extended DES-based crypt(3)
 
-descrypt        standard 56 bit DES-based crypt(3)
+descrypt        -standard 56 bit DES-based crypt(3)
 
-nt              NT-Hash
+nt              -NT-Hash
 
 $mkpasswd -m sha-512crypt user-password
 
