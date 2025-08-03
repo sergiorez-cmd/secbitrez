@@ -34,6 +34,8 @@ nt              =NT-Hash
 
 $mkpasswd -m sha-512crypt user-password
 
+$mkpasswd -m sha-512crypt user-password > passhash.txt
+
 # OpenSSL Passwd
 
 -1 MD5
