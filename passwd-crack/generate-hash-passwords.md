@@ -34,7 +34,7 @@ nt              =NT-Hash
 
 $mkpasswd -m sha-512crypt user-password
 
-$mkpasswd -m sha-512crypt user-password > passhash.txt
+$mkpasswd -m sha-512crypt user-password > pass-hash.txt
 
 # OpenSSL Passwd
 
@@ -44,7 +44,11 @@ $mkpasswd -m sha-512crypt user-password > passhash.txt
 
 -6 SHA512
 
-$openssl passwd -6 -s 'customsalt' 'user-password'
+$openssl passwd -help
+
+$openssl passwd -6 -salt customsalt user-password
+
+$openssl passwd -6 -salt customsalt user-password > pass-hash.txt
 
 ## Links
 
