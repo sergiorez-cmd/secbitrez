@@ -20,6 +20,8 @@ $gobuster -u http://example.com -w /usr/share/dirb/wordlists/big.txt dir
 
 # 3° Gain Access
 
+http://example.com/login
+
 http://example.com/hiden/dir
 
 $ftp Target_IP
