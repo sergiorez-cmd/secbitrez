@@ -22,7 +22,7 @@ $gobuster -u http://example.com -w /usr/share/dirb/wordlists/big.txt dir
 
 http://example.com/hiden/dir
 
-$ftp
+$ftp Target_IP
 
 $ssh user@Target_IP
 
