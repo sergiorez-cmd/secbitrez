@@ -22,6 +22,8 @@ $gobuster -u http://example.com -w /usr/share/dirb/wordlists/big.txt dir
 
 http://example.com/login
 
+http://example/upload
+
 http://example.com/hiden/dir
 
 $ftp Target_IP
