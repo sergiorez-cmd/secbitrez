@@ -36,9 +36,9 @@ $ssh -i id_rsa user@Target_IP
 
 $ssh -oHostKeyAlgorithms=+ssh-rsa user@Target_IP
 
-$sudo mount -o rw <Target_IP>:/tmp /tmp/dir-target
+$sudo mount -o rw <Target_IP>:/backup /tmp/dir-target
 
-$sudo mount -t cifs -o username=user_name //server_name/share_name /mnt/dir-target
+$sudo mount -t cifs -o username=user_name //<Target_IP>/share_name /mnt/dir-target
 
 # 4° Search Priv-Esc
 
