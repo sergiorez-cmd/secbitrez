@@ -20,7 +20,7 @@ $gobuster -u http://example.com -w /usr/share/dirb/wordlists/big.txt dir
 
 # 3° Gain Access
 
-http://
+http://example.com/hiden/dir
 
 $ftp
 
