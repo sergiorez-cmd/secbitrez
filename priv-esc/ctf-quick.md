@@ -26,7 +26,7 @@ http://example/upload
 
 http://example.com/hiden/dir
 
-http://robots.txt
+http://example.com/robots.txt
 
 $ftp Target_IP
 
