@@ -20,6 +20,13 @@ $gobuster -u http://example.com -w /usr/share/dirb/wordlists/big.txt dir
 
 # 3° Gain Access
 
+http://
+
+$ftp
+
+$ssh user@Target_IP
+
+$sudo mount -o rw <Target_IP>:/tmp /tmp/back-target
 
 # 4° Search Priv-Esc
 
