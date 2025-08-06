@@ -32,6 +32,8 @@ $ssh -oHostKeyAlgorithms=+ssh-rsa user@Target_IP
 
 $sudo mount -o rw <Target_IP>:/tmp /tmp/back-target
 
+$sudo mount -t cifs -o username=user_name //server_name/share_name /mnt/
+
 # 4° Search Priv-Esc
 
 $cat /etc/proc/version
