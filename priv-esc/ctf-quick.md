@@ -26,6 +26,8 @@ http://example/upload
 
 http://example.com/hiden/dir
 
+http://robots.txt
+
 $ftp Target_IP
 
 $ssh user@Target_IP
