@@ -26,6 +26,10 @@ $ftp
 
 $ssh user@Target_IP
 
+$ssh -i id_rsa user@Target_IP
+
+$ssh -oHostKeyAlgorithms=+ssh-rsa user@Target_IP
+
 $sudo mount -o rw <Target_IP>:/tmp /tmp/back-target
 
 # 4° Search Priv-Esc
