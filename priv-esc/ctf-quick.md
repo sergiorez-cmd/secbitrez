@@ -74,10 +74,10 @@ $find / -perm -o w -type d 2>/dev/null
 
 $find / -perm -u=s -type f 2>/dev/null
 
-# 7° Deploy Payload
-
 $find / -name perl* python* gcc* 2>/dev/nul
 
 $find /home -name flag*.txt
 
 $find / -user "www-data" -name "*" 2>/dev/null
+
+# 7° Deploy Payload
