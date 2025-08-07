@@ -91,3 +91,7 @@ $find /home -name flag*.txt
 $find / -user "www-data" -name "*" 2>/dev/null
 
 # 7° Deploy Payload
+
+$python2 -m SimpleHTTPServer 8000
+
+$python3 -m http-server 8000
