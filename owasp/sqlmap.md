@@ -2,8 +2,6 @@
 
 Site para testes http://testphp.vulnweb.com
 
-$gobuster -u http://testphp.vulnweb.com -x php -w /usr/share/dirb/wordlists/big.txt dir
-
 $sqlmap --help
 
 $sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 –-dbs
