@@ -56,6 +56,8 @@ $sudo mount -o rw Target_IP:/backup /tmp/dir-target
 
 $sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
 
+$smbclient //Target_IP/shared/dir
+
 # 6° Search Priv-Esc
 
 $cat /etc/proc/version
