@@ -1,6 +1,6 @@
 # 1° Scan Nmap 
 
-$sudo nmap -A [Target_IP] -oN report-nmap.txt
+$sudo nmap -Pn -A [Target_IP] -oN report-nmap.txt
 
 $sudo nmap -Pn -sV -O [Target_IP] -oN report-nmap.txt
 
