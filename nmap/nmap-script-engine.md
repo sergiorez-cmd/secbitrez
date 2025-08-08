@@ -54,7 +54,7 @@ $sudo bash
 
 #nmap -Pn -p 445 --script smb-os-discovery [Target_IP]
 
-#nmap -Pn -p 445 --script smb-enum-shares [Target_IP]
+#nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users [Target_IP]
 
 #nmap -Pn -p 445 --script smb-brute [Target_IP]
 
