@@ -8,6 +8,10 @@ $sudo nmap -Pn --script vuln [Target_IP]
 
 $sudo nmap -Pn -p 80 --script http-enum,http-robots.txt [Target_IP]
 
+$sudo nmap -Pn -p 80 --script http-sql-injection [Target_IP]
+
+$sudo nmap -Pn -p 80 --script http-passwd --script-args http-passwd.root=/test/ [Target_IP]
+
 $sudo nmap -Pn -p 21 --script ftp-anon [Target_IP]
 
 $sudo nmap -Pn -p 21 --script ftp-proftpd-backdoor [Target_IP] - ProFTPD 1.3.3c
