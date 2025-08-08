@@ -12,6 +12,8 @@ $sudo nmap -Pn -p 80 --script http-sql-injection [Target_IP]
 
 $sudo nmap -Pn -p 80 --script http-passwd --script-args http-passwd.root=/test/ [Target_IP]
 
+$sudo nmap -Pn -p 80 --script http-vuln-* [Target_IP]
+
 $sudo nmap -Pn -p 21 --script ftp-anon [Target_IP]
 
 $sudo nmap -Pn -p 21 --script ftp-proftpd-backdoor [Target_IP] - ProFTPD 1.3.3c
@@ -21,6 +23,8 @@ $sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor [Target_IP] - vsFTPd 2.3.4
 #nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount [Target_IP]
 
 #nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users [Target_IP]
+
+#nmap -Pn -p 445 --script smb-vuln-* [Target_IP]
 
 # 2° Scan Dirb/Gobuster
 
