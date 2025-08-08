@@ -1,3 +1,5 @@
+https://dns.google
+
 https://www.nslookup.io
 
 https://dnsdumpster.com
