@@ -6,11 +6,13 @@ $sudo nmap -Pn -sV -O [Target_IP] -oN report-nmap.txt
 
 $sudo nmap -Pn --script vuln [Target_IP]
 
-$sudo nmap -Pn -p 80 --script http-enum [Target_IP]
-
-$sudo nmap -Pn --script http-robots.txt [Target_IP]
+$sudo nmap -Pn -p 80 --script http-enum,http-robots.txt [Target_IP]
 
 $sudo nmap -Pn -p 21 --script ftp-anon [Target_IP]
+
+#nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount [Target_IP]
+
+#nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users [Target_IP]
 
 # 2° Scan Dirb/Gobuster
 
