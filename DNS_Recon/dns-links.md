@@ -2,7 +2,7 @@
 
 https://www.iana.org/domains/root/db
 
-$ DNS root-server
+# DNS root-server
 
 https://root-servers.org
 
