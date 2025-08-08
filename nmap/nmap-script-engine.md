@@ -56,6 +56,8 @@ $sudo bash
 
 #nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users [Target_IP]
 
+#nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount [Target_IP]
+
 #nmap -Pn -p 445 --script smb-brute [Target_IP]
 
 #nmap -Pn -p 25 --script smtp-enum-users [Target_IP]
