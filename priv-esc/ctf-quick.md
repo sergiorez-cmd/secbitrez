@@ -16,7 +16,7 @@ $sudo nmap -Pn -p 21 --script ftp-anon [Target_IP]
 
 $dirb http://example.com -o dirb-report.txt
 
-$gobuster -u http://example.com -x php.txt,html -w /usr/share/dirb/wordlists/big.txt dir
+$gobuster -u http://example.com -x php,html,js,txt -w /usr/share/dirb/wordlists/big.txt dir
 
 # 3° Scan SQLMap
 
