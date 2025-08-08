@@ -111,3 +111,5 @@ $find / -user "www-data" -name "*" 2>/dev/null
 $python2 -m SimpleHTTPServer 8000
 
 $python3 -m http-server 8000
+
+$scp payload.sh user@Target_IP:/home/user
