@@ -76,6 +76,12 @@ $smbclient //Target_IP/shared/dir
 
 php, python, nc
 
+https://github.com/pentestmonkey/php-reverse-shell
+
+https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+https://www.sans.org/posters/netcat-cheat-sheet
+
 # 7° Search Priv-Esc
 
 $cat /etc/proc/version
