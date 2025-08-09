@@ -72,7 +72,11 @@ $sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
 
 $smbclient //Target_IP/shared/dir
 
-# 6° Search Priv-Esc
+# 6° Reverse Shell
+
+php, python, nc
+
+# 7° Search Priv-Esc
 
 $cat /etc/proc/version
 
@@ -106,7 +110,7 @@ $find /home -name flag*.txt
 
 $find / -user "www-data" -name "*" 2>/dev/null
 
-# 7° Deploy Payload
+# 8° Deploy Payload
 
 $python2 -m SimpleHTTPServer 8000
 
