@@ -1,8 +1,8 @@
 ## Criar Worlists Personalizadas 
 
-Exemplo para criar uma wordlist de palavras com comprimento de 5 caracteres
+Exemplo para criar uma wordlist de palavras com comprimento de 8 caracteres
 
-$grep -oE '\b\w{5}\b' /usr/share/wordlists/rockyou.txt > passwd-5lt.txt
+$grep -oE '\b\w{8}\b' /usr/share/wordlists/rockyou.txt > passwd-5lt.txt
 
 $wc -l passwd-5lt.txt
 
