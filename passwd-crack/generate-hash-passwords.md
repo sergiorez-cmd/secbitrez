@@ -2,6 +2,14 @@
 
 Search Google generate password hash online
 
+https://www.onlinewebtoolkit.com/hash-generator
+
+https://bcrypt.online
+
+https://bcrypt-generator.com
+
+https://unix4lyfe.org/crypt
+
 # Linux mkpasswd
 
 $mkpasswd -m help
