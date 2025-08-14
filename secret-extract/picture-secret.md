@@ -17,3 +17,5 @@ $binwalk -h
 $binwalk picture.jpg
 
 $binwalk -e picture.jpg
+
+$binwalk -W picture.jpg
