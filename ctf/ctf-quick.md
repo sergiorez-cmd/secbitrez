@@ -60,7 +60,7 @@ $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
 # 5° Gain Access
 
-http://example.com/login
+http://example.com/login [Exibir código fonte da página]
 
 http://example/upload
 
