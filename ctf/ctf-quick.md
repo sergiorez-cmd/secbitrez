@@ -120,6 +120,8 @@ $ls -la /
 
 $ls -la /home
 
+$ls -la /home/user/.ssh
+
 $sudo -l
 
 $getcap -r / 2>/dev/null
