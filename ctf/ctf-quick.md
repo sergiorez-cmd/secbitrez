@@ -62,6 +62,8 @@ $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
 http://example.com/login [Exibir código fonte da página]
 
+http://example.com/ftp
+
 http://example/upload
 
 http://example.com/hiden/dir
