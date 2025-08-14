@@ -32,7 +32,7 @@ https://www.exploit-db.com
 
 $dirb http://example.com -o dirb-report.txt
 
-$gobuster -u http://example.com -x php,html,js,txt -w /usr/share/dirb/wordlists/big.txt dir
+$gobuster dir -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt
 
 # 3° Scan SQLMap/Burp Suite/ZAP
 
