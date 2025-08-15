@@ -58,6 +58,8 @@ $hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
+$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get  
+
 # 5° Scan SMB
 
 $enum4linux -a Target_IP | tee enum4linux.log
