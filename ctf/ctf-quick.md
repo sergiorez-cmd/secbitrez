@@ -34,13 +34,15 @@ $dirb http://example.com -o dirb-report.txt
 
 $gobuster dir -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt
 
-# 3° Scan SQLMap/Burp Suite/ZAP
+# 3° Scan SQLMap/Nikto/Burp Suite/ZAP
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
 $sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
 $sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
+
+$nikto -h http://Target_IP:8080/ -id user:password
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
