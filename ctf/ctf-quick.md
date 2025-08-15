@@ -32,7 +32,7 @@ https://www.exploit-db.com
 
 $dirb http://Target_IP -o dirb-report.txt
 
-$dirb http://Target_IP -x file-ext.txt -w /usr/share/dirb/wordlists/common.txt
+$dirb http://Target_IP -x file-ext.txt -w /usr/share/dirb/wordlists/common.txt -o dirb-report.txt
 
 $dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/common.txt -u user:password
 
