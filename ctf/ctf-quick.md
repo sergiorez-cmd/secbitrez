@@ -30,11 +30,13 @@ https://www.exploit-db.com
 
 # 2° Scan Dirb/Gobuster
 
-$dirb http://Target -o dirb-report.txt
+$dirb http://Target_IP -o dirb-report.txt
+
+$dirb http://Target_IP -x file-ext.txt -w /usr/share/dirb/wordlists/common.txt
 
 $dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/common.txt -u user:password
 
-$gobuster dir -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt
+$gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
 
 # 3° Scan SQLMap/Nikto/Burp Suite/ZAP
 
