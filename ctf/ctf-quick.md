@@ -100,13 +100,17 @@ $smbclient //Target_IP/shared/dir
 
 Execute no terminal shell do Kali Linux $nc -lvnp 6666
 
-php, python, nc
+https://www.sans.org/posters/netcat-cheat-sheet
+
+Implante o Payload de Shell Reverso [php, python, nc]
 
 https://github.com/pentestmonkey/php-reverse-shell
 
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
-https://www.sans.org/posters/netcat-cheat-sheet
+Spawn a tty shell
+
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 # 8° Search Priv-Esc
 
