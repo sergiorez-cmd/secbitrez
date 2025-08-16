@@ -68,7 +68,9 @@ $hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
 
 $hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
-$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get  
+$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
+
+$hydra -f -L user-name.txt -P /usr/share/wordlists/rockyou.txt Target_IP ssh
 
 # 5° Scan SMB
 
