@@ -30,7 +30,7 @@ $sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor [Target_IP] - vsFTPd 2.3.4
 
 https://www.exploit-db.com
 
-# 2° Scan Dirb/Gobuster
+# 2° Scan Dirb/Gobuster/Nikto
 
 $dirb http://Target_IP -o dirb-report.txt
 
@@ -40,17 +40,17 @@ $dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:passwor
 
 $gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
 
-# 3° Scan SQLMap/Nikto/Burp Suite/ZAP
+$nikto -h http://Target_IP -o report.html
+
+$nikto -h http://Target_IP:8080/ -id user:password
+
+# 3° Scan SQLMap/Burp Suite/ZAP
 
 $sqlmap -u http://Target_IP/login.php --forms --dump
 
 $sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
 $sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
-
-$nikto -h http://Target_IP -o report.html
-
-$nikto -h http://Target_IP:8080/ -id user:password
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
