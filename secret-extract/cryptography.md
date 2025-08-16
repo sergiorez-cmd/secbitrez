@@ -1,5 +1,7 @@
 # Cryptography Tools
 
+https://www.boxentriq.com/code-breaking/cipher-identifier
+
 https://gchq.github.io/CyberChef
 
 https://cryptii.com
