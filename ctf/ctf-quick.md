@@ -2,6 +2,8 @@
 
 $sudo nmap 10.0.0.0/24 -oN report-nmap.txt
 
+$sudo nmap -Pn -p- -sV -v [Target_IP] -oN report-nmap.txt
+
 $sudo nmap -Pn -A [Target_IP] -oN report-nmap.txt
 
 $sudo nmap -Pn -sV -sC -O [Target_IP] -oN report-nmap.txt
