@@ -1,3 +1,7 @@
+## Dir Wordlists Kali
+
+/usr/share/wordlists/
+
 ## Criar Worlists Personalizadas 
 
 Exemplo para criar uma wordlist de palavras com comprimento de 8 caracteres
