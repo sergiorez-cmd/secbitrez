@@ -46,7 +46,7 @@ Insert New Rules john.conf
 
 $ sudo nano /etc/john/john.conf 
 
-# Rule border mutation appending 2 digits combination at the end passwords 
+Rule border mutation appending 2 digits combination at the end passwords 
 
 [List.Rules:THM01]
 
