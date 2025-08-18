@@ -1,5 +1,13 @@
 # JohnTheRipper
 
+## Identificar tipo de hash
+
+$ hashid -m [hash-sequence]
+
+$ sudo gem install haiti-hash (install on Kali-Linux)
+
+$ haiti-hash -e [hash-sequence]
+
 ## Crack Linux PASSWD/SHADOW
 
 $ unshadow passwd shadow > crack-shadow.txt
