@@ -40,6 +40,18 @@ $ hydra -l username -P /usr/share/wordlists/rockyou.txt Target_IP rdp
 
 $ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt -t 4 -W 3 rdp://IP_Address:33389/
 
+## Dir Kali Passwords Wordlists
+
+/usr/share/wordlists/rockyou.txt
+
+/usr/share/wordlists/fasttrack.txt
+
+/usr/share/wordlists/john.lst
+
+/usr/share/wordlists/nmap.lst
+
+/usr/share/wordlists/legion
+
 ## Links
 
 Fonte: https://www.stationx.net/how-to-use-hydra
