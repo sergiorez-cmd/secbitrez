@@ -30,6 +30,18 @@ $zip2john file.zip > zip.hashes
 
 $john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
 
+## Dir Kali Passwords Wordlists
+
+/usr/share/wordlists/rockyou.txt
+
+/usr/share/wordlists/fasttrack.txt
+
+/usr/share/wordlists/john.lst
+
+/usr/share/wordlists/nmap.lst
+
+/usr/share/wordlists/legion
+
 ## Links
 
 Fonte: https://www.stationx.net/how-to-use-john-the-ripper
