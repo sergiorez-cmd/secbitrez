@@ -42,7 +42,7 @@ $ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt -t 
 
 ## POP3
 
-$hydra -f -l boris -P /usr/share/wordlists/fasttrack.txt Target_IP pop3
+$hydra -f -l user-name -P /usr/share/wordlists/fasttrack.txt Target_IP pop3
 
 ## Dir Kali Passwords Wordlists
 
