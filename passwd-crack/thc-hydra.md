@@ -1,4 +1,4 @@
-# Brute Force THCHydra
+# Brute Force THC-Hydra
 
 ## HTTP Post Web Form
 
