@@ -1,3 +1,11 @@
+# Identificar tipo de hash
+
+$ hashid -m [hash-sequence]
+
+$ sudo gem install haiti-hash (install on Kali-Linux)
+
+$ haiti-hash -e [hash-sequence]
+
 # ID Crack Hash Online
 
 https://hashes.com/en/tools/hash_identifier
