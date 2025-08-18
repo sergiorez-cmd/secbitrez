@@ -1,3 +1,5 @@
+# Hashcat
+
 # Identificar tipo de hash
 
 $ hashid -m [hash-sequence]
@@ -6,7 +8,7 @@ $ sudo gem install haiti-hash (install on Kali-Linux)
 
 $ haiti-hash -e [hash-sequence]
 
-# Hashcat
+## Hashcat Modes
 
 $ hashcat --help
 
