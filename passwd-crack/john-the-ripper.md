@@ -2,7 +2,7 @@
 
 ## Crack Linux PASSWD/SHADOW
 
-$ unshadow passwd shadow > crack-passwd.txt
+$ unshadow passwd shadow > crack-shadow.txt
 
 $ john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt crack-passwd.txt
 
