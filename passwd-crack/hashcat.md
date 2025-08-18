@@ -1,4 +1,4 @@
-# Verficar tipo de hash
+# Identificar tipo de hash
 
 $ hashid -m [hash-sequence]
 
