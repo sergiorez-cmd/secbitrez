@@ -40,8 +40,6 @@ $ john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
 
 ## Rules
 
-$ john --wordlist=/usr/share/wordlists/passwords/10k-most-common.txt --format=raw-sha1 --rules=THM01 thm-hash.txt
-
 Insert New Rules john.conf
 
 $ sudo nano /etc/john/john.conf 
@@ -51,6 +49,8 @@ Rule border mutation appending 2 digits combination at the end passwords
 [List.Rules:THM01]
 
 $[0-9]$[0-9]
+
+$ john --wordlist=/usr/share/wordlists/passwords/10k-most-common.txt --format=raw-sha1 --rules=THM01 thm-hash.txt
 
 ## Dir Kali Passwords Wordlists
 
