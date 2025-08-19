@@ -16,7 +16,7 @@ $ wordlists
 
 /usr/share/wordlists/
 
-## Criar Worlists Personalizadas 
+## Criar Worlists Personalizadas Grep
 
 Exemplo para criar uma wordlist de palavras com comprimento de 8 caracteres
 
