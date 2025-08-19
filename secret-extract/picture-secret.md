@@ -10,6 +10,14 @@ $steghide --info picture.jpg
 
 $steghide --extract -sf picture.jpg
 
+# Stegseek
+
+$sudo apt install stegseek
+
+$stegseek --help
+
+$stegseek picture.png
+
 # Binwalk
 
 $binwalk -h
