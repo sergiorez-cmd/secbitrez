@@ -30,7 +30,7 @@ $ sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
 
 $ sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
 
-https://www.exploit-db.com
+https://nmap.org/book/man.html
 
 # 2° Web-Server Scan Dirb/Gobuster/ffuf/Nikto
 
@@ -39,6 +39,8 @@ $ dirb http://Target_IP -o dirb-report.txt
 $ dirb http://Target_IP -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
 
 $ dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
+
+$ gobuster -u http://Target -w /usr/share/dirb/wordlists/small.txt dir
 
 $ gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
 
