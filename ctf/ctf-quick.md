@@ -34,15 +34,15 @@ https://nmap.org/book/man.html
 
 # 2° Web-Server Scan Dirb/Gobuster/ffuf/Nikto
 
-$ dirb http://Target_IP -o dirb-report.txt
+$ dirb http://example.com -o dirb-report.txt
 
-$ dirb http://Target_IP -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
+$ dirb http://example.com -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
 
-$ dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
+$ dirb http://example.com:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
 
-$ gobuster -u http://Target -w /usr/share/dirb/wordlists/small.txt dir
+$ gobuster -u http://example.com -w /usr/share/dirb/wordlists/small.txt dir
 
-$ gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
+$ gobuster -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
 
 $ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt
 
@@ -58,9 +58,9 @@ $ ffuf -u http://example.com/FUZZ -w Wordlists/list-name.txt -X POST -d "usernam
 
 $ ffuf -u http://FUZZ.example.com -w Wordlists/list-subdomains.txt -H "Host: FUZZ.example.com"
 
-$ nikto -h http://Target_IP -o report.html
+$ nikto -h http://example.com -o report.html
 
-$ nikto -h http://Target_IP:8080/ -id user:password
+$ nikto -h http://example.com:8080/ -id user:password
 
 # 3° Web-Site-DB Scan SQLMap/Burp Suite/ZAP
 
