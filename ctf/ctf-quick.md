@@ -42,7 +42,7 @@ $ dirb http://example.com:8080 -w /usr/share/dirb/wordlists/big.txt -u user:pass
 
 $ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/small.txt -o dir-report.txt
 
-$ gobuster dir -u http://example.com -x .php, .txt -w /usr/share/dirb/wordlists/small.txt -o dir-report.txt
+$ gobuster dir -u http://example.com -w -x php,txt /usr/share/dirb/wordlists/small.txt -o dir-report.txt
 
 $ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -t 4 --delay 1s
 
