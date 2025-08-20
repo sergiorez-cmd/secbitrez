@@ -24,15 +24,15 @@ $ sudo nmap -Pn -p 21 --script ftp-proftpd-backdoor 10.0.0.123 [ProFTPD 1.3.3c]
 
 $ sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor 10.0.0.123 [vsFTPd 2.3.4]
 
-# sudo nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount 10.0.0.123
+$ sudo nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount 10.0.0.123
 
-# sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
+$ sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
 
-# sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
+$ sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
 
 https://www.exploit-db.com
 
-# 2° Web-Server Scan Dirb/Gobuster/Nikto
+# 2° Web-Server Scan Dirb/Gobuster/ffuf/Nikto
 
 $ dirb http://Target_IP -o dirb-report.txt
 
@@ -41,6 +41,20 @@ $ dirb http://Target_IP -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-r
 $ dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
 
 $ gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
+
+$ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt
+
+$ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt -o results.json -of json
+
+$ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt -fc 403
+
+$ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt --recursion-depth 2
+
+$ ffuf -u http://example.com/FUZZ.txt -w Wordlists/dir-list-2.3-medium.txt -fc 403 -fs 292
+
+$ ffuf -u http://example.com/FUZZ -w Wordlists/list-name.txt -X POST -d "username=FUZZ&password=pass"
+
+$ ffuf -u http://FUZZ.example.com -w Wordlists/list-subdomains.txt -H "Host: FUZZ.example.com"
 
 $ nikto -h http://Target_IP -o report.html
 
