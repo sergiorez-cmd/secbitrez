@@ -144,7 +144,7 @@ https://github.com/pentestmonkey/php-reverse-shell
 
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
-Spawn a tty shell
+## Spawn a tty shell
 
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 
