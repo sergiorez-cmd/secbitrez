@@ -36,13 +36,21 @@ https://nmap.org/book/man.html
 
 $ dirb http://example.com -o dirb-report.txt
 
-$ dirb http://example.com -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
+$ dirb http://example.com -X .txt -w /usr/share/dirb/wordlists/small.txt -o dir-report.txt
 
 $ dirb http://example.com:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
 
-$ gobuster -u http://example.com -w /usr/share/dirb/wordlists/small.txt dir
+$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/small.txt -o dir-report.txt
 
-$ gobuster -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
+$ gobuster dir -u http://example.com -x .php, .txt -w /usr/share/dirb/wordlists/small.txt -o dir-report.txt
+
+$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -t 4 --delay 1s
+
+$ gobuster dir -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt
+
+$ gobuster dns -q -r 8.8.8.8 -d example.com -w /Wordlists/subdomains-top1million-5000.txt
+
+$ gobuster vhost -u https://example.com -t 50 -w /wordlists/subdomains-top1million-5000.txt 
 
 $ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt
 
