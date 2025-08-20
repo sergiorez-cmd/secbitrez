@@ -96,6 +96,12 @@ $ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-get
 
 $ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
 
+https://github.com/danielmiessler/SecLists
+
+https://weakpass.com
+
+https://wordlists.assetnote.io
+
 # 5° Scan SMB
 
 $ enum4linux -a Target_IP
