@@ -50,7 +50,7 @@ $ gobuster dir -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/w
 
 $ gobuster dns -q -r 8.8.8.8 -d example.com -w /Wordlists/subdomains-top1million-5000.txt
 
-$ gobuster vhost -u https://example.com -t 50 -w /wordlists/subdomains-top1million-5000.txt 
+$ gobuster vhost -u https://example.com -t 50 -w /wordlists/subdomains-top1million-5000.txt -o subdom.report.txt
 
 $ ffuf -u http://example.com/FUZZ -w Wordlists/dir-list-2.3-medium.txt
 
