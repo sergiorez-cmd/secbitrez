@@ -14,4 +14,6 @@ https://www.tunnelsup.com/hash-analyzer
 
 https://privdayz.com/tools/hash-identifier
 
+https://nth.skerritt.blog
+
 https://crackstation.net
