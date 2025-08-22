@@ -2,7 +2,7 @@
 
 $ sudo nmap 10.0.0.0/24 -oN report-nmap.txt
 
-$ sudo nmap -Pn -p- -sV 10.0.0.123 -oN report-all-ports-nmap.txt
+$ sudo nmap -Pn -p- 10.0.0.123 -oN report-all-ports-nmap.txt
 
 $ sudo nmap -Pn -A 10.0.0.123 -oN report-agressive-nmap.txt
 
