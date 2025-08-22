@@ -144,6 +144,10 @@ $ sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-targe
 
 $ smbclient //Target_IP/shared/dir
 
+$ nc Target_IP 44444
+
+$ telnet Target_IP 44444
+
 # 7° Reverse Shell
 
 Execute no terminal shell do Kali Linux $nc -lvnp 6666
