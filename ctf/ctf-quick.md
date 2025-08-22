@@ -104,9 +104,9 @@ $ hydra -l user-name -P /usr/share/wordlists/fasttrack.txt -f Target_IP http-get
 
 $ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
 
-$ hydra -l user-name -P /usr/share/wordlists/fasttrack.txt -f Target_IP pop3 -I -t 20
+$ hydra -l user-name -P /usr/share/wordlists/fasttrack.txt -f Target_IP pop3 -t 20
 
-$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 13110 pop3 -I -t 20
+$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 13110 pop3 -t 20
 
 https://github.com/danielmiessler/SecLists
 
