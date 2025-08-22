@@ -6,7 +6,7 @@ $ hashid -m [hash-sequence]
 
 $ sudo gem install haiti-hash (install on Kali-Linux)
 
-$ haiti-hash -e [hash-sequence]
+$ haiti -e [hash-sequence]
 
 ## Crack Linux PASSWD/SHADOW
 
