@@ -12,7 +12,7 @@ nmap -v -iR 10000 -Pn -p 80
 
 VEJA A PÁGINA DE MANUAL (https://nmap.org/book/man.html) PARA MAIS OPÇÕES E EXEMPLOS
 
-===============================================================================================
+============================================================================================
 ## ESPECIFICAÇÃO DE DESTINO:
 
 Pode passar nomes de host, endereços IP, redes, etc.
