@@ -13,6 +13,7 @@ nmap -v -iR 10000 -Pn -p 80
 VEJA A PÁGINA DE MANUAL (https://nmap.org/book/man.html) PARA MAIS OPÇÕES E EXEMPLOS
 
 ============================================================================================
+
 ## ESPECIFICAÇÃO DE DESTINO:
 
 Pode passar nomes de host, endereços IP, redes, etc.
@@ -27,7 +28,8 @@ Ex: $nmap scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
 
 --excludefile <arquivo_de_exclusão>: Exclui lista do arquivo
 
-======================================================================================================================
+============================================================================================
+
 ## DESCOBERTA DE HOSTS:
 
 -sL: Varredura de Lista - simplesmente lista os alvos a serem varridos
@@ -50,7 +52,8 @@ Ex: $nmap scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
 
 --traceroute: Rastreia o caminho de salto para cada host
 
-====================================================================================================================
+===========================================================================================
+
 ## TÉCNICAS DE SCAN:
 
 -sS/sT/sA/sW/sM: Scans TCP SYN/Connect()/ACK/Window/Maimon
@@ -85,7 +88,7 @@ Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
 
 --port-ratio <índice>: Varre portas mais comuns que <índice>
 
-=======================================================================================================
+=======================================================================================
 
 ## DETECÇÃO DE SERVIÇO/VERSÃO:
 
@@ -99,7 +102,8 @@ Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
 
 --version-trace: Exibe a atividade detalhada da varredura de versão (para depuração)
 
-====================================================================================================================
+========================================================================================
+
 ## VARREÇÃO DE SCRIPT:
 
 -sC: equivalente para --script=default
@@ -121,7 +125,8 @@ diretórios, arquivos de script ou categorias de script
 <scripts Lua> é uma lista separada por vírgulas de arquivos de script ou
 categorias de scripts.
 
-===================================================================================================================
+========================================================================================
+
 ## DETECÇÃO DE SO:
 
 -O: Habilita a detecção de SO
@@ -130,7 +135,8 @@ categorias de scripts.
 
 --osscan-guess: Adivinha o SO de forma mais agressiva
 
-==================================================================================================================
+========================================================================================
+
 ## TEMPO E DESEMPENHO:
 
 As opções que levam <tempo> estão em segundos ou adicionam 'ms' (milissegundos),
@@ -154,7 +160,8 @@ o tempo de ida e volta da sonda.
 
 --max-rate <número>: Envia pacotes com velocidade não superior a <número> por segundo
 
-===================================================================================================================
+==========================================================================================
+
 ## EVASÃO E FALSIFICAÇÃO DE MAC/IP PARA FIREWALL/IDS:
 
 -f; --mtu <valor>: fragmenta pacotes (opcionalmente com o MTU fornecido)
@@ -183,7 +190,8 @@ o tempo de ida e volta da sonda.
 
 --badsum: Envia pacotes com uma soma de verificação TCP/UDP/SCTP falsa 
 
-=====================================================================================================================
+========================================================================================
+
 ## SAÍDA PARA ARQUIVOS:
 
 -oN/-oX/-oS/-oG <arquivo>: Exibe a varredura nos formatos normal, XML, s|<rIpt kIddi3
@@ -215,7 +223,8 @@ e Grepable, respectivamente, para o nome de arquivo fornecido.
 
 --no-stylesheet: Impede a associação da folha de estilo XSL com a saída XML
 
-=====================================================================================================================
+=======================================================================================
+
 ## MISC:
 
 -6: Habilita a varredura IPv6
