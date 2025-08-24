@@ -30,6 +30,8 @@ $ sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
 
 $ sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
 
+$ wget https://svn.nmap.org/nmap/docs/nmap.usage.txt
+
 https://nmap.org/book/man.html
 
 # 2° Web-Server Scan Dirb/Gobuster/ffuf/Nikto
