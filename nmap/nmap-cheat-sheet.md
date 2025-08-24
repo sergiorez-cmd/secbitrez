@@ -12,7 +12,7 @@ nmap -v -iR 10000 -Pn -p 80
 
 VEJA A PÁGINA DE MANUAL (https://nmap.org/book/man.html) PARA MAIS OPÇÕES E EXEMPLOS
 
-======================================================================================================================
+===============================================================================================
 ## ESPECIFICAÇÃO DE DESTINO:
 
 Pode passar nomes de host, endereços IP, redes, etc.
@@ -85,7 +85,9 @@ Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
 
 --port-ratio <índice>: Varre portas mais comuns que <índice>
 
-DETECÇÃO DE SERVIÇO/VERSÃO:
+=======================================================================================================
+
+## DETECÇÃO DE SERVIÇO/VERSÃO:
 
 -sV: Sonda portas abertas para determinar informações de serviço/versão
 
