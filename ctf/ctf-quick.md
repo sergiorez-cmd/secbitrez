@@ -232,14 +232,14 @@ https://gtfobins.github.io
 
 https://www.exploit-db.com
 
-# 9° Deploy Payload/Script Enum
+`$ wget "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -O lse.sh;chmod 700 lse.sh`
+
+`$ wget "https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh" -O LinEnum.sh;chmod 700 LinEnum.sh`
+
+# 9° Deploy Payloads
 
 $ python2 -m SimpleHTTPServer 8000
 
 $ python3 -m http-server 8000
 
 $ scp payload.sh user@Target_IP:/home/user
-
-`$ wget "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -O lse.sh;chmod 700 lse.sh`
-
-`$ wget "https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh" -O LinEnum.sh;chmod 700 LinEnum.sh`
