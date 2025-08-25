@@ -16,9 +16,9 @@ $ crunch 16 16 -t password*%%%%%%%% -o custom-wordlist.txt
 
 Exemplo para criar uma wordlist de palavras com comprimento de 8 caracteres
 
-$ grep -oE '\b\w{8}\b' /usr/share/wordlists/rockyou.txt > passwd-8lt.txt
+$ grep -oE '\b\w{8}\b' /usr/share/wordlists/rockyou.txt > custom-worlist.txt
 
-$ wc -l passwd-8lt.txt
+$ wc -l custom-worlist.txt
 
 ## Links
 
