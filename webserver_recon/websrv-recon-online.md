@@ -17,3 +17,5 @@ https://wpscan.com
 https://web.archive.org
 
 https://mothereff.in
+
+https://www.w3schools.com/
