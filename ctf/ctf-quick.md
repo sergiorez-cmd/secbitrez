@@ -1,6 +1,6 @@
 # 1° Network Scan Nmap 
 
-`$ sudo nmap -sn 10.0.0.0/24 -oN report-ping-scan-nmap.txt`
+$ sudo nmap -sn 10.0.0.0/24 -oN report-ping-scan-nmap.txt
 
 $ sudo nmap -Pn -p- 10.0.0.123 -oN report-all-ports-nmap.txt
 
