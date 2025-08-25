@@ -15,9 +15,7 @@
 * ext:php site:[testphp.vulnweb.com](http://testphp.vulnweb.com)  
 * intitle:"index of" inurl:ftp  
 * site:pastebin.com intext:admin.password  
-* 
-
-
+  
 **Google Advanced Search**
 
 [https://www.google.com/advanced\_search](https://www.google.com/advanced_search)
