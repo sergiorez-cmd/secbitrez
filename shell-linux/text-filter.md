@@ -52,4 +52,4 @@
 
 
 
-Ex; cat log.txt | grep "error" | awk '{print $2, $3}' | sort | uniq
+Ex; `cat log.txt | grep "error" | awk '{print $2, $3}' | sort | uniq`
