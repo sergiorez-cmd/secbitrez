@@ -1,9 +1,8 @@
 # Filtrar Texto Terminal Linux
 
-Comando
-Função
-`$cut -d ',' -f 1,3 arquivo.txt`
-Filtrar delimitado por vírgula 1° e 2° coluna
+## Comando
+
+`$cut -d ',' -f 1,3 arquivo.txt` - Filtrar delimitado por vírgula 1° e 2° coluna
 `$awk '{print $1, $3}' arquivo.txt`
 Filtrar 1° e 3° coluna separado por espaço
 `$sort -d arquivo.txt`
