@@ -30,7 +30,7 @@ $ sudo nmap -Pn -p 445 --script smb-enum-shares,smb-enum-users 10.0.0.123
 
 $ sudo nmap -Pn -p 445 --script smb-vuln-* 10.0.0.123
 
-$ wget https://svn.nmap.org/nmap/docs/nmap.usage.txt
+`$ wget https://svn.nmap.org/nmap/docs/nmap.usage.txt`
 
 https://nmap.org/book/man.html
 
@@ -190,7 +190,7 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 ## Spawn a tty shell
 
-python3 -c 'import pty; pty.spawn("/bin/bash")'
+`python3 -c 'import pty; pty.spawn("/bin/bash")'`
 
 # 8° Search Priv-Esc
 
