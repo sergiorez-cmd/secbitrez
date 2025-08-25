@@ -38,7 +38,7 @@ $ wordlists
 
 Exemplo criar wordlist de letras e números via Crunch min=4 max=8
 
-$ crunch 4 8 abcdef1234567890 -o wordlist.txt
+$ crunch 4 8 abcdef1234567890 -o hex-wordlist.txt
 
 Exemplo para criar uma wordlist de palavras com comprimento de 8 caracteres via GREP
 
