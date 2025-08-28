@@ -84,6 +84,8 @@ Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
 Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
 
+ZAP Automated Scan > URL to attack: http://10.0.0.123 > Set spider If Modern HtmlUnit > Attack
+
 ZAP Sites > vulnerabilities > GET:/login,password,username > Attack > Fuzz
 
 ZAP Add > File: > /usr/share/wordlists/fasttrack.txt > OK > Start Fuzzer
