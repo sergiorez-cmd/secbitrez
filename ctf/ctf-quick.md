@@ -90,7 +90,7 @@ ZAP Quick Start > Manual Explore > URL to explore: http://10.0.0.123 > Launch Br
 
 ZAP Quick Start > Automated Scan > URL to attack: http://10.0.0.123 > Set spider If Modern HtmlUnit > Attack
 
-ZAP Sites > vulnerabilities > GET:/login,password,username > Attack > Fuzz
+ZAP Sites > vulnerabilities > GET:/login,password,username > Attack > Fuzz (highlight password field)
 
 ZAP Add > File: > /usr/share/wordlists/fasttrack.txt > OK > Start Fuzzer
 
