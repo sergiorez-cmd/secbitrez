@@ -84,6 +84,10 @@ Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
 Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
 
+ZAP Sites > vulnerabilities > GET:/login,password,username > Attack > Fuzz
+
+ZAP Add > File: > /usr/share/wordlists/fasttrack.txt > OK > Start Fuzzer
+
 # 4° Password Brute Force
 
 $ hydra -l user-name -P /usr/share/wordlists/rockyou.txt -f Target_IP http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"
