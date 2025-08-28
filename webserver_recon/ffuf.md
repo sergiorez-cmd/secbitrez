@@ -6,7 +6,7 @@ $ sudo apt install seclists -y
 
 $ ffuf -u http://10.0.0.123/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/big.txt
 
-## Find pages and directories
+## Finding pages and directories
 
 $ ffuf -u http://10.0.0.123/indexFUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/web-extensions.txt
 
