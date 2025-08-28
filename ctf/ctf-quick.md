@@ -82,6 +82,8 @@ $ sqlmap -u  http://example.com/listproducts.php?cat=1 –-dbs -D products –-t
 
 Burp Suite > Proxy > Intercept > Open Browser > Intercept on
 
+Burp Suite > Proxy > Send to Repeater > Send > Inspector (Change Attributes)
+
 Burp Suite > Intruder > Sniper attack > Positions Add > Payload Type = Simple list
 
 ZAP Quick Start > Manual Explore > URL to explore: http://10.0.0.123 > Launch Browser (auto proxy localhost)
