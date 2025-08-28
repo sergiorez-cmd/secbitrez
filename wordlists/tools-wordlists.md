@@ -34,6 +34,10 @@ $ wordlists
 
 /usr/share/wordlists/
 
+# Seclists
+
+$ sudo apt -y install seclists
+
 # Criar Worlists Personalizadas
 
 Exemplo para criar wordlist de letras e números min=4 max=8
