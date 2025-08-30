@@ -2,7 +2,7 @@
 
 $ sudo nmap -sn 10.0.0.0/24 -oN report-ping-scan-nmap.txt
 
-$ sudo nmap -Pn -p- -sV 10.0.0.123 -T4 -oN report-all-ports-nmap.txt (0-65535)
+$ sudo nmap -Pn -p- -sV 10.0.0.123 -T4 -oN report-all-ports-nmap.txt (scan all ports 0-65535)
 
 $ sudo nmap -Pn -A 10.0.0.123 -oN report-agressive-nmap.txt
 
