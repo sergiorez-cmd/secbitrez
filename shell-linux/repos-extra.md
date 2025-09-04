@@ -15,6 +15,8 @@ $ sudo apt install gnome-software-plugin-flatpak -y
 
 $ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+$ flatpak install --user flathub org.keepassxc.KeePassXC
+
 https://flashhub.org/setup/Debian
 
 ## Repositório  Oracle Virtual Box Debian
