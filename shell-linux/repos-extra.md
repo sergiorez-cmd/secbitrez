@@ -7,7 +7,7 @@ Adicionar no final das linhas
 contrib non-free
 
 
-## Ativar Flatpacks
+## Ativar Flatpaks
 
 $ sudo apt install flatpak -y
 
