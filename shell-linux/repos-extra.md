@@ -17,7 +17,6 @@ $ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/
 
 $ flatpak install --user flathub org.keepassxc.KeePassXC
 
-https://flashhub.org/setup/Debian
 
 ## Repositório  Oracle Virtual Box Debian
 
