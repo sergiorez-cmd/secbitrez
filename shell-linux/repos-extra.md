@@ -9,11 +9,11 @@ contrib non-free
 
 ## Ativar Flatpacks
 
-$ sudo apt install flatpack -y
+$ sudo apt install flatpak -y
 
-$ sudo apt install gnome-software-plugin-flatpack -y
+$ sudo apt install gnome-software-plugin-flatpak -y
 
-$ flatpack remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+$ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 https://flashhub.org/setup/Debian
 
