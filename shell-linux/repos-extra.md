@@ -6,8 +6,12 @@ Adicionar no final das linhas
 
 contrib non-free
 
+$ sudo apt update
+
 
 ## Ativar Flatpaks
+
+$ sudo apt update
 
 $ sudo apt install flatpak -y
 
@@ -15,7 +19,7 @@ $ sudo apt install gnome-software-plugin-flatpak -y
 
 $ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-$ flatpak install --user flathub org.keepassxc.KeePassXC
+$ flatpak install --user flathub org.keepassxc.KeePassXC (Instalar pacotes)
 
 
 ## Repositório  Oracle Virtual Box Debian
