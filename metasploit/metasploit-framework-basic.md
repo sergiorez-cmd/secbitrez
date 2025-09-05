@@ -2,19 +2,19 @@
 
 ## Listar base de exploits do Kali Linux
 
-$searchsploit <name service> [smb, dns, http, smtp, ftp, Apache, ProFTPd, vsftpd, samba, etc]
+$ searchsploit <name service> [smb, dns, http, smtp, ftp, Apache, ProFTPd, vsftpd, samba, etc]
 
 ## Diretório do Metasploit-Framework
 
-$ls -l /usr/share/metasploit-framework
+$ ls -l /usr/share/metasploit-framework
 
 ## Run Metasploit-Framework
 
-$sudo service postgresql start
+$ sudo service postgresql start
 
-$sudo msfdb init
+$ sudo msfdb init
 
-$sudo msfconsole
+$ sudo msfconsole
 
 msf > db_status
 
