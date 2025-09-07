@@ -55,3 +55,12 @@ gateway 192.168.1.1
 dns-nameservers 9.9.9.9 1.1.1.1
 
 $ sudo systemctl restart networking.service
+
+## Converter discos virtuais 
+
+$ sudo apt install qemu-img
+
+$ tar -xvf vm_disc.ova
+
+$ qemu-img convert -p -f vmdk -O qcow2 vm_disc.vmdk new_vm_disc.qcow2
+
