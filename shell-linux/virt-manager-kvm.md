@@ -28,9 +28,9 @@ $ sudo nano /etc/network/interfaces
 
 ### Primary network interface
 
-auto ens18
+auto enp2s0
 
-iface ens18 inet manual
+iface enp2s0 inet manual
 
 ### Bridge definitions
 
@@ -38,7 +38,7 @@ auto br0
 
 iface br0 inet static
 
-bridge_ports ens18
+bridge_ports enp2s0
 
 bridge_stp off
 
