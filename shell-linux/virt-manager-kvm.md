@@ -26,11 +26,12 @@ $ sudo virsh net-list --all
 
 $ sudo nano /etc/network/interfaces
 
-'# Primary network interface
+'# Primary network interface'
+
 auto ens18
 iface ens18 inet manual
 
-# Bridge definitions
+'# Bridge definitions'
 auto br0
 iface br0 inet static
 bridge_ports ens18
