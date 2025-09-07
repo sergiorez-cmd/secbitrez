@@ -60,8 +60,8 @@ $ sudo systemctl restart networking.service
 
 $ sudo apt install qemu-img
 
-$ tar -xvf vm_disc.ova
+$ tar -xvf vm_disk.ova
 
-$ qemu-img convert -p -f vmdk -O qcow2 vm_disc.vmdk new_vm_disc.qcow2
+$ qemu-img convert -p -f vmdk -O qcow2 vm_disk.vmdk new_vm_disk.qcow2
 
 $ qemu-img convert -p -f vhdx -O qcow2 /virtual_disk_directory/vm_disk.vhdx /disk_directory/new_vm_disk.qcow2
