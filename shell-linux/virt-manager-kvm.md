@@ -26,7 +26,7 @@ $ sudo virsh net-list --all
 
 $ sudo nano /etc/network/interfaces
 
-# Primary network interface
+'# Primary network interface
 auto ens18
 iface ens18 inet manual
 
@@ -40,6 +40,6 @@ network 192.168.1.0
 netmask 255.255.255.0
 broadcast 192.168.1.255
 gateway 192.168.1.1
-dns-nameservers 9.9.9.9 1.1.1.1
+dns-nameservers 9.9.9.9 1.1.1.1'
 
 $ sudo systemctl restart networking.service
