@@ -58,7 +58,7 @@ $ sudo systemctl restart networking.service
 
 ## Converter discos virtuais 
 
-$ sudo apt install qemu-img
+$ sudo apt install qemu-utils
 
 $ tar -xvf vm_disk.ova
 
