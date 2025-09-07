@@ -64,3 +64,4 @@ $ tar -xvf vm_disc.ova
 
 $ qemu-img convert -p -f vmdk -O qcow2 vm_disc.vmdk new_vm_disc.qcow2
 
+$ qemu-img convert -p -f vhdx -O qcow2 /virtual_disk_directory/vm_disk.vhdx /disk_directory/new_vm_disk.qcow2
