@@ -5,3 +5,5 @@ https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide
 https://www.offsec.com/metasploit-unleashed/msfconsole-commands
 
 https://www.exploit-db.com/searchsploit
+
+https://www.hackingloops.com/metasploitable-2
