@@ -7,59 +7,65 @@ https://account.shodan.io
 
 ## Instalar Shodan no Kali-Linux
 
-$sudo apt install -y python3-pip
+$ python3 -m venv my_venv
 
-$pip3 install shodan
+$ source my_venv/bin/activate
+
+$ (my_venv)─(kali㉿kali)-[~]
+
+$ sudo apt install -y python3-pip
+
+$ pip3 install shodan
 
 ## Executar Shodan CLI
 
-$shodan init [YOUR_API_KEY]
+$ shodan init [YOUR_API_KEY]
 
-$shodan --help
+$ shodan --help
 
-$shodan search --help
+$ shodan search --help
 
-$shodan myip
+$ shodan myip
 
-$shodan host example.com
+$ shodan host example.com
 
-$shodan domain example.com
+$ shodan domain example.com
 
-$shodan count port:3389 os:"Windows 10 Home 19041"
+$ shodan count port:3389 os:"Windows 10 Home 19041"
 
-$shodan count Apache 2.4
+$ shodan count Apache 2.4
 
-$shodan count vuln:cve-2021-40449
+$ shodan count vuln:cve-2021-40449
 
-$shodan stats --facets vuln country:BR
+$ shodan stats --facets vuln country:BR
 
-$shodan search '230 login successful port:21'
+$ shodan search '230 login successful port:21'
 
-$shodan search 'product:MySQL'    
+$ shodan search 'product:MySQL'    
 
-$shodan search --fields ip_str,port,org,hostnames microsoft iis 6.0
+$ shodan search --fields ip_str,port,org,hostnames microsoft iis 6.0
 
-$shodan search --fields ip_str,port,org,hostnames Apache 2.4
+$ shodan search --fields ip_str,port,org,hostnames Apache 2.4
 
-$shodan search --fields ip_str,org,hostnames port:8291 product:mikrotik
+$ shodan search --fields ip_str,org,hostnames port:8291 product:mikrotik
 
-$shodan search --fields ip_str,org,hostnames port:8080 product:nginx
+$ shodan search --fields ip_str,org,hostnames port:8080 product:nginx
 
-$shodan download apache-2.4 Apache 2.4
+$ shodan download apache-2.4 Apache 2.4
 
-$shodan parse --fields ip_str,port,org --separator , apache-2.4.json.gz
+$ shodan parse --fields ip_str,port,org --separator , apache-2.4.json.gz
 
-$shodan search --fields ip_str,port,org,hostnames 'asn:<ASN_Number> vuln:cve-2021-40449'
+$ shodan search --fields ip_str,port,org,hostnames 'asn:<ASN_Number> vuln:cve-2021-40449'
 
-$shodan stats --facets ssl.version asn:<ASN_Number> has_ssl:true http
+$ shodan stats --facets ssl.version asn:<ASN_Number> has_ssl:true http
 
-$shodan domain -D scanme.nmap.com -S
+$ shodan domain -D scanme.nmap.com -S
 
-$shodan honeyscore  [Target_IP]
+$ shodan honeyscore  [Target_IP]
 
-$shodan scan submit [Target_IP]
+$ shodan scan submit [Target_IP]
 
-$nmap -sn -Pn -n --script shodan-api --script-args shodan-api.apikey=<ShodanAPI_KEY> scanme.nmap.org
+$ nmap -sn -Pn -n --script shodan-api --script-args shodan-api.apikey=<ShodanAPI_KEY> scanme.nmap.org
 
 ## Lista de palavras chaves para search
 
@@ -79,6 +85,6 @@ TELNET: telnet.do, telnet.dont, telnet.option, telnet.will, telnet.wont
 
 SSH: ssh.hassh, ssh.type
 
-https://cli.shodan.io/
+https://cli.shodan.io
 
 https://help.shodan.io/command-line-interface/0-installation
