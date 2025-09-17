@@ -24,3 +24,5 @@ Além do caso de uso para hackers e treinamento de conscientização, proxies de
 https://juice-shop.herokuapp.com
 
 https://github.com/juice-shop/juice-shop
+
+https://pwning.owasp-juice.shop/companion-guide/latest
