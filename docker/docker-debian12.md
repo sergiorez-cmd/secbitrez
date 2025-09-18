@@ -17,12 +17,12 @@ Docker é um conjunto de produtos de plataforma como serviço (PaaS) que usam vi
 `$ sudo chmod a+r /etc/apt/keyrings/docker.asc`
 
 ## Adicionar repositório oficial do Docker
-
-`echo \
+```
+echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
-
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 ## Instalar pacotes do Docker-CE
 
 `$ sudo apt update`
