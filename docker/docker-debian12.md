@@ -4,22 +4,22 @@ Docker é um conjunto de produtos de plataforma como serviço (PaaS) que usam vi
 
 ## Adicionar GPG key oficial do Docker
 ```
-`$ sudo apt update`
+sudo apt update
 ```
 ``` 
-`$ sudo apt -y upgrade`
+sudo apt -y upgrade
 ```
 ```
-`$ sudo apt install -y ca-certificates curl`
+sudo apt install -y ca-certificates curl
 ```
 ```
-`$ sudo install -m 0755 -d /etc/apt/keyrings`
+sudo install -m 0755 -d /etc/apt/keyrings
 ```
 ```
-`$ sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc`
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 ```
 ```
-`$ sudo chmod a+r /etc/apt/keyrings/docker.asc`
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 ``` 
 ## Adicionar repositório oficial do Docker
 ```
@@ -29,17 +29,18 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 ## Instalar pacotes do Docker-CE
-
-`$ sudo apt update`
-
-`$ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
-
+```
+sudo apt update
+```
+```
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 ## Testar instalação do Docker-CE
-
-`$ sudo docker run hello-world`
-
+```
+sudo docker run hello-world
+```
 ## Gerenciar daemon Docker
-
-`$ sudo systemctl [status,restart,stop,start] docker`
-
+```
+sudo systemctl [status,restart,stop,start] docker
+``` 
 https://docs.docker.com/engine/install/debian/
