@@ -12,6 +12,7 @@ Docker é um conjunto de produtos de plataforma como serviço (PaaS) que usam vi
 ```
 `$ sudo apt install -y ca-certificates curl`
 ```
+```
 `$ sudo install -m 0755 -d /etc/apt/keyrings`
 ```
 ```
