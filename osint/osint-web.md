@@ -26,7 +26,9 @@ https://tineye.com
 
 https://web.archive.org
 
-## Search
+## Web Search
+
+https://www.shodan.io
 
 https://ahmia.fi
 
