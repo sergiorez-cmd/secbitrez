@@ -20,6 +20,10 @@ $ grep -oE '\b\w{8}\b' /usr/share/wordlists/rockyou.txt > custom-worlist.txt
 
 $ wc -l custom-worlist.txt
 
+Exemplo para criar wordlist com variações de senha admin
+
+$ cat /usr/share/wordlists/sqlmap.txt | grep admin > admin-wordlist.txt
+
 ## Links
 
 https://github.com/danielmiessler/SecLists
