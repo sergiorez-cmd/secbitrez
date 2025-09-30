@@ -34,9 +34,15 @@ $ john --show hashdmp-blue.txt
 
 ## Crack ZIP files
 
-$ zip2john file.zip > zip.hashes
+$ zip2john file.zip > hash-zip-file.txt
 
-$ john --wordlist=/usr/share/wordlists/rockyou.txt zip.hashes
+$ john --wordlist=/usr/share/wordlists/rockyou.txt hash-zip-file.txt
+
+## Crack Keepass Files
+
+$ keepass2john file.kdbx > hash-file.txt
+
+$ john --wordlist=/usr/share/wordlists/rockyou.txt hash-file.txt
 
 ## Rules
 
