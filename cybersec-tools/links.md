@@ -73,3 +73,16 @@ https://openvpn.net
 https://www.wireguard.com
 
 https://protonvpn.com
+
+# Criptografia
+
+https://www.gnupg.org
+
+https://www.openpgp.org
+
+https://www.gpg4win.org
+
+https://letsencrypt.org/pt-br/
+
+https://veracrypt.io
+
