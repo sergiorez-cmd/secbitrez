@@ -34,6 +34,12 @@ https://suricata.io
 
 # Web App Firewalls
 
+https://www.cloudflare.com/pt-br/
+
+https://www.akamai.com/pt/solutions/security
+
+https://sucuri.net/website-firewall/
+
 # Avaliação de Segurança
 
 https://www.tenable.com/products/nessus
