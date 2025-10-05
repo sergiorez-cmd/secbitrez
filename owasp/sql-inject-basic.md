@@ -1,5 +1,5 @@
 # SQL Inject Payloads
-
+´´
 '
 ''
 `
@@ -37,7 +37,7 @@ Comentarios:
 -- -
 ;%00
 `
-
+´´'
 ## Links
 
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
