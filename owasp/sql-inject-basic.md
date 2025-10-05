@@ -1,6 +1,7 @@
 # SQL Inject Payloads
 ```
 '
+' --
 ''
 `
 ``
