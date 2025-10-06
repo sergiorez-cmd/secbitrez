@@ -8,17 +8,21 @@ $ sudo gem install haiti-hash (install on Kali-Linux)
 
 $ haiti -e [hash-sequence]
 
+## Crack MD5
+
+$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 hash-md5.txt --fork=2
+
 ## Crack Linux PASSWD/SHADOW
 
 $ unshadow passwd shadow > crack-shadow.txt
 
-$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt crack-passwd.txt
+$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt crack-passwd.txt --fork=2
 
 ## Crack SSH ID_RSA
 
 $ ssh2john id_rsa > crack-idrsa.txt
 
-$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=SSH crack-idrsa.txt
+$ john --wordlist=/usr/share/wordlists/rockyou.txt --format=SSH crack-idrsa.txt --fork=2
 
 $ john --show crack-idrsa.txt
 
