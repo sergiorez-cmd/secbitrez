@@ -2,6 +2,10 @@ https://github.com/The-Art-of-Hacking
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master
 
+https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS
+
+https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
+
 https://github.com/HackWithSumit/Tor-Proxychains
 
 https://github.com/PacktPublishing/Python-Ethical-Hacking
