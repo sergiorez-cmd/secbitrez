@@ -103,4 +103,6 @@ https://www.w3schools.com/sql/sql_injection.asp
 
 https://github.com/gui1535/sql-injection-list
 
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master
+
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
