@@ -99,8 +99,8 @@ admin") or "1"="1"/*
 ```
 ## Links
 
-https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
-
 https://www.w3schools.com/sql/sql_injection.asp
 
 https://github.com/gui1535/sql-injection-list
+
+https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
