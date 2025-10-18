@@ -31,6 +31,6 @@ sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLi
 ```
 ## Fontes:
 
-https://www.100security.com.br/sqlmap
+https://github.com/sqlmapproject/sqlmap/wiki/Usage
 
 https://github.com/sqlmapproject/sqlmap/wiki/Introduction
