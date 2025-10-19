@@ -14,6 +14,8 @@ https://cheatsheet.haax.fr
 
 https://www.w3schools.com
 
+https://pt.wikipedia.org/wiki/Modelo_OSI
+
 https://amanhardikar.com/mindmaps/Practice.html
 
 https://www.stationx.net/category/cheat-sheets
