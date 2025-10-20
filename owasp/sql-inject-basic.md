@@ -124,3 +124,7 @@ https://github.com/gui1535/sql-injection-list
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master
 
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+
+https://dev.mysql.com/doc
+
+https://www.sqlite.org/faq.html
