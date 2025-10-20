@@ -65,6 +65,8 @@ $ shodan honeyscore  [Target_IP]
 
 $ shodan scan submit [Target_IP]
 
+$ shodan search <your pattern search> | egrep -v "792/71644" (Honeypots Exclude)
+
 $ nmap -sn -Pn -n --script shodan-api --script-args shodan-api.apikey=<ShodanAPI_KEY> scanme.nmap.org
 
 ## Lista de palavras chaves para search
