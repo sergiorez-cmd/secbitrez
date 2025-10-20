@@ -2,6 +2,8 @@ https://sitereport.netcraft.com
 
 https://www.wappalyzer.com/lookup
 
+https://securityheaders.com
+
 https://top.nic.br
 
 https://pentest-tools.com
