@@ -2,6 +2,8 @@ https://sitereport.netcraft.com
 
 https://www.wappalyzer.com/lookup
 
+https://builtwith.com
+
 https://securityheaders.com
 
 https://top.nic.br
