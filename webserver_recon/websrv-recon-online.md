@@ -21,3 +21,7 @@ https://web.archive.org
 https://mothereff.in
 
 https://www.w3schools.com/
+
+https://httpd.apache.org/docs
+
+https://nginx.org/en/docs
