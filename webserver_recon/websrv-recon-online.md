@@ -14,6 +14,8 @@ https://domsignal.com/hsts-test
 
 https://pentest-tools.com
 
+https://hackertarget.com
+
 https://wpscan.com
 
 https://web.archive.org
