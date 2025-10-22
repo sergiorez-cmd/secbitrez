@@ -10,7 +10,9 @@ $torbrowser-launcher
 
 ## Conectar + Onionize (Configurações>Conexão>Encontrar mais Pontes)
 
-https://check.torproject.org, https://bgp.he.net
+https://check.torproject.org 
+
+https://bgp.he.net
 
 ## Utilizando Torsocks no Shell Kali Linux
 
