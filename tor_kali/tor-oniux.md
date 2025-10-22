@@ -16,8 +16,11 @@ rustc –version
 cargo install --git https://gitlab.torproject.org/tpo/core/oniux --tag v0.4.0 oniux
 ```
 ```
-oniux curl ifconfig.so, $oniux curl ipinfo.io 
+oniux curl ifconfig.so
 ```
+```
+oniux curl ipinfo.io 
+``` 
 ```
 oniux firefox
 ``` 
