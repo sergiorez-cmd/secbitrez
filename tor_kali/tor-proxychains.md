@@ -30,7 +30,7 @@ $ proxychains curl ifconfig.so (seu_ip_via_TOR)
 
 ## 5° Testar a rede tor com firefox 
 
-“$proxychains firefox”
+$ proxychains firefox
 
 https://check.torproject.org
 
