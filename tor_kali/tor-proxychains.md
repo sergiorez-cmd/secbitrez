@@ -9,7 +9,9 @@ $ sudo apt install -y tor proxychains
 $ sudo vim /etc/proxychains.conf
 
   • Descomente a linha: dynamic_chain
+  
   • Comente a linha: strict_chain
+  
   • Acrescente no final do arquivo a linha: socks5  127.0.0.1 9050
 
 ## 3° Inicializar o serviço tor: 
