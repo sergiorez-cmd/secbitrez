@@ -11,7 +11,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 rustc –version
 ```
-2° Instalar o Oniux
+2° Instalar Oniux
 ```
 cargo install --git https://gitlab.torproject.org/tpo/core/oniux --tag v0.4.0 oniux
 ```
@@ -23,6 +23,6 @@ oniux firefox
 ``` 
 ## Links de sites para teste
 
-    https://bgp.he.net 
+https://bgp.he.net 
     
-    https://ipinfo.io/what-is-my-ip
+https://ipinfo.io/what-is-my-ip
