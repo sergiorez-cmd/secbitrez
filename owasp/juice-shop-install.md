@@ -15,7 +15,7 @@ https://www.kali.org/tools/zaproxy
 sudo apt update && sudo apt upgrade -y
 ```
 ```
-sudo apt install -y zaproxy
+sudo apt install zaproxy -y
 ```
 ## 3° Instalar Docker-CE no Kali Linux
 
