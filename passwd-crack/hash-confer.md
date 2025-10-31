@@ -11,9 +11,9 @@ print ("$sha1sum none-do-arquiv.exe")
 
 print ("$sha256sum none-do-arquiv.exe")
 
-hash1 = input ("Digite o Hash gerado no Shell :")
+hash1 = input ("Insira o Hash gerado no Shell :")
 
-hash2 = input ("Digite o Hash obtido no site oficial :")
+hash2 = input ("Insira o Hash obtido no site oficial :")
 
 if hash1 == hash2:
     
