@@ -5,6 +5,8 @@ Utilizar o OWASP Top 10 é provavelmente o primeiro passo mais eficaz para mudar
 
 https://owasp.org/www-project-top-ten
 
+https://github.com/OWASP
+
 # Zed Attack Proxy (ZAP)
 
 Teste de segurança de software é o processo de avaliar e testar um sistema para descobrir riscos de segurança e vulnerabilidades do sistema e de seus dados. 
@@ -12,6 +14,8 @@ Não existe uma terminologia universal, mas, para nossos propósitos, definimos 
 Definimos testes como a descoberta e a tentativa de exploração de vulnerabilidades.
 
 https://www.zaproxy.org
+
+https://github.com/zaproxy/zaproxy
 
 # Juice-Shop (Playgroung)
 
