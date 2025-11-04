@@ -1,1 +1,5 @@
-USERNAMES=("sophie" "nathaniel" "lauren" "christopher" "seth" "connor" "beverly" "craig" "debra" "sandra" "alice" "roberto" "ivan" "gloria" "nicole" "johnny" "juliana" "amanda" "jerry" "joe" "gilbert" "riley" "stephanie" "troy" "liam" "hector" "nick" "clark" "danna" "perry" "alexis" "stuart" "daisy" "joey" "ron" "janet" "albert" "ben" "ashley" "dan" "shane" "scott" "sandy" "paul" "terry" "marion" "isabel" )
+## Lista de nomes de usuários
+```
+USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "daniele" "emilia" "eduardo" "fernando" "flavia" "geraldo" "gisele" "heitor" "helena" "isabela" "igor" "jorge" "julia" "laura" "leonardo" "marcos" "maria" "natasha" "nicolas" "oswaldo" "odete" "paula" "pedro" "ricardo" "rafaela" "sandra" "samuel" "talita" "tiago" "ursula" "umberto" "vania" "valdir" "zilda" "zacarias")
+```
+
