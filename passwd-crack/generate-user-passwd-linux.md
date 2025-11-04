@@ -4,7 +4,7 @@ USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "dan
 ```
 ## Download de wordlists
 ```
-wget https://github.com/sergiorez-cmd/secbitrez/blob/main/wordlists/wordlists.zip
+wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/wordlists.zip
 ```
 ## Criar usuários no Linux e definir senhas via wordlist
 ```
