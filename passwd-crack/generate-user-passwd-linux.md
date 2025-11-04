@@ -11,7 +11,7 @@ wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/wo
 sudo bash -c " \
 for user in $USERNAMES; do 
 	useradd \$user; 
-	password=\$(shuf -n 1 /home/user/john-passwd.txt); 
+	password=\$(shuf -n 1 /home/user/wordlists/john-passwd.txt); 
 	echo \$user:\$password | chpasswd; 
 	echo Creating user \"\$user\"...; 
 done ;
