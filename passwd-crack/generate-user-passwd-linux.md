@@ -2,4 +2,27 @@
 ```
 USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "daniele" "emilia" "eduardo" "fernando" "flavia" "geraldo" "gisele" "heitor" "helena" "isabela" "igor" "jorge" "julia" "laura" "leonardo" "marcos" "maria" "natasha" "nicolas" "oswaldo" "odete" "paula" "pedro" "ricardo" "rafaela" "sandra" "samuel" "talita" "tiago" "ursula" "umberto" "vania" "valdir" "zilda" "zacarias")
 ```
+## Criar usuários no Linux e definir senhas via wordlist
+```
+sudo bash -c " \
+for user in $USERNAMES; do 
+	useradd \$user; 
+	password=\$(shuf -n 1 /home/user/passwd-list.txt); 
+	echo \$user:\$password | chpasswd; 
+	echo Creating user \"\$user\"...; 
+done ;
 
+echo 'All done!'
+"
+```
+## Copiar arquivos de usuários e senhas do Linux para pasta tmp
+```
+sudo bash -c " \
+cp /etc/passwd /tmp/passwd
+cp /etc/shadow /tmp/shadow
+"
+```
+## Executar John The Ripper para quebrar hashs das senhas dos usuários
+```
+john /tmp/hashes --wordlist=/usr/share/wordlists/fasttrack.txt --format=crypt
+```
