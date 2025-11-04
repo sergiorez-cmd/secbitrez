@@ -2,10 +2,6 @@
 ```
 USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "daniele" "emilia" "eduardo" "fernando" "flavia" "geraldo" "gisele" "heitor" "helena" "isabela" "igor" "jorge" "julia" "laura" "leonardo" "marcos" "maria" "natasha" "nicolas" "oswaldo" "odete" "paula" "pedro" "ricardo" "rafaela" "sandra" "samuel" "talita" "tiago" "ursula" "umberto" "vania" "valdir" "zilda" "zacarias")
 ```
-## Fazer o download do arquivo de semhas
-```
-wget https://drive.google.com/file/d/18Vu7VZ0sl4IN-lfU5E9SFk9rglu1xsku/view?usp=drive_link/wordlists.zip
-```
 ## Criar usuários no Linux e definir senhas via wordlist
 ```
 sudo bash -c " \
