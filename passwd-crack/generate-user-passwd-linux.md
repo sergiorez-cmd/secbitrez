@@ -36,3 +36,14 @@ hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 ```
 john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
 ```
+## Remover usuários do Linux
+```
+sudo bash -c " \
+for user in $USERNAMES; do 
+	userdel \$user; 
+	echo Removing user \"\$user\"...; 
+done ;
+
+echo 'All done!' 
+"
+```
