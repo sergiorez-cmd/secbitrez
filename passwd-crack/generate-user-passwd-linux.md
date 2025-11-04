@@ -30,5 +30,5 @@ unshadow /tmp/passwd /tmp/shadow > /tmp/hashes
 ```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários
 ```
-john /tmp/hashes --wordlist=/usr/share/wordlists/fasttrack.txt --format=crypt
+john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
 ```
