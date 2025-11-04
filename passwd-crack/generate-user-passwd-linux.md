@@ -22,6 +22,12 @@ cp /etc/passwd /tmp/passwd
 cp /etc/shadow /tmp/shadow
 "
 ```
+## Converter arquivos de hash para o formato compativel do John The Ripper
+```
+sudo bash -c " \
+unshadow /tmp/passwd /tmp/shadow > /tmp/hashes
+"
+```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários
 ```
 john /tmp/hashes --wordlist=/usr/share/wordlists/fasttrack.txt --format=crypt
