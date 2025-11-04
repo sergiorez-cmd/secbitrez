@@ -4,7 +4,7 @@ USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "dan
 ```
 ## Fazer o download do arquivo de semhas
 ```
-wget https://github.com/sergiorez-cmd/secbitrez/blob/main/wordlists/john-passwd.txt
+wget https://drive.google.com/file/d/18Vu7VZ0sl4IN-lfU5E9SFk9rglu1xsku/view?usp=drive_link
 ```
 ## Criar usuários no Linux e definir senhas via wordlist
 ```
