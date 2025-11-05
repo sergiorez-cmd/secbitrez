@@ -11,9 +11,9 @@ https://bcrypt-generator.com
 https://unix4lyfe.org/crypt
 
 # Linux mkpasswd
-
-$mkpasswd -m help
-
+```
+mkpasswd -m help
+```
 Available methods:
 
 yescrypt       
@@ -39,11 +39,12 @@ bsdicrypt       =BSDI extended DES-based crypt(3)
 descrypt        =standard 56 bit DES-based crypt(3)
 
 nt              =NT-Hash
-
-$mkpasswd -m sha-512crypt user-password
-
-$mkpasswd -m sha-512crypt user-password > pass-hash.txt
-
+```
+mkpasswd -m sha-512crypt user-password
+```
+``` 
+mkpasswd -m sha-512crypt user-password > pass-hash.txt
+``` 
 # OpenSSL Passwd
 
 -1 MD5
@@ -51,13 +52,15 @@ $mkpasswd -m sha-512crypt user-password > pass-hash.txt
 -5 SHA256
 
 -6 SHA512
-
-$openssl passwd -help
-
-$openssl passwd -6 -salt customsalt user-password
-
-$openssl passwd -6 -salt customsalt user-password > pass-hash.txt
-
+```
+openssl passwd -help
+```
+``` 
+openssl passwd -6 -salt customsalt user-password
+```
+``` 
+openssl passwd -6 -salt customsalt user-password > pass-hash.txt
+``` 
 ## Links
 
 https://man.archlinux.org/man/mkpasswd.1.en
