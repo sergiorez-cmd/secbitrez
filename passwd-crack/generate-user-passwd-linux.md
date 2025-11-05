@@ -91,9 +91,13 @@ sftp> get /tmp/shadow
 ```
 unshadow passwd shadow > hashes-linux.txt
 ```
+## Download de wordlist para quebra de hashes
+```
+https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/100k-most-used-passwords-NCSC.txt
+```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários (Kali Linux)
 ```
-john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt hashes-linux.txt
+john --wordlist=100k-most-used-passwords-NCSC.txt --format=crypt hashes-linux.txt
 ```
 ## Remover usuários do Linux
 ```
