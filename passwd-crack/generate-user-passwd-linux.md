@@ -41,8 +41,8 @@ hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
 ```
 ## Remover usuários do Linux
-```#!/bin/bash
-
+```
+#!/bin/bash
 # Script para deletar usuários via lista em sistemas Linux
 # Para utilizar esse script aplique permissão de execução via "$ chmod +x script_name.sh"
 
