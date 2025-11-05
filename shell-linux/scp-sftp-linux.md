@@ -44,4 +44,7 @@ get /caminho/do/arquivo/remoto para baixar um arquivo
 get /home/user/file.txt
 ```
 
-ls para listar arquivos no servidor remoto
+Para listar arquivos no servidor remoto
+```
+ls
+```
