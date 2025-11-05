@@ -2,6 +2,10 @@
 ```
 wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/wordlists.zip
 ```
+## Download de script para criar usuários no Linux
+```
+wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/passwd-crack/create-users.zip
+```
 ## Criar usuários no Linux e definir senhas via wordlist
 ```
 #!/bin/bash
