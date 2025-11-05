@@ -71,6 +71,13 @@ cp /etc/passwd /tmp/passwd
 cp /etc/shadow /tmp/shadow
 "
 ```
+## Alterar permissões dos arquivos passwd e shadow
+```
+sudo bash -c " \
+chmod 666 /tmp/passwd
+chmod 666 /tmp/shadow
+"
+```
 ## Converter arquivos de hash para o formato compativel do John The Ripper (Kali Linux)
 ```
 unshadow passwd shadow > hashes-linux.txt
