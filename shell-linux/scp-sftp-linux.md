@@ -26,25 +26,25 @@ Exemplo:
 sftp usuario@192.168.1.100
 ```
 
-Use comandos locais: para navegar no seu computador:
+Use comandos SFTP: para navegar no seu computador:
 
-Para ver arquivos no diretório local:
+Para listar arquivos no diretório local:
 ```
 !ls
 ```
-Use comandos SFTP: para gerenciar arquivos no servidor remoto:
-
 put /caminho/do/arquivo/local para fazer o upload de um arquivo
 ```
 put /home/kali/script.sh
 ```
+Use comandos SFTP: para gerenciar arquivos no servidor remoto:
 
+Para listar arquivos no servidor remoto:
+```
+ls
+```
 get /caminho/do/arquivo/remoto para baixar um arquivo
 ```
 get /home/user/file.txt
 ```
 
-Para listar arquivos no servidor remoto
-```
-ls
-```
+
