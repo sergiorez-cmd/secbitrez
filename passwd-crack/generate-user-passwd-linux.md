@@ -41,13 +41,39 @@ hydra -l name_user -P /usr/share/wordlists/john.lst ssh://<Target_IP>
 john /tmp/hashes --wordlist=/usr/share/wordlists/john.lst --format=crypt
 ```
 ## Remover usuários do Linux
-```
-sudo bash -c " \
-for user in $USERNAMES; do 
-	userdel \$user; 
-	echo Removing user \"\$user\"...; 
-done ;
+```#!/bin/bash
 
-echo 'All done!' 
-"
+# Script para deletar usuários via lista em sistemas Linux
+# Para utilizar esse script aplique permissão de execução via "$ chmod +x script_name.sh"
+
+# Verifica se o script está sendo executado como root
+if [ "$(id -u)" -ne 0 ]; then
+  echo "Este script precisa ser executado com privilégios de root (use sudo)."
+  exit 1
+fi
+
+# Verifica se foi passado um nome de arquivo como argumento
+if [ -z "$1" ]; then
+  echo "Uso: $0 <arquivo_com_lista_de_usuarios>"
+  exit 1
+fi
+
+# Abre o arquivo de lista de usuários
+while IFS= read -r user || [ -n "$user" ]; do
+  if [ -n "$user" ]; then
+    echo "Removendo o usuário: $user"
+    # Tenta remover o usuário e seu home directory
+    userdel -r "$user"
+    if [ $? -eq 0 ]; then
+      echo "Usuário $user removido com sucesso."
+    else
+      echo "Não foi possível remover o usuário $user."
+    fi
+  fi
+done < "$1"
+
+echo "Processo de remoção de usuários concluído."
+
+
+
 ```
