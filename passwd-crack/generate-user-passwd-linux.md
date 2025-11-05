@@ -8,16 +8,61 @@ wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/wo
 ```
 ## Criar usuários no Linux e definir senhas via wordlist
 ```
-sudo bash -c " \
-for user in $USERNAMES; do 
-	useradd \$user; 
-	password=\$(shuf -n 1 /home/sergio/wordlists/john-passwd.txt); 
-	echo \$user:\$password | chpasswd; 
-	echo Creating user \"\$user\"...; 
-done ;
+#!/bin/bash
+# Script para criar usuários e definir senhas em sistemas Linux
+# Para utilizar esse script aplique permissão de execução via "$ chmod +x script_name.sh"
 
-echo 'All done!'
-"
+# Define o caminho para o arquivo de usuários e senhas
+USER_FILE="users-passwd.txt"
+
+# Verifica se o script está sendo executado como root
+if [ "$(id -u)" -ne 0 ]; then
+   echo "Este script precisa ser executado com privilégios de root (use sudo)."
+   exit 1
+fi
+
+# Verifica se o arquivo de usuários existe
+if [ ! -f "$USER_FILE" ]; then
+    echo "Arquivo $USER_FILE não encontrado."
+    exit 1
+fi
+
+# Loop para ler cada linha do arquivo
+# O IFS (Internal Field Separator) é definido como : para separar o nome de usuário da senha
+while IFS=: read -r username password; do
+    # Remove espaços em branco extras (opcional)
+    username=$(echo "$username" | xargs)
+    password=$(echo "$password" | xargs)
+
+    if [ -z "$username" ] || [ -z "$password" ]; then
+        echo "Linha inválida ou vazia, pulando..."
+        continue
+    fi
+
+    # Cria o usuário com diretório home (-m) e shell padrão (-s /bin/bash)
+    # Em sistemas baseados em Debian/Ubuntu, useradd já cria o grupo com o mesmo nome
+    if useradd -m -s /bin/bash "$username"; then
+        echo "Usuário '$username' criado com sucesso."
+        
+        # Define a senha para o usuário usando chpasswd
+        # O comando chpasswd lê a entrada no formato usuario:senha
+        echo "$username:$password" | chpasswd
+        
+        if [ $? -eq 0 ]; then
+            echo "Senha para '$username' definida com sucesso."
+            # Opcional: forçar o usuário a mudar a senha no primeiro login
+            # chage -d 0 "$username"
+        else
+            echo "Falha ao definir a senha para '$username'."
+        fi
+    else
+        echo "Falha ao criar o usuário '$username' (talvez já exista)."
+    fi
+    echo "----------------------------------------"
+done < "$USER_FILE"
+
+echo "Processo de criação de usuários concluído."
+
 ```
 ## Copiar arquivos de usuários e senhas do Linux para pasta tmp
 ```
