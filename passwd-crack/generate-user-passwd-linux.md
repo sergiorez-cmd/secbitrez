@@ -93,7 +93,7 @@ unshadow passwd shadow > hashes-linux.txt
 ```
 ## Download de wordlist para quebra de hashes
 ```
-https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/100k-most-used-passwords-NCSC.txt
+wget https://github.com/sergiorez-cmd/secbitrez/raw/refs/heads/main/wordlists/100k-most-used-passwords-NCSC.txt
 ```
 ## Executar John The Ripper para quebrar hashs das senhas dos usuários (Kali Linux)
 ```
