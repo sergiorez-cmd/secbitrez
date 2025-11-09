@@ -84,7 +84,7 @@ systemctl [enable|disable] firewalld
 
 ## 4° Configurações de rede (nome de host, endereço IP, gateway, servidores DNS)
 
-#### ========================================================================================
+#### =================================================================================================
 
 Debian 12 (Edição Manual)
 ```
@@ -265,7 +265,7 @@ dnf install -y htop
 
 ## 9° Habilitar Painel de Gerenciamento Cockpit Debian/Rocky Linux
 
-## ===========================================================================
+### ========================================================================
 ```
 sudo apt install -y cockpit
 ```
