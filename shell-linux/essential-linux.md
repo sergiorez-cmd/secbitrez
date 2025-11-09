@@ -234,8 +234,9 @@ RHEL/Oracle/Rocky Linux
 dnf install -y dnf-automatic
 ```
 ```
-nano /etc/dnf/automatic
+vim /etc/dnf/automatic.conf
 ```
+Alterar o tipo de atualização somente para segurança
 ```
 upgrade_type = security
 ```
