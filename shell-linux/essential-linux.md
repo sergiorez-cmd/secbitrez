@@ -66,6 +66,8 @@ ufw default allow outgoing
 ufw app list
 ufw allow 'OpenSSH'
 ufw allow 22/tcp
+ufw allow 9090/tcp
+ufw reload
 ```
 RHEL/Rocky/Oracle
 ```
@@ -74,6 +76,7 @@ firewall-cmd --permanent --list-all
 firewall-cmd --get-services
 firewall-cmd --permanent --add-port=22/tcp
 firewall-cmd --permanent --add-service=ssh
+firewall-cmd --permanent --add-service=cockpit
 firewall-cmd --reload
 systemctl [start|stop] firewalld
 systemctl [enable|disable] firewalld
@@ -153,7 +156,7 @@ DNS2=208.67.220.220
 
 ### =====================================================
 ```
-sudo apt install fail2ban -y
+sudo apt install -y fail2ban
 ```
 Configurar Fail2Ban para proteção SSH
 ```
@@ -214,7 +217,7 @@ sudo systemctl daemon-reload
 
 Debian/Ubuntu
 ```
-sudo apt install unattended-upgrades -y
+sudo apt install -y unattended-upgrades
 ```
 ```
 sudo dpkg-reconfigure -plow unattended-upgrades
@@ -228,7 +231,7 @@ sudo systemctl status unattended-upgrades.service
 
 RHEL/Oracle/Rocky Linux
 ```
-dnf install dnf-automatic -y
+dnf install -y dnf-automatic
 ```
 ```
 nano /etc/dnf/automatic
@@ -249,7 +252,7 @@ systemctl status dnf-automatic-install
 
 Debian/Ubuntu
 ```
-$sudo apt install -y htop
+sudo apt install -y htop
 ```
 
 Oracle/Rocky Linux
