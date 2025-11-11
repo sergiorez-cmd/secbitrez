@@ -13,7 +13,7 @@ $ subfinder -d example.com -cs -o sub-domains-cs.txt
 sudo apt install -y httprobe httpx-toolkit
 ```
 ```
-cat sub-domains.txt | httpprobe
+cat sub-domains.txt | httprobe
 ```
 ```
 httpx-toolkit -l sub-domains.txt
