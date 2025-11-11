@@ -1,10 +1,16 @@
-$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/common.txt -o dir-report.txt
+## Install Seclists
+```
+sudo apt install -y seclists
+``` 
+## Gobuster Basic
+
+$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/common.txt -t 2 -o dir-report.txt
 
 $ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -t 4 --delay 3s -a "Mozilla/5.0"
 
 $ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -x php,html,js,txt,zip --random-agent -t 4 -o dir-report.txt
 
-$ gobuster dns --domain example.com -w wordlist-dns.txt --no-error -t 2
+$ gobuster dns --domain example.com -w /usr/share/wordlists/seclists/Discovery/DNS/namelist.txt --no-error -t 4
 
 $ gobuster dns -q -r 8.8.8.8 -d https://example.com -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 
