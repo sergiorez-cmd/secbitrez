@@ -1,3 +1,5 @@
+## Identificando Web Application Firewall
+
 $ wafw00f -l
 
 $ wafw00f -v example.com
