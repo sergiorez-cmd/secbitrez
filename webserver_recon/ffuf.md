@@ -1,10 +1,8 @@
-# Install Seclists
+## Install Seclists
 ```
 sudo apt install -y seclists
 ``` 
-# ffuf 
-
-## Basic
+## ffuf basic
 
 $ ffuf -u http://10.0.0.123/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/big.txt
 
