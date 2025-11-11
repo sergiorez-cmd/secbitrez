@@ -46,7 +46,7 @@ $ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/small.txt -o d
 
 $ gobuster dir -u http://example.com -x php,txt -w /usr/share/dirb/wordlists/common.txt -o dir-report.txt
 
-$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -t 4 --delay 1s
+$ gobuster dir -u http://example.com -w /usr/share/dirb/wordlists/big.txt -t 4 --delay 1s -a "Mozilla/5.0"
 
 $ gobuster dir -u http://example.com -x php,html,js,txt,zip -w /usr/share/dirb/wordlists/big.txt
 
