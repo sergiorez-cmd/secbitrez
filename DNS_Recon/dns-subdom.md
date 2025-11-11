@@ -4,4 +4,4 @@ https://www.kali.org/tools/subfinder
 
 $ subfinder -ls
 
-$ subfinder -d example.com -cs
+$ subfinder -d example.com -cs -o sub-domains.txt
