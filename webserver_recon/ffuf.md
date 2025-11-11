@@ -1,6 +1,8 @@
+# Install Seclists
+```
+sudo apt install -y seclists
+``` 
 # ffuf 
-
-$ sudo apt install seclists -y
 
 ## Basic
 
