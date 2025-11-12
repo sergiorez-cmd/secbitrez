@@ -1,8 +1,15 @@
 ## Curl Basic
 
-https://reqbin.com/curl
+$ curl --help
+
+$ curl https://example.com
+
+S curl -v https://example.com
+
+$ curl --trace-ascii debugdump.txt http://www.example.com/
 
 $ curl -u username:password https://example.com/api/endpoint
 
-$ curl https://example.com.br/dirapp/api_data.php --data "token=838e8d8e8ehd8d8u7y6t5r43e2wd1&source=users"
+$ curl --user-agent "Mozilla/4.73 [en] (X11; U; Linux 2.2.15 i686)" https://example.com
 
+$ curl https://example.com.br/dirapp/api_data.php --data "token=838e8d8e8ehd8d8u7y6t5r43e2wd1&source=users"
