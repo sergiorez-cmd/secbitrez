@@ -1,5 +1,7 @@
 https://sitereport.netcraft.com
 
+https://hostedscan.com
+
 https://www.wappalyzer.com/lookup
 
 https://builtwith.com
@@ -31,3 +33,5 @@ https://httpd.apache.org/docs
 https://nginx.org/en/docs
 
 https://learn.microsoft.com/pt-br/iis
+
+https://reqbin.com/curl
