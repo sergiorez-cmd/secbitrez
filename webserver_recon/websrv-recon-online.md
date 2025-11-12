@@ -35,3 +35,5 @@ https://nginx.org/en/docs
 https://learn.microsoft.com/pt-br/iis
 
 https://reqbin.com/curl
+
+https://curl.se/docs/httpscripting.html
