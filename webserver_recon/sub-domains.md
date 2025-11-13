@@ -6,6 +6,8 @@ sudo apt install -y subfinder
 ```
 $ subfinder -ls
 
+$ subfinder -d example.com --silent
+
 $ subfinder -d example.com -o sub-domains.txt
 
 $ subfinder -d example.com -cs -o sub-domains-cs.txt
