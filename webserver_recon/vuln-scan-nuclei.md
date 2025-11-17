@@ -19,3 +19,5 @@ $ reset
 $ nuclei --help
 
 $ nuclei -u https://scanme.sh
+
+$ nuclei -u https://scanme.sh -t dns
