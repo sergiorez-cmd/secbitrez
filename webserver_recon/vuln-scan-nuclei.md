@@ -18,6 +18,8 @@ $ reset
 
 $ nuclei --help
 
+$ nuclei -update-templates
+
 $ nuclei -u https://scanme.sh
 
 $ nuclei -u https://scanme.sh -t dns
