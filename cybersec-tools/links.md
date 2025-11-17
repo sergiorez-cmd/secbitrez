@@ -46,6 +46,8 @@ https://www.tenable.com/products/nessus
 
 https://www.openvas.org
 
+https://projectdiscovery.io
+
 https://portswigger.net/burp
 
 https://www.zaproxy.org
