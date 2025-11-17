@@ -10,7 +10,7 @@ go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 ```
 ## Inserir variável de ambiente 
 
-$ subl ~/.zshrc
+$ nano ~/.zshrc
 
 export PATH="$PATH:/home/kali/go/bin"
 
