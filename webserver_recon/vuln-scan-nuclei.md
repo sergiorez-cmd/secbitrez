@@ -1,6 +1,7 @@
 ## Instalar Nuclei
-
-$ sudo apt update
+```
+sudo apt update
+```
 ``` 
 sudo apt install -y golang-go
 ``` 
