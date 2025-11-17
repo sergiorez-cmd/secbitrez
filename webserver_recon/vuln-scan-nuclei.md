@@ -12,8 +12,6 @@ go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 
 $ nano ~/.zshrc
 
-export PATH="$PATH:/home/kali/go/bin"
-
 export PATH=$PATH:$HOME/go/bin
 
 $ reset
