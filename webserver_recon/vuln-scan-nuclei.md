@@ -14,6 +14,8 @@ $ nano ~/.zshrc
 
 export PATH="$PATH:/home/kali/go/bin"
 
+export PATH=$PATH:$HOME/go/bin
+
 $ reset
 
 $ nuclei --help
