@@ -5,3 +5,5 @@ https://juice-shop.herokuapp.com
 http://vulnweb.com
 
 https://pentest-ground.com
+
+https://google-gruyere.appspot.com
