@@ -20,6 +20,12 @@ $ nuclei --help
 
 $ nuclei -update-templates
 
-$ nuclei -u https://scanme.sh
+$ nuclei -u https://scanme.sh -o scan-report.txt
 
 $ nuclei -u https://scanme.sh -t dns
+
+$ nuclei -u https://scanme.sh -t cves
+
+$ nuclei -u https://scanme.sh -severity critical
+
+$ nuclei -u https://scanme.sh -tags tech,xss
