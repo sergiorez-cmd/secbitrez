@@ -14,7 +14,7 @@ $ nano ~/.zshrc
 
 export PATH=$PATH:$HOME/go/bin
 
-$ reset
+$ sudo systenctl reboot
 
 $ nuclei --help
 
