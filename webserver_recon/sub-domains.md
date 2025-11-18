@@ -10,12 +10,12 @@ $ subfinder -d example.com --silent
 
 $ subfinder -d example.com -o sub-domains.txt
 
-$ subfinder -d example.com -cs -o sub-domains-cs.txt
+$ subfinder -d example.com -cs
 ```
 sudo apt install -y httprobe httpx-toolkit
 ```
 ```
-cat sub-domains.txt | httprobe
+cat sub-domains.txt | httprobe | tee sub-online.txt
 ```
 ```
 httpx-toolkit -l sub-domains.txt
