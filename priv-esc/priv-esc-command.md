@@ -1,4 +1,5 @@
-9° Search Priv-Esc
+Search Priv-Esc
+
 $ cat /etc/proc/version
 
 $ cat /etc/issue
