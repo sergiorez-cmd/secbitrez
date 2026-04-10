@@ -1,4 +1,4 @@
-Search Priv-Esc
+# Search Priv-Esc
 
 $ cat /etc/proc/version
 
