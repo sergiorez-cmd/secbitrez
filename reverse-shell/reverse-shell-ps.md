@@ -1,4 +1,15 @@
 
+Como Habilitar a Execução de Scripts
+
+Abra o PowerShell como Administrador: Clique no menu Iniciar, digite PowerShell, clique com o botão direito sobre ele e selecione Executar como Administrador.
+
+Verifique a política atual (opcional): Digite Get-ExecutionPolicy e pressione Enter. (Geralmente estará como Restricted, que bloqueia a execução).
+
+Altere a permissão: Digite o comando abaixo e pressione Enter:Set-ExecutionPolicy Unrestricted
+
+Confirme a alteração: O sistema exibirá um aviso de segurança. Digite S (para Sim) e pressione Enter.Agora, os seus scripts (.ps1) poderão ser executados normalmente.
+
+Desabilitar Microsoft Defender
 
 Salve este script como reverse.ps1 em sua máquina Kali.
 
