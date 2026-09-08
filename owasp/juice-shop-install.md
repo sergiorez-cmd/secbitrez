@@ -21,7 +21,7 @@ sudo apt install zaproxy -y
 
 https://www.kali.org/docs/containers/installing-docker-on-kali
 ```
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" | \
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian trixie stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list
 ```
 ```
