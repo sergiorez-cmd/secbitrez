@@ -47,14 +47,14 @@ Insira as seguintes configurações no inicio do arquivo
 ```
 Reinicie o kali linux 
 
-Execute o servidor MCP Hexstrike-ai
+### Execute o servidor MCP Hexstrike-ai
 ```
 hexstrike_server
 ```
 ```
 hexstrike_mcp
 ``` 
-No terminal do Claude-Desktop digite o prompt para verificar se esta tudo OK
+### No terminal do Claude-Desktop digite o prompt para verificar se esta tudo OK
 ```
 check health hexstrike mcp
 ```
