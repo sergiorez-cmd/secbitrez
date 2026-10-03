@@ -31,9 +31,13 @@ https://github.com/sqlmapproject/sqlmap/wiki
 
 https://www.stationx.net/sqlmap-cheat-sheet
 
+https://community.owasp.org/attacks/Blind_SQL_Injection
+
 https://community.owasp.org/attacks/SQL_Injection
 
 ## Exploits
+
+https://gtfobins.org
 
 https://www.exploit-db.com
 
