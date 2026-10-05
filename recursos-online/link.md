@@ -7,6 +7,12 @@ https://cyberchef.io
 
 https://www.cipherdecipher.com
 
+## JSON Web Token
+
+https://www.jwt.io
+
+https://tribestream.io/tools/jwt
+
 ## OWASP Attacks
 
 https://community.owasp.org/attacks
