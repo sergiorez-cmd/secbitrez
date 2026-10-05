@@ -11,7 +11,7 @@ https://www.cipherdecipher.com
 
 https://www.jwt.io
 
-https://tribestream.io/tools/jwt
+https://tribestream.io/tools/jwt/
 
 ## OWASP Attacks
 
