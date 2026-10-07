@@ -21,6 +21,8 @@ https://community.owasp.org/attacks
 
 https://weakpass.com
 
+https://wordlists.assetnote.io
+
 https://github.com/danielmiessler/SecLists
 
 https://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
