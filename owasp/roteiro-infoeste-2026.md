@@ -260,9 +260,9 @@ sudo apt install keepassxc-full -y
 - [ ] Acessar o arquivo de senhas do suporte via aplicativo KeepassXC.
 
 - [ ] Exemplo de Modo Força Bruta via Hash Cat (Somente para máquinas potentes).
-
-$ hashcat -a 3 -m 13400 hash-keepass-file.txt ?u?l?l?l?l?l?l?d?d?d?d?s
-
+```
+hashcat -a 3 -m 13400 hash-keepass-file.txt ?u?l?l?l?l?l?l?d?d?d?d?s
+```
 
 ## 13° Reportar Problemas de Segurança Encontrados
 
