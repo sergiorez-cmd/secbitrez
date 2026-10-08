@@ -40,8 +40,9 @@ __Clique direito:__ Clique com o botão direito em qualquer parte da página e s
 
 - [ ] Analisar código fonte main.js, para encontrar informações importantes (Dica: Firefox inspect debugger, search parâmetros path, score, web3, admin).
 
-- [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”, urlencoder.org).
+- [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”).
 
+https://www.urlencoder.org
 
 ## 3° OSINT - Redefinir Senhas e Visualizar Dados de Métricas do Servidor
 
@@ -74,7 +75,7 @@ https://x.com/bkimminich/status/1594985736650035202
 
 ## 4° OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
 
-- [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock)
+- [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock).
 
 https://github.com/juice-shop/juice-shop
 
@@ -102,7 +103,7 @@ Um ataque de força bruta no login é um método em que softwares automatizados 
 
 - [ ] Faça login com as credenciais de usuário do administrador sem alterá-las previamente ou aplicar SQL Injection (Dica: brute force, ZAP Attack Fuzz).
 
-- [ ] Faça download de uma wordlist específica de senhas com credenciais padrão (Dica: Password Defaults Credentials).
+- [ ] Faça download de uma wordlist específica com senhas de credenciais padrão (Dica: Password Defaults Credentials).
 
 https://github.com/danielmiessler/SecLists 
 
@@ -136,7 +137,7 @@ Falhas de injeção são muito comuns, especialmente em código legado. Vulnerab
 
 A injeção pode resultar em perda ou corrupção de dados, divulgação a partes não autorizadas, perda de rastreabilidade ou negação de acesso. A injeção pode, por vezes, levar à tomada de controle total do host. O impacto para o negócio depende das necessidades da aplicação e dos dados.
 
-- [ ] Faça login de usuários via injeção SQL 
+- [ ] Faça login de usuários via injeção SQL.
 
             E-mail: ' OR 1=1 --
             E-mail = user@dom.net' --
@@ -153,7 +154,7 @@ Payloads Schema Database baseados em operador SQL Union.
 
 Usa o operador UNION do SQL para juntar o resultado da busca original do site com os dados obtidos pelo invasor.
 
-Utilize o ZAP (Open/Resend) no campo de pesquisa de produtos do juice-shop.
+- [ ] Utilize o ZAP (Open/Resend) no campo de pesquisa de produtos do juice-shop.
 ```
 orange')) UNION SELECT * FROM sql --
 ```
