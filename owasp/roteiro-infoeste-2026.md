@@ -272,6 +272,16 @@ Quando riscos de segurança em serviços web são descobertos por pesquisadores 
 
 - [ ] Comporte-se como qualquer "white-hat" deveria antes de entrar em ação.
 
+## 14° Bônus Easter Egg
+
+- [ ] Encontre o Easter Egg escondido e use o ataque Poison Null Byte ​para baixar o arquivo.
+
+- [ ] Aplique uma criptoanálise avançada para encontrar o caminho do easter egg, decodifique em Base64 e depois para ROT13.
+
+https://gchq.github.io/CyberChef
+
+- [ ] Visite a URL decodificada para visualizar o Easter Egg.
+
 __Labs:__
 
 https://tryhackme.com/room/owaspjuiceshop
