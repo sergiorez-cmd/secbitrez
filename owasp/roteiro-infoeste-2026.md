@@ -5,8 +5,7 @@
 
 https://www.hackingisnotacrime.org
 
-
-Iniciar Juice-Shop
+## 1° Iniciar Juice-Shop
 
 O OWASP Juice Shop é uma aplicação web de código aberto propositalmente vulnerável, desenvolvida para treinar e testar habilidades em cibersegurança e hacking ético.
 
@@ -14,8 +13,10 @@ Online: https://juice-shop.herokuapp.com/#/
 
 Github: https://github.com/juice-shop/juice-shop
 
-Executar local: $docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
-
+Executar local: 
+```
+docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+```
 Acessar página web do juice-shop http://localhost:3000
 
 Criar uma conta de usuário para acessar as funcionalidades do App.
