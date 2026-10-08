@@ -238,7 +238,7 @@ https://www.jwt.io/
 
 - [ ] Tente convencer o Juice-Shop a fornecer um token válido com o payload necessário, desativando completamente a criptografia. 
 
-## 12° Quebrar Senha do Arquivo de Gerenciador do Suporte
+## 12° Decifrar Senha do Arquivo de Gerenciador do Suporte
 
 - [ ] Inspecionar o código main.js para procurar linhas relativas com e-mail de suporte, analisar parâmetros de requisitos de senha (Dica: search, support@).
 
