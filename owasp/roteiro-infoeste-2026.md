@@ -30,17 +30,17 @@ __Como abrir:__
 
 __Atalho:__ Pressione F12 ou Ctrl + Shift + C (no Windows/Linux) ou Cmd + Option + C (no Mac).
 
-__Clique direito:__ Clique com o botão direito em qualquer parte da página e selecione "Inspecionar elemento”
+__Clique direito:__ Clique com o botão direito em qualquer parte da página e selecione "Inspecionar Elemento”.
 
-Obtenha a senha (hash) do usuário atualmente logado diretamente de um endpoint da API REST. (Dica: Firefox inspect network, parâmetros email, password)
+- [ ] Obtenha a senha (hash) do usuário atualmente logado diretamente de um endpoint da API REST (Dica: Firefox inspect network, parâmetros email, password).
 
-Forge um feedback em nome de outro usuário (Dica: código HTML da área de feedback, editar #userId)
+- [ ] Forge um feedback em nome de outro usuário (Dica: código HTML da área de feedback, editar #userId)
 
-Procure por credenciais de uma conta de teste — ainda válida — no lado do cliente. (Dica: Firefox inspect debugger, código fonte main.js, search userName, testing)
+- [ ] Procure por credenciais de uma conta de teste — ainda válida — no lado do cliente (Dica: Firefox inspect debugger, código fonte main.js, search userName, testing).
 
-Analisar código fonte main.js, para encontrar informações importantes (Dica: Firefox inspect debugger, search parâmetros path, score, web3, admin)
+- [ ] Analisar código fonte main.js, para encontrar informações importantes (Dica: Firefox inspect debugger, search parâmetros path, score, web3, admin).
 
-Recupere a foto do gato de Bjoern (Dica: código HTML “src”, urlencoder.org)
+- [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”, urlencoder.org).
 
 
 ## 3° OSINT
@@ -49,49 +49,54 @@ OSINT (sigla em inglês para Open Source Intelligence, ou Inteligência de Fonte
 
 https://osintframework.com
 
-Principais Fontes de Dados:
+__Principais Fontes de Dados:__
 
-Internet aberta: Sites de notícias, blogs, fóruns e artigos.
+__Internet aberta:__ Sites de notícias, blogs, fóruns e artigos.
 
-Redes sociais: Perfis públicos, fotos, vídeos, marcações e comentários.
+__Redes sociais:__ Perfis públicos, fotos, vídeos, marcações e comentários.
 
-Dados governamentais e públicos: Registros de empresas, diários oficiais, processos judiciais e dados de órgãos públicos.
+__Dados governamentais e públicos:__ Registros de empresas, diários oficiais, processos judiciais e dados de órgãos públicos.
 
-Fontes técnicas e digitais: Endereços de IP, registros de domínio, metadados de arquivos e bancos de dados de senhas vazadas.
+__Fontes técnicas e digitais:__ Endereços de IP, registros de domínio, metadados de arquivos e bancos de dados de senhas vazadas.
 
-Dark Web: Fóruns ou páginas indexadas em redes específicas (quando investigado de forma restrita e legal).
+__Dark Web:__ Fóruns ou páginas indexadas em redes específicas (quando investigado de forma restrita e legal).
 
-Redefinir senhas de usuários Emma, John utilizando técnicas de OSINT (Dica: photo-wall, exiftool, google-maps).
+- [ ] Redefinir senhas de usuários emma, john utilizando técnicas de OSINT (Dica: photo-wall, exiftool, google-maps).
 
-Descobrir senhas de usuários Amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board).
+- [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board).
 
-Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: redes sociais). https://x.com/bkimminich/status/1594985736650035202
+- [ ] Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: redes sociais).
 
-Encontre métricas expostas que forneçam dados de uso para serem coletadas por um sistema de monitoramento popular. (Dica: link no Score-Board)
+https://x.com/bkimminich/status/1594985736650035202
 
-
-
-
-OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
-
-Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock) https://github.com/juice-shop/juice-shop.
-
-Acesse o site https://stackoverflow.com, e obtenha o arquivo de log disponível via link pastebin no fórum e procure por “password” no arquivo de log.
-
-Decodifique a senha descoberta via https://www.urldecoder.org.
+- [ ] Encontre métricas expostas que forneçam dados coletadas por um sistema de monitoramento popular (Dica: link no Score-Board).
 
 
-Brute Force de Diretórios Web
+## OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
+
+- [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock)
+
+https://github.com/juice-shop/juice-shop
+
+- [ ] Acesse o site https://stackoverflow.com, e obtenha o arquivo de log disponível via link pastebin no fórum e procure por “password” no arquivo de log.
+
+- [ ] Decodifique a senha descoberta via https://www.urldecoder.org
+
+
+## Brute Force de Diretórios Web
 
 Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma técnica de reconhecimento em segurança da informação utilizada para descobrir pastas, arquivos e endpoints ocultos em um servidor web. O processo consiste no envio em massa de requisições HTTP combinando a URL alvo com uma lista de termos predefinidos (chamada de wordlist). Se o servidor retornar um código que indique a existência do recurso (como 200 OK ou 403 Forbidden), a ferramenta mapeia esse caminho como existente.
 
-Acessar documentos confidenciais via ataque de força bruta de diretórios (Dica: scan, $ dirb http://localhost:3000 -z 30 -o dir-juice.txt).
+- [ ] Acessar documentos confidenciais via ataque de força bruta de diretórios (Dica: Dirb scan).
+```
+dirb http://localhost:3000 -z 30 -o dir-juice.txt
+```
+- [ ] Faça download dos arquivos (Dica utilize a técnica Poison Null Byte).
 
-Faça download dos arquivos (Dica utilize a técnica Poison Null Byte).
 https://wiki.zacheller.dev/web-app-pentest/upload-download/error-only-.md-and-.pdf-files-are-allowed
 
 
-Brute Force de Login 
+## Brute Force de Login 
 
 Um ataque de força bruta no login é um método em que softwares automatizados testam milhares de combinações de nomes de usuário e senhas em alta velocidade até acertarem a credencial correta para invadir uma conta.
 
