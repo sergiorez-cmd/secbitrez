@@ -15,7 +15,7 @@ __Github:__ https://github.com/juice-shop/juice-shop
 
 Executar local: 
 ```
-docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 ```
 - [ ] Acessar página web do juice-shop http://localhost:3000
 
@@ -43,7 +43,7 @@ __Clique direito:__ Clique com o botão direito em qualquer parte da página e s
 - [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”, urlencoder.org).
 
 
-## 3° OSINT
+## 3° OSINT - Redefinir Senhas e Visualizar Dados de Métricas do Servidor
 
 OSINT (sigla em inglês para Open Source Intelligence, ou Inteligência de Fontes Abertas) é o processo de coleta, análise e extração de conclusões a partir de informações públicas e legalmente acessíveis. Não se trata de invadir sistemas ou quebrar senhas, mas sim de juntar pontas soltas que qualquer pessoa, empresa ou governo deixou disponíveis na internet ou em registros abertos. 
 
@@ -72,7 +72,7 @@ https://x.com/bkimminich/status/1594985736650035202
 - [ ] Encontre métricas expostas que forneçam dados coletadas por um sistema de monitoramento popular (Dica: link no Score-Board).
 
 
-## OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
+## 4° OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
 
 - [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock)
 
@@ -83,7 +83,7 @@ https://github.com/juice-shop/juice-shop
 - [ ] Decodifique a senha descoberta via https://www.urldecoder.org
 
 
-## Brute Force de Diretórios Web
+## 5° Brute Force de Diretórios Web
 
 Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma técnica de reconhecimento em segurança da informação utilizada para descobrir pastas, arquivos e endpoints ocultos em um servidor web. O processo consiste no envio em massa de requisições HTTP combinando a URL alvo com uma lista de termos predefinidos (chamada de wordlist). Se o servidor retornar um código que indique a existência do recurso (como 200 OK ou 403 Forbidden), a ferramenta mapeia esse caminho como existente.
 
@@ -91,23 +91,25 @@ Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma
 ```
 dirb http://localhost:3000 -z 30 -o dir-juice.txt
 ```
-- [ ] Faça download dos arquivos (Dica utilize a técnica Poison Null Byte).
+- [ ] Faça download dos arquivos (Dica utilize a técnica Poison Null Byte %2500).
 
 https://wiki.zacheller.dev/web-app-pentest/upload-download/error-only-.md-and-.pdf-files-are-allowed
 
 
-## Brute Force de Login 
+## 6° Brute Force de Login 
 
 Um ataque de força bruta no login é um método em que softwares automatizados testam milhares de combinações de nomes de usuário e senhas em alta velocidade até acertarem a credencial correta para invadir uma conta.
 
-Faça login com as credenciais de usuário do administrador sem alterá-las previamente ou aplicar SQL Injection. (Dica: brute force, ZAP Attack Fuzz)
+- [ ] Faça login com as credenciais de usuário do administrador sem alterá-las previamente ou aplicar SQL Injection (Dica: brute force, ZAP Attack Fuzz).
 
-Faça download de uma wordlist específica de senhas com credenciais padrão (Dica: Password Defaults Credentials). https://github.com/danielmiessler/SecLists 
+- [ ] Faça download de uma wordlist específica de senhas com credenciais padrão (Dica: Password Defaults Credentials).
 
-Acesse a área de administrador descoberta na inspeção de código main.js.
+https://github.com/danielmiessler/SecLists 
+
+- [ ] Acesse a área de administrador descoberta na inspeção de código main.js.
 
 
-Broken Access Control
+## 7° Broken Access Control
 
 A exploração de falhas no controle de acesso é uma habilidade fundamental dos atacantes. Ferramentas de SAST e DAST (Burp Suite, Zed Attack Proxy) conseguem detectar a ausência de controle de acesso, mas não conseguem verificar se ele é funcional quando está presente. O controle de acesso pode ser detectado por meios manuais ou, possivelmente, por meio de automação para identificar a ausência de controles em determinados frameworks.
 
@@ -115,19 +117,19 @@ Falhas de controle de acesso são comuns devido à ausência de detecção autom
 
 O impacto técnico consiste em invasores agindo como usuários ou administradores, ou usuários utilizando funções privilegiadas, ou ainda criando, acessando, atualizando ou excluindo quaisquer registros. O impacto para o negócio depende das necessidades de proteção da aplicação e dos dados.
 
-Postar um Feedback  0 estrelas (Dica: ZAP Open/Resend, método POST editar campo JSON)
+- [ ] Postar um Feedback  0 estrelas (Dica: ZAP Open/Resend, método POST editar campo JSON).
 
-Ver o carrinho de compra de outro usuário (Dica: ZAP Open/Resend, método GET alterar id de usuário na requisição)
+- [ ] Ver o carrinho de compra de outro usuário (Dica: ZAP Open/Resend, método GET alterar id de usuário na requisição).
 
-Forge um uma review em nome de outro usuário (Dica: ZAP Open/Resend, método PUT editar campo JSON)
+- [ ] Forge um uma review em nome de outro usuário (Dica: ZAP Open/Resend, método PUT editar campo JSON).
 
-Adicione um produto no carrinho de outro usuário (Dica: ZAP Open/Resend, método POST editar JSON, duplicar a propriedade "BasketId": "x")
+- [ ] Adicione um produto no carrinho de outro usuário (Dica: ZAP Open/Resend, método POST editar JSON, duplicar a propriedade "BasketId": "x").
 
-Adicione um novo usuário com permissões de administrador (Dica: ZAP Open/Resend, método POST editar JSON)
+- [ ] Adicione um novo usuário com permissões de administrador (Dica: ZAP Open/Resend, método POST editar JSON).
 
-Adulteração de produto https://owasp.org/projects/o-saft
 
-Injection
+## 8° Injection
+
 Praticamente qualquer fonte de dados pode ser um vetor de injeção: variáveis ​​de ambiente, parâmetros, serviços web externos e internos, e todos os tipos de usuários. Falhas de injeção ocorrem quando um atacante consegue enviar dados maliciosos a um interpretador.
 
 Falhas de injeção são muito comuns, especialmente em código legado. Vulnerabilidades de injeção são frequentemente encontradas em consultas SQL, LDAP, XPath ou NoSQL, comandos do sistema operacional, analisadores XML, cabeçalhos SMTP, linguagens de expressão e consultas ORM. Falhas de injeção são fáceis de detectar ao examinar o código. Ferramentas de varredura (*scanners* e *fuzzers*) podem ajudar invasores a encontrar falhas de injeção.
@@ -140,38 +142,41 @@ Faça login de usuários via injeção SQL
             E-mail = user@dom.net‘ --
             Senha: qualquer
 
-Obtenha o Schema do banco de dados SQL (Dica: sqlmap)
+- [ ] Obtenha o Schema do banco de dados SQL (Dica: sqlmap).
 
 Payloads Database Schema
 
 Utilizando o ZAP (Open/Resend) no campo de pesquisa de produtos do juice-shop 
-
+```
 orange'))--
-
+```
 Consulte https://www.sqlite.org/faq.html no item "(7) How do I list all tables/indices contained in an SQLite database" (Como listo todas as tabelas/índices contidos em um banco de dados SQLite), que o esquema é armazenado em uma tabela do sistema chamada (sqlite_master).
-
+```
 orange')) UNION SELECT * FROM sqlite_master --
-
+```
+```
 orange')) UNION SELECT 1 FROM sqlite_master --
-
+```
+```
 orange')) UNION SELECT 1,2 FROM sqlite_master --
-
+``` 
 Repetir até receber uma resposta JSON de sucesso
-
+``` 
 orange')) UNION SELECT 1,2,3,4,5,6,7,8,9 FROM sqlite_master --
-
+```
 O último passo é substituir o primeiro valor "1" pelo nome correto da coluna "sql"
-
+``` 
 orange')) UNION SELECT sql,2,3,4,5,6,7,8,9 FROM sqlite_master –
-
+```
 Procure no código JSON por CREATE TABLE `Users`
 
 Acrescente os campos importantes para extração dos dados e complete com os números da colunas
-
+```
 orange')) UNION SELECT id,username,email,password,role,6,7,8,9 FROM users --
+```
 
+## 9° Brute Force de Hash
 
-Brute Force de Hash
 Um ataque de força bruta de hash é um método usado para descobrir a senha original por trás de um código criptografado (o hash) testando milhões de combinações possíveis de palavras e caracteres por segundo.
 
 Realize um brute force no hash de senha do usuário jim (Dica, John The Ripper, Wordlist Rockyou)
