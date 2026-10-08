@@ -9,9 +9,9 @@ https://www.hackingisnotacrime.org
 
 O OWASP Juice Shop é uma aplicação web de código aberto propositalmente vulnerável, desenvolvida para treinar e testar habilidades em cibersegurança e hacking ético.
 
-Online: https://juice-shop.herokuapp.com/#/ 
+__Online:__ https://juice-shop.herokuapp.com/#/ 
 
-Github: https://github.com/juice-shop/juice-shop
+__Github:__ https://github.com/juice-shop/juice-shop
 
 Executar local: 
 ```
@@ -22,15 +22,15 @@ Acessar página web do juice-shop http://localhost:3000
 Criar uma conta de usuário para acessar as funcionalidades do App.
 
 
-Analisar Código Client-Side via Web Browser
+## 2° Analisar Código Client-Side via Web Browser
 
 O recurso de inspeção de elementos no Mozilla Firefox é uma ferramenta integrada que permite ver e editar o código HTML, CSS e scripts de uma página da web em tempo real.
 
-Como abrir:
+__Como abrir:__
 
-Atalho: Pressione F12 ou Ctrl + Shift + C (no Windows/Linux) ou Cmd + Option + C (no Mac).
+__Atalho:__ Pressione F12 ou Ctrl + Shift + C (no Windows/Linux) ou Cmd + Option + C (no Mac).
 
-Clique direito: Clique com o botão direito em qualquer parte da página e selecione "Inspecionar elemento”
+__Clique direito:__ Clique com o botão direito em qualquer parte da página e selecione "Inspecionar elemento”
 
 Obtenha a senha (hash) do usuário atualmente logado diretamente de um endpoint da API REST. (Dica: Firefox inspect network, parâmetros email, password)
 
@@ -43,7 +43,7 @@ Analisar código fonte main.js, para encontrar informações importantes (Dica: 
 Recupere a foto do gato de Bjoern (Dica: código HTML “src”, urlencoder.org)
 
 
-OSINT
+## 3° OSINT
 
 OSINT (sigla em inglês para Open Source Intelligence, ou Inteligência de Fontes Abertas) é o processo de coleta, análise e extração de conclusões a partir de informações públicas e legalmente acessíveis. Não se trata de invadir sistemas ou quebrar senhas, mas sim de juntar pontas soltas que qualquer pessoa, empresa ou governo deixou disponíveis na internet ou em registros abertos. 
 
