@@ -248,10 +248,10 @@ crunch 12 12 -t Support%%%%^ -o custom-wordlist.txt
 ```
 - [ ] Decifrar senha do arquivo do gerenciador de senhas via John The Ripper.
 ```
-keepass2john file.kdbx > hash-keepass-file.txt
+keepass2john incident-support.kdbx > hash-keepass-file.txt
 ```
 ```
-john –wordlist=custom-wordlist.txt hash-keepass-file.txt
+john --wordlist=custom-wordlist.txt hash-keepass-file.txt
 ```
 - [ ] Instalar o KeePassXC no Kali Linux keepassxc.org.
 ```
