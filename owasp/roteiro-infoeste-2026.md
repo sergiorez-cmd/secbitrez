@@ -17,9 +17,9 @@ Executar local:
 ```
 docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 ```
-Acessar página web do juice-shop http://localhost:3000
+- [ ] Acessar página web do juice-shop http://localhost:3000
 
-Criar uma conta de usuário para acessar as funcionalidades do App.
+- [ ] Criar uma conta de usuário para acessar as funcionalidades do App.
 
 
 ## 2° Analisar Código Client-Side via Web Browser
