@@ -131,11 +131,18 @@ O impacto técnico consiste em invasores agindo como usuários ou administradore
 
 ## 8° Injection
 
-Praticamente qualquer fonte de dados pode ser um vetor de injeção: variáveis ​​de ambiente, parâmetros, serviços web externos e internos, e todos os tipos de usuários. Falhas de injeção ocorrem quando um atacante consegue enviar dados maliciosos a um interpretador.
+Você pode detectar injeção de SQL manualmente, utilizando um conjunto sistemático de testes em todos os pontos de entrada da aplicação. Para isso, você normalmente enviaria:
 
-Falhas de injeção são muito comuns, especialmente em código legado. Vulnerabilidades de injeção são frequentemente encontradas em consultas SQL, LDAP, XPath ou NoSQL, comandos do sistema operacional, analisadores XML, cabeçalhos SMTP, linguagens de expressão e consultas ORM. Falhas de injeção são fáceis de detectar ao examinar o código. Ferramentas de varredura (*scanners* e *fuzzers*) podem ajudar invasores a encontrar falhas de injeção.
+- O caractere de aspa simples (') e verificaria a ocorrência de erros ou outras anomalias.
 
-A injeção pode resultar em perda ou corrupção de dados, divulgação a partes não autorizadas, perda de rastreabilidade ou negação de acesso. A injeção pode, por vezes, levar à tomada de controle total do host. O impacto para o negócio depende das necessidades da aplicação e dos dados.
+- Alguma sintaxe específica de SQL que resulte no valor base (original) do ponto de entrada e, alternativamente, em um valor diferente, observando diferenças sistemáticas nas respostas da aplicação.
+
+- Condições booleanas como `OR 1=1` e `OR 1=2`, observando diferenças nas respostas da aplicação.
+Payloads projetados para provocar atrasos na execução quando processados ​​dentro de uma consulta SQL, observando diferenças no tempo de resposta.
+
+- Payloads OAST projetados para acionar uma interação de rede *out-of-band* (fora de banda) quando executados dentro de uma consulta SQL, monitorando quaisquer interações resultantes.
+
+- Alternativamente, você pode encontrar a maioria das vulnerabilidades de injeção de SQL de forma rápida e confiável utilizando o Zed Attack Proxy ou Burp Suite Scanner.
 
 - [ ] Faça login de usuários via injeção SQL.
 
