@@ -152,3 +152,35 @@ mkdir -p ~/ai-security/{prompts,reports,experiments}
 ```
 
 Dessa forma, o **Ollama** fornece a inteligência local, o **HexStrike** executa a varredura técnica e a **lógica DeepHat** garante que a análise seja focada em engenharia de software e segurança empresarial, não apenas em "hacks" genéricos.
+
+### Hardware Recomendado
+
+__Processador__
+
+Para rodar o Ollama, o mais recomendado é um processador moderno com 8 ou mais núcleos (como um AMD Ryzen 5000 ou superior, ou um Intel Core de 12ª geração ou superior), com suporte a instruções avançadas (como AVX2 ou AVX512).
+
+__Memória RAM__
+
+O mínimo recomendado é de 16 GB de RAM do sistema, mas se você pretende rodar modelos maiores (como 13B, 14B ou superiores) apenas na CPU ou dividindo com a RAM, o ideal é ter 32 GB ou mais.
+
+__Armazenamento__
+
+O SSD mais recomendado para rodar o Ollama é o Samsung 990 Pro ou o WD Black SN850X (ambos em versão NVMe PCIe Gen4 de 2 TB ou 4 TB).
+
+__Placa de Video__
+
+A escolha da placa de vídeo para rodar o Ollama depende diretamente do tamanho do modelo de linguagem (LLM) que você deseja utilizar, sendo que o fator mais importante é a VRAM (memória de vídeo).
+
+Recomendações por Categoria e VRAM:
+
+- __Entrada__ (Modelos de 7B a 8B):
+VRAM necessária: 8 GB (ex: RTX 3060, RTX 4060).
+O que roda: Modelos compactos como Llama 3/3.1 (8B), Phi-3 Mini ou Mistral em quantização padrão q4.
+
+- __Ponto Ideal / Intermediário__ (Modelos de 12B a 22B):
+VRAM necessária: 16 GB (ex: RTX 5070 Ti, RTX 5080).
+O que roda: Modelos como Qwen 2.5, Phi-4, Gemma 3 ou Mistral Small/Nemo sem perda de desempenho.
+
+- __Alto Desempenho / Custo-Benefício Avançado__ (Modelos de 24B a 32B):
+VRAM necessária: 24 GB a 32 GB (ex: RTX 3090 usada, RTX 4090 ou RTX 5090).
+O que roda: A RTX 3090 (24 GB) usada é considerada uma das opções com melhor custo-benefício para rodar modelos maiores inteiramente na GPU. A RTX 5090 (32 GB) é a melhor escolha de placa única atual para lidar com modelos de 32 bits e contextos maiores com alta largura de banda (GDDR7).
