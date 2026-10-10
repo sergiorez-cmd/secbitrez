@@ -175,7 +175,7 @@ Recomendações por Categoria e VRAM:
 
 - __Entrada__ (Modelos de 7B a 8B):
 VRAM necessária: 8 GB (ex: RTX 3060, RTX 4060).
-O que roda: Modelos compactos como Llama 3/3.1 (8B), Phi-3 Mini ou Mistral em quantização padrão q4.
+O que roda: Modelos compactos como Llama 3/3.1 (8B), Phi-3 Mini ou Mistral em quantização padrão q4, DeepHat/DeepHat-V1-7B.
 
 - __Ponto Ideal / Intermediário__ (Modelos de 12B a 22B):
 VRAM necessária: 16 GB (ex: RTX 5070 Ti, RTX 5080).
