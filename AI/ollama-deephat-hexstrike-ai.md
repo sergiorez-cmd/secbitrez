@@ -42,6 +42,8 @@ __Principais Características:__
 
 https://www.deephat.ai
 
+https://ollama.com/DeepHat
+
 Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
 
 __Aqui está o passo a passo conciso para a integração:__
