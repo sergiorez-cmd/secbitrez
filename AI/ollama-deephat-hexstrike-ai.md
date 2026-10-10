@@ -4,19 +4,19 @@ O Ollama é uma ferramenta de código aberto que permite executar, gerenciar e i
 
 __Principais características:__
 
-- Execução local: Roda modelos como Llama 3, Mistral, Code Llama e outros sem depender de serviços ou APIs pagas na nuvem.
-- Privacidade total: Os seus dados, prompts e conversas não saem do seu ambiente, garantindo segurança contra vazamentos de informações.
-- Fácil de usar via terminal: Utiliza comandos simples como ollama run [nome_do_modelo] para baixar e conversar com a IA.
-- API integrada: Cria automaticamente uma API local que permite integrar os modelos a softwares, editores de código (como VS Code) ou aplicativos próprios.
-- Multiplataforma: Compatível com sistemas operacionais como macOS, Linux e Windows.
+- __Execução local:__ Roda modelos como Llama 3, Mistral, Code Llama e outros sem depender de serviços ou APIs pagas na nuvem.
+- __Privacidade total:__ Os seus dados, prompts e conversas não saem do seu ambiente, garantindo segurança contra vazamentos de informações.
+- __Fácil de usar via terminal:__ Utiliza comandos simples como ollama run [nome_do_modelo] para baixar e conversar com a IA.
+- __API integrada:__ Cria automaticamente uma API local que permite integrar os modelos a softwares, editores de código (como VS Code) ou aplicativos próprios.
+- __Multiplataforma:__ Compatível com sistemas operacionais como macOS, Linux e Windows.
 
 https://ollama.com
 
 https://www.redhat.com/pt-br/topics/ai/vllm-vs-ollama
 
-Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali já vem com `docker` e `git`, o que facilita muito.
+Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
 
-Aqui está o passo a passo conciso para a integração:
+__Aqui está o passo a passo conciso para a integração:__
 
 ### 1. Instalação do Ollama (O Cérebro Local)
 O Ollama rodará seus modelos LLM locais (ex: Llama 3, Mistral, CodeLlama) para gerar código e análises sem latência de rede.
@@ -40,6 +40,11 @@ ollama pull llama3     # Geral, bom para explicação de logs
 ### 2. Instalação do HexStrike-AI (O Executor de Pentest)
 O HexStrike é uma CLI que orquestra comandos de segurança (nmap, nikto, gobuster, etc.) usando LLMs para decidir a próxima ação.
 
+Via APT
+```
+sudo apt update
+sudo apt install hexstrike-ai
+```
 ```bash
 # Instalar via pip (recomendado usar venv ou pyenv para isolar dependências)
 pip install hexstrike-ai
