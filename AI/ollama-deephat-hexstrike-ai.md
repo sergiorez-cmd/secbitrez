@@ -1,4 +1,6 @@
-# Integrar Ollama, DeepHat e Hexstrike-ai no Kali Linux
+# Integrar Ollama, Hexstrike-ai e DeepHat no Kali Linux
+
+## Ollama
 
 O Ollama é uma ferramenta de código aberto que permite executar, gerenciar e interagir com Grandes Modelos de Linguagem (LLMs) diretamente no seu próprio computador ou servidor local.
 
@@ -14,13 +16,31 @@ https://ollama.com
 
 https://www.redhat.com/pt-br/topics/ai/vllm-vs-ollama
 
+## Hexstrike-ai
+
 O HexStrike AI (ou hexstrike-ai) é um servidor e framework de segurança ofensiva baseado no protocolo MCP (Model Context Protocol) que conecta Inteligências Artificiais (como Claude, GPT e Copilot) a mais de 150 ferramentas automatizadas de cibersegurança.
 
-Disponível no GitHub - HexStrike AI, ele funciona da seguinte forma:
+__Disponível no GitHub - HexStrike AI, ele funciona da seguinte forma:__
 
 - __Orquestração autônoma:__ Permite que comandos em linguagem natural (ex: varredura ou exploração de uma falha) sejam traduzidos pela IA em sequências completas de ações técnicas sem intervenção humana constante.
 - __Capacidades ofensivas:__ Automatiza testes de penetração (pentest), descoberta de vulnerabilidades, varreduras e programas de recompensa por bugs (bug bounty).
 - __Uso por cibercriminosos:__ Embora concebido para pesquisa e testes de segurança, o framework tem sido adotado por agentes maliciosos para acelerar a exploração de vulnerabilidades zero-day (como falhas recentes em produtos Citrix NetScaler), reduzindo processos que levavam dias para poucos minutos.
+
+https://github.com/0x4m4/hexstrike-ai
+
+## DeepHat
+
+O Deep Hat (anteriormente chamado de WhiteRabbitNeo) é um modelo de Inteligência Artificial (IA) "sem censura", desenvolvido pela empresa Kindo com foco em cibersegurança ofensiva e defensiva.
+
+Diferente de assistentes tradicionais (como o ChatGPT) que bloqueiam comandos associados a invasões ou testes de penetração, o Deep Hat é projetado para auxiliar profissionais de segurança (Red Team e DevSecOps), pesquisadores e analistas.
+
+__Principais Características:__
+
+- __Sem Filtros Tradicionais:__ Fornece comandos reais e instruções detalhadas para testes de invasão, em vez de respostas genéricas ou recusas de segurança.
+- __Capacidades Técnicas:__ Ajuda em comandos do Kali Linux, reconhecimento com Nmap, exploração com Metasploit, payloads para SQL Injection, XSS, escalada de privilégios e análise de contexto longo.
+- __Conceito de Uso Duplo (Dual Use):__ Foi criado com o objetivo legítimo de permitir que equipes de defesa entendam como criminosos atuam para proteger melhor os sistemas, embora exija responsabilidade ética de quem o utiliza.
+
+https://www.deephat.ai
 
 Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
 
