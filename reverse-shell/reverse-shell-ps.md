@@ -10,7 +10,7 @@
 
 4° __Confirme a alteração:__ O sistema exibirá um aviso de segurança. Digite S (para Sim) e pressione Enter.Agora, os seus scripts (.ps1) poderão ser executados normalmente.
 
-## Desabilitar Microsoft Defender
+5° __Desabilitar Microsoft Defender.__
 
 Salve este script como reverse.ps1 em sua máquina Kali. (Alterar IP e porta TCP conforme o ambiente)
 ```
