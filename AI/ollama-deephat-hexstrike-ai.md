@@ -1,3 +1,19 @@
+# Integrar Ollama, DeepHat e Hexstrike-ai no Kali Linux
+
+O Ollama é uma ferramenta de código aberto que permite executar, gerenciar e interagir com Grandes Modelos de Linguagem (LLMs) diretamente no seu próprio computador ou servidor local.
+
+__Principais características:__
+
+• Execução local: Roda modelos como Llama 3, Mistral, Code Llama e outros sem depender de serviços ou APIs pagas na nuvem.
+• Privacidade total: Os seus dados, prompts e conversas não saem do seu ambiente, garantindo segurança contra vazamentos de informações.
+• Fácil de usar via terminal: Utiliza comandos simples como ollama run [nome_do_modelo] para baixar e conversar com a IA.
+• API integrada: Cria automaticamente uma API local que permite integrar os modelos a softwares, editores de código (como VS Code) ou aplicativos próprios.
+• Multiplataforma: Compatível com sistemas operacionais como macOS, Linux e Windows.
+
+https://ollama.com
+
+https://www.redhat.com/pt-br/topics/ai/vllm-vs-ollama
+
 Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali já vem com `docker` e `git`, o que facilita muito.
 
 Aqui está o passo a passo conciso para a integração:
