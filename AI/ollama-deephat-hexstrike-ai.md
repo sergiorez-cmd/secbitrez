@@ -42,7 +42,7 @@ O HexStrike é uma CLI que orquestra comandos de segurança (nmap, nikto, gobust
 
 Via APT
 ```bash
-sudo apt update
+sudo apt update && sudo apt upgrade
 sudo apt install hexstrike-ai
 ```
 Via Pip
