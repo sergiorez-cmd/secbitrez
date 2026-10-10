@@ -46,3 +46,5 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 https://highon.coffee/blog/reverse-shell-cheat-sheet
 
 https://github.com/pentestmonkey/php-reverse-shell
+
+https://www.revshells.com
