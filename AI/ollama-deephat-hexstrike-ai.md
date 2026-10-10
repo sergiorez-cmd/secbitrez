@@ -41,10 +41,11 @@ ollama pull llama3     # Geral, bom para explicação de logs
 O HexStrike é uma CLI que orquestra comandos de segurança (nmap, nikto, gobuster, etc.) usando LLMs para decidir a próxima ação.
 
 Via APT
-```
+```bash
 sudo apt update
 sudo apt install hexstrike-ai
 ```
+Via Pip
 ```bash
 # Instalar via pip (recomendado usar venv ou pyenv para isolar dependências)
 pip install hexstrike-ai
