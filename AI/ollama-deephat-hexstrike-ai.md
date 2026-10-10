@@ -44,9 +44,9 @@ https://www.deephat.ai
 
 https://ollama.com/DeepHat
 
-Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
+Integrar essas três ferramentas no Kali Linux cria um "canivete suiço" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
 
-__Aqui está o passo a passo conciso para a integração:__
+__Passo a passo conciso para a integração:__
 
 ### 1. Instalação do Ollama (O Cérebro Local)
 O Ollama rodará seus modelos LLM locais (ex: Llama 3, Mistral, CodeLlama) para gerar código e análises sem latência de rede.
