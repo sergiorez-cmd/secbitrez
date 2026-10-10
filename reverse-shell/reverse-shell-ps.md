@@ -36,7 +36,7 @@ __Use a seguinte sintaxe:__
 
 ```powershell -encodedcommand < String_Base64 >```
 
-__Na sua máquina Kali, configure um ouvinte para capturar a conexão do shell reverso.__
+__Na sua máquina Kali Linux, configure um ouvinte para capturar a conexão do shell reverso.__
 ```
 nc  -lnvp  4444
 ```
