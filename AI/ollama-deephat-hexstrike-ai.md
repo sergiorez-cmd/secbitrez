@@ -14,6 +14,14 @@ https://ollama.com
 
 https://www.redhat.com/pt-br/topics/ai/vllm-vs-ollama
 
+O HexStrike AI (ou hexstrike-ai) é um servidor e framework de segurança ofensiva baseado no protocolo MCP (Model Context Protocol) que conecta Inteligências Artificiais (como Claude, GPT e Copilot) a mais de 150 ferramentas automatizadas de cibersegurança.
+
+Disponível no GitHub - HexStrike AI, ele funciona da seguinte forma:
+
+- __Orquestração autônoma:__ Permite que comandos em linguagem natural (ex: varredura ou exploração de uma falha) sejam traduzidos pela IA em sequências completas de ações técnicas sem intervenção humana constante.
+- __Capacidades ofensivas:__ Automatiza testes de penetração (pentest), descoberta de vulnerabilidades, varreduras e programas de recompensa por bugs (bug bounty).
+- __Uso por cibercriminosos:__ Embora concebido para pesquisa e testes de segurança, o framework tem sido adotado por agentes maliciosos para acelerar a exploração de vulnerabilidades zero-day (como falhas recentes em produtos Citrix NetScaler), reduzindo processos que levavam dias para poucos minutos.
+
 Integrar essas três ferramentas no Kali Linux cria um "cofre de bolso" de análise de código, automação de pentest e geração de conteúdo técnico. O Kali deve estar configurado com `docker` e `git`, o que facilita muito.
 
 __Aqui está o passo a passo conciso para a integração:__
