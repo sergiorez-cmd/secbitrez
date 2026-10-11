@@ -20,8 +20,8 @@ A exfiltração de cookies (ou roubo de cookies) é um ataque em que um invasor 
 
 ```
 #!/usr/bin/env python3
-# Treinamento Cibersec e Hacking �tico
-# Web Server para Exfiltra��o de Cookies
+# Treinamento Cibersec e Ethical Hacking 
+# Web Server para Cookies Exfiltration
 
 # Template HTML embutido
 TEMPLATE = """
@@ -106,6 +106,8 @@ if __name__ == '__main__':
 
 ```
 #!/usr/bin/env python3
+# Treinamento Cibersec e Ethical Hacking 
+# Web Server para Cookies Exfiltration Basic
 
 from flask import Flask, request, make_response
 
@@ -144,6 +146,8 @@ Web-srv
 
 ```
 #!/usr/bin/env python3
+# Treinamento Cibersec e Ethical Hacking 
+# Web Server para Cookies Exfiltration Estruturado
 
 from flask import Flask, request, make_response, render_template
 
