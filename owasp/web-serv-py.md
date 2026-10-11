@@ -31,7 +31,10 @@ Copie o payload e cole no campo de pesquisa do Juice-Shop
 
 Estrutura:
 
-
+Web-srv
+       |_web-srv.py
+       |_templates
+                  |_index.html
 
 Criar um diretório com o nome Web-srv
 
@@ -60,7 +63,7 @@ if __name__ == '__main__':
 ```
 Criar um diretório como o nome templates
 
-Copiar o código html e salvar como index.html
+Copiar o código html e salvar como index.html dentro do diretório templates
 
 ```
 <!DOCTYPE html>
