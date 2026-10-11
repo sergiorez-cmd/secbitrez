@@ -38,7 +38,7 @@ Web-srv
 ```
 Criar um diretório com o nome Web-srv
 
-Copiar o código python e salvar como web-srv.py
+Copiar o código python e salvar como web-srv.py dentro do diretório Web-srv
 
 ```
 #!/usr/bin/env python3
@@ -61,7 +61,7 @@ def home():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
 ```
-Criar um diretório como o nome templates
+Criar um diretório como o nome templates dentro do diretório Web-srv
 
 Copiar o código html e salvar como index.html dentro do diretório templates
 
