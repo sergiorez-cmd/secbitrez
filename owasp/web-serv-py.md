@@ -98,7 +98,7 @@ if __name__ == '__main__':
 ```
 
 
-## Web-Server Exfiltration Basic Python
+## Web-Server Exfiltration Python Basic
 
 1° Copiar o código python e salvar como web-srv.py
 
@@ -131,7 +131,7 @@ Payload XSS para teste:
 ```
 4°  Verificar no shell o cookie capturado
 
-## Web-Server Exfiltration Web Link Python
+## Web-Server Exfiltration Python Estruturado
 
 ```
 Estrutura:
