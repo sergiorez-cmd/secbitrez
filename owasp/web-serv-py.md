@@ -29,13 +29,13 @@ Copie o payload e cole no campo de pesquisa do Juice-Shop
 ```
 ## Web-Server Exfiltration Web Link Python
 
+```
 Estrutura:
-
 Web-srv\
        |_web-srv.py\
        |_templates\
                   |_index.html\
-
+```
 Criar um diretório com o nome Web-srv
 
 Copiar o código python e salvar como web-srv.py
