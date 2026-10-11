@@ -1,5 +1,9 @@
 ## Web-Server Exfiltration Basic Python
 
+Copiar o código e salvar como web-srv-py
+
+Executar $python ./web-srv.py
+
 ```
 #!/usr/bin/env python3
 
