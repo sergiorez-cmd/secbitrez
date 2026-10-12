@@ -17,7 +17,7 @@ https://www.hackingisnotacrime.org
 
 O OWASP Juice Shop é uma aplicação web de código aberto propositalmente vulnerável, desenvolvida para treinar e testar habilidades em cibersegurança e hacking ético.
 
-__Online:__ https://juice-shop.herokuapp.com/#/ 
+__Online:__ https://juice-shop.herokuapp.com
 
 __Github:__ https://github.com/juice-shop/juice-shop
 
