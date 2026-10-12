@@ -1,7 +1,15 @@
-
 # Roteiro Juice-Shop Infoeste 2026
 
 ## Introdução
+
+O __Ethical Hacking__ (ou hacking ético) é a prática autorizada de usar técnicas de invasão e simulação de ataques cibernéticos para encontrar falhas em sistemas, redes e softwares antes que criminosos o façam.
+
+O que faz um Hacker Ético (White Hat)?
+
+- __Simulação de ataques:__ Testa a segurança da empresa de forma controlada (como os testes de intrusão ou pentests).
+- __Identificação de vulnerabilidades:__ Localiza portas abertas, falhas em códigos, erros de configuração ou brechas de engenharia social.
+- __Geração de relatórios:__ Entrega um documento técnico com as correções necessárias para a equipe de TI blindar o sistema.
+- __Conformidade:__ Ajuda a cumprir normas de segurança e leis de proteção de dados, como a LGPD.
 
 https://www.hackingisnotacrime.org
 
@@ -66,7 +74,7 @@ __Dark Web:__ Fóruns ou páginas indexadas em redes específicas (quando invest
 
 - [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board).
 
-- [ ] Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: redes sociais).
+- [ ] Redefinir senha do usuário bjoern, utilizando técnicas de OSINT (Dica: github, redes sociais).
 
 https://x.com/bkimminich/status/1594985736650035202
 
@@ -75,11 +83,11 @@ https://x.com/bkimminich/status/1594985736650035202
 
 ## 4° OSINT - Descobrir Senha em Arquivo de log Vazado na Internet
 
-- [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock).
+- [ ] Verificar desenvolvedores do Juice-Shop via github (Dica: sherlock, https://whatsmyname.app).
 
 https://github.com/juice-shop/juice-shop
 
-- [ ] Acesse o site https://stackoverflow.com, e obtenha o arquivo de log disponível via link pastebin no fórum e procure por “password” no arquivo de log.
+- [ ] Acesse o site e obtenha o arquivo de log disponível via link pastebin no fórum e procure por “password” no arquivo de log.
 
 - [ ] Decodifique a senha descoberta via https://www.urldecoder.org
 
