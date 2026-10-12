@@ -27,13 +27,13 @@ Enumerar DNS:
 
 https://dnsdumpster.com
 ```
-dnsrecon -d juice-shop.herokuapp.com
+dnsrecon -d juice-shop.herokuapp.com -x dns-juice.xml
 ```
 Scan de portas TCP:
 
 https://hackertarget.com
 ```
-sudo nmap juice-shop.herokuapp.com
+sudo nmap juice-shop.herokuapp.com -oN nmap-juice.txt
 ```
 Identificar tecnologias do Web Server:
 
