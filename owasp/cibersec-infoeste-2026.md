@@ -13,7 +13,7 @@ O que faz um Hacker Ético (White Hat)?
 
 https://www.hackingisnotacrime.org
 
-## 1° Iniciar Juice-Shop
+## 1° Recon Juice-Shop
 
 O OWASP Juice Shop é uma aplicação web de código aberto propositalmente vulnerável, desenvolvida para treinar e testar habilidades em cibersegurança e hacking ético.
 
@@ -21,7 +21,27 @@ __Online:__ https://juice-shop.herokuapp.com/#/
 
 __Github:__ https://github.com/juice-shop/juice-shop
 
-Executar local: 
+__Basic Recon:__
+
+Enumerar DNS:
+
+https://dnsdumpster.com
+```
+dnsrecon -d juice-shop.herokuapp.com
+```
+Scan de portas TCP:
+
+https://hackertarget.com
+```
+sudo nmap juice-shop.herokuapp.com
+```
+Identificar tecnologias do Web Server:
+
+```
+whatweb -v juice-shop.herokuapp.com
+```
+
+__Executar local:__ 
 ```
 sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 ```
