@@ -2,8 +2,6 @@
 
 ## 1° Atualizar pacotes do sistema operacional
 
-### =========================================================
-
 Debian/Ubuntu
 ```
 apt update && apt upgrade -y
@@ -18,8 +16,6 @@ dnf install epel-release -y
 ```
 
 ## 2° Usuário administrador (sudoers/sudo su)
-
-### ========================================================
 
 Debian/Ubuntu
 ```
@@ -54,8 +50,6 @@ getent group wheel
 
 ## 3° Verificar firewall do sistema
 
-### ============================================
-
 Debian/Ubuntu
 ```
 ufw status
@@ -83,8 +77,6 @@ systemctl [enable|disable] firewalld
 ```
 
 ## 4° Configurações de rede (nome de host, endereço IP, gateway, servidores DNS)
-
-#### =================================================================================================
 
 Debian 12 (Edição Manual)
 ```
@@ -154,7 +146,6 @@ DNS2=208.67.220.220
 
 ## 5° Instalar e configurar Fail2Ban para proteção SSH
 
-### ================================================================
 ```
 sudo apt install -y fail2ban
 ```
@@ -180,7 +171,6 @@ fail2ban-client status
 
 ## 6° Criar um par de chaves RSA para acesso SSH sem senha
 
-### =================================================================
 
 RHEL/Rocky/Oracle
 ```
@@ -212,8 +202,6 @@ sudo systemctl daemon-reload
 ```
 
 ## 7° Atualizações de segurança automáticas Debian/Ubuntu
-
-### ================================================================
 
 Debian/Ubuntu
 ```
@@ -249,8 +237,6 @@ systemctl status dnf-automatic-install
 
 ## 8° Instalar Htop para monitorar processos e recursos do sistema
 
-### ==========================================================================
-
 Debian/Ubuntu
 ```
 sudo apt install -y htop
@@ -266,7 +252,6 @@ dnf install -y htop
 
 ## 9° Habilitar Painel de Gerenciamento Cockpit Debian/Rocky Linux
 
-### ========================================================================
 ```
 sudo apt install -y cockpit
 ```
