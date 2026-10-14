@@ -25,12 +25,6 @@ sudo docker pull tleemcjr/metasploitable2
 sudo docker run --name metasploitable -it tleemcjr/metasploitable2 sh -c "/bin/services.sh && bash"
 ```
 
-__O que este comando faz:__
-
-• __-d:__ Roda o container em segundo plano (background).
-• __--name metasploitable__: Dá um nome amigável ao container.
-• __-p [porta:porta]__: Mapeia as portas vulneráveis do container (FTP, SSH, Telnet, HTTP, SMB, PostgreSQL) para a sua máquina Kali, permitindo que você as ataque diretamente via localhost ou pelo IP da sua máquina.
-
 __Passo 3: Verificar se está rodando__
 
 Para confirmar que o container está ativo e ver quais portas estão abertas, utilize:
