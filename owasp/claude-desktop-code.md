@@ -1,7 +1,5 @@
 # Análise de Código Fonte main.js no Claude-Desktop
 
-https://markdownlivepreview.dev
- 
 1° __Obs: Faça upload do arquivo main.js__
 
 2° __Prompt =__ ```Assuma a personalidade de um especialista em DevSecOps e Cybersecurity. Analise este código Json e identifique vulnerabilidades de segurança.```
