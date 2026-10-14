@@ -1,7 +1,5 @@
 # Mapa Mental de Superfície de Ataque do Juice-Shop
 
-https://markdownlivepreview.dev
-
 __Prompt =__ ```Crie um mapa mental da superfície de ataque externa para uma empresa que usa [STACK_DE_TECNOLOGIA, ex: AWS, Express, Angular, Node.js]. Liste vetores de ataque prováveis, desde o CDN até o banco de dados, identificando pontos de falha comuns em cada camada.```
 
 Usei o stack do seu exemplo (AWS, Express, Angular, Node.js). Se o real for diferente, me diga e eu adapto.
