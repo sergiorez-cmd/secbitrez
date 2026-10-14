@@ -14,7 +14,7 @@ sudo apt install docker.io -y
 sudo systemctl enable --now docker
 ```
 
-__Passo 2: Baixar e rodar o Metasploitable__
+__Passo 2: Baixar e rodar o Metasploitable2__
 
 A imagem mais popular e pronta para uso da comunidade é a tleemcjr/metasploitable2 [0.6.1]. Execute o comando abaixo para baixar e iniciar o container:
 
