@@ -22,7 +22,7 @@ A imagem mais popular e pronta para uso da comunidade é a tleemcjr/metasploitab
 sudo docker pull tleemcjr/metasploitable2
 ``` 
 ```bash
-sudo docker run -d --name metasploitable -p 21:21 -p 22:22 -p 23:23 -p 80:80 -p 445:445 -p 5442:5442 tleemcjr/metasploitable2
+sudo docker run --name container-name -it tleemcjr/metasploitable2 sh -c "/bin/services.sh && bash"
 ```
 
 __O que este comando faz:__
