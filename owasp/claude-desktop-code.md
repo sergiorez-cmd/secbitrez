@@ -2,11 +2,11 @@
 
 1° __Obs: Faça upload do arquivo main.js__
 
-2° __Prompt =__ ```Assuma a personalidade de um especialista em DevSecOps e Cybersecurity. Analise este código Json e identifique vulnerabilidades de segurança.```
+2° __Prompt =__ ```Assuma a personalidade de um especialista em DevSecOps e Cybersecurity. Analise este código JavaScript e identifique vulnerabilidades de segurança.```
  
 ## Resumo
 
-O `main.js` não é um JSON de configuração. É um **bundle Angular de ~2 MB (67 mil linhas, gerado pelo Rolldown)**. Pelas URLs `owasp-juice.shop` e pelos e-mails `@juice-sh.op`, é o frontend do **OWASP Juice Shop**, uma aplicação propositalmente vulnerável. Analisei só o lado cliente, por busca de padrões. Nada foi executado nem testado, e o backend não foi avaliado.
+O `main.js` é um **bundle Angular de ~2 MB (67 mil linhas, gerado pelo Rolldown)**. Pelas URLs `owasp-juice.shop` e pelos e-mails `@juice-sh.op`, é o frontend do **OWASP Juice Shop**, uma aplicação propositalmente vulnerável. Analisei só o lado cliente, por busca de padrões. Nada foi executado nem testado, e o backend não foi avaliado.
 
 **Segredos:** não encontrei chaves AWS, tokens de API, JWTs ou chaves privadas hardcoded. O `client_id` do Google (linha 49818) é público por natureza e não é um vazamento.
 
