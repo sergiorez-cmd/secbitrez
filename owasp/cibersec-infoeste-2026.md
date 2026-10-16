@@ -226,7 +226,7 @@ Um ataque de força bruta de hash é um método usado para descobrir a senha ori
 
 - [ ] Realize um brute force no hash de senha do usuário jim (Dica, John The Ripper, Wordlist Rockyou).
 ```
-hashid -m jim-hash.txt
+hashid -j jim-hash.txt
 ```
 ```
 sudo gunzip /usr/share/wordlists/rockyou.txt.gz
