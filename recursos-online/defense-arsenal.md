@@ -30,6 +30,11 @@ Para estruturar uma estratégia sólida de **defesa cibernética**, as principai
 * **The Hive & Cortex:** Uma plataforma escalável de resposta a incidentes, colaboração e gerenciamento de casos (*Case Management*), que se integra perfeitamente ao Cortex para automatizar análises de observáveis (como hashes, IPs e domínios) de forma centralizada.
 * **Volatility Framework:** A ferramenta padrão para **análise de memória RAM** voltada a investigações forenses. Permite extrair artefatos ocultos, processos maliciosos e evidências de ataques que operam puramente em memória (*fileless malware*).
 
+### 6. Rede Privada Virtual (VPN)
+
+* **OpenVPN:** Software de código aberto (open-source) usado para criar redes privadas virtuais (VPN) seguras. Ele protege o tráfego da internet por meio de túneis criptografados baseados em SSL/TLS.
+* **WireGuard:** Protocolo de comunicação e software de código aberto projetado para criar conexões de Rede Privada Virtual (VPN) de ponto a ponto de forma simples, rápida e segura.
+
 ---
 
 ### Dicas para Implementação
@@ -65,3 +70,8 @@ Para estruturar uma estratégia sólida de **defesa cibernética**, as principai
 
 * **The Hive:** [thehive-project.org](https://thehive-project.org/)
 * **Volatility Framework:** [volatilityfoundation.org](https://www.volatilityfoundation.org/) *(ou via repositório no [GitHub da Volatility](https://github.com/volatilityfoundation/volatility))`
+
+### 6. Rede Privada Virtual (VPN)
+
+* **OpenVPN:** [openvpn.net](https://openvpn.net/)
+* **WireGuard:** [wireguard.com](https://www.wireguard.com/)
