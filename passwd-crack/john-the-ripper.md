@@ -2,7 +2,7 @@
 
 ## Identificar tipo de hash
 
-$ hashid -m [hash-sequence]
+$ hashid -j [hash-sequence]
 
 $ sudo gem install haiti-hash (install on Kali-Linux)
 
