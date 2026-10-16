@@ -19,3 +19,7 @@ hashid -m bcrypt-hash.txt
 [https\://hashcat.net/wiki](https://hashcat.net/wiki)
 ```
 hashcat -a 3 -m 3200 bcrypt-hash.txt ?d?d?d?d?d?d?d?d
+```
+```
+hashcat -m 3200 --show bcrypt-hash.txt
+```
