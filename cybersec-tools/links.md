@@ -84,9 +84,14 @@ https://www.openpgp.org
 
 https://www.gpg4win.org
 
-https://letsencrypt.org/pt-br/
+https://letsencrypt.org/pt-br
 
 https://veracrypt.io
+
+# Auditoria e Hardening de SO
+
+https://cisofy.com
+
 # GitHub
 
 https://github.com/cyberguideme/Tools
