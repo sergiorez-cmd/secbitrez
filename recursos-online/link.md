@@ -68,3 +68,5 @@ https://wiki.zacheller.dev
 ## ROE - Rules of Engagement
 
 https://www.amansploit.com/templates/rules-of-engagement
+
+https://redteam.guide/docs/Templates/roe_template
