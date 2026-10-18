@@ -64,3 +64,7 @@ https://www.revshells.com
 ## SecWiki
 
 https://wiki.zacheller.dev
+
+## ROE - Rules of Engagement
+
+https://www.amansploit.com/templates/rules-of-engagement
