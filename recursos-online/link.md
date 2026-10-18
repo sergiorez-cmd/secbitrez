@@ -65,6 +65,8 @@ https://www.revshells.com
 
 https://wiki.zacheller.dev
 
+https://hackersmanifest.com
+
 ## ROE - Rules of Engagement
 
 https://www.amansploit.com/templates/rules-of-engagement
