@@ -1,9 +1,9 @@
-https://sourceforge.net/projects/metasploitable/files/Metasploitable2
+[VM Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2)
 
-https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide
+[Guide Metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide)
 
-https://www.offsec.com/metasploit-unleashed/msfconsole-commands
+[Commands MSFConsole](https://www.offsec.com/metasploit-unleashed/msfconsole-commands)
 
-https://www.exploit-db.com/searchsploit
+[Man Searchsploit](https://www.exploit-db.com/searchsploit)
 
-https://www.hackingloops.com/metasploitable-2
+[Tutorial Metasploitable2](https://www.hackingloops.com/metasploitable-2)
