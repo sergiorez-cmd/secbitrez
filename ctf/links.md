@@ -1,9 +1,9 @@
 [Hackers Manifest](https://hackersmanifest.com)
 
-https://wiki.zacheller.dev
+[Sec Wiki](https://wiki.zacheller.dev)
 
-https://www.thehacker.recipes
+[Hacker Recipes](https://www.thehacker.recipes)
 
-https://www.revshells.com
+[Reverse Shells](https://www.revshells.com)
 
-https://swisskyrepo.github.io/InternalAllTheThings
+[Internal All The Things](https://swisskyrepo.github.io/InternalAllTheThings)
