@@ -29,14 +29,20 @@ https://dnsdumpster.com
 ```
 dnsrecon -d juice-shop.herokuapp.com -x dns-juice.xml
 ```
+
+Detectar WAF
+```
+wafw00f -a juice-shop.herokuapp.com
+```
+
 Scan de portas TCP:
 
 https://hackertarget.com
 ```
 sudo nmap juice-shop.herokuapp.com -oN nmap-juice.txt
 ```
-Identificar tecnologias do Web Server:
 
+Identificar tecnologias do Web Server:
 ```
 whatweb -v juice-shop.herokuapp.com
 ```
