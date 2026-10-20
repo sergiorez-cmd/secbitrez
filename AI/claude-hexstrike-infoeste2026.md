@@ -2,7 +2,7 @@
 
 ### __Preparar o laboratório via Docker__
 
-Faça download do Metasploitable2 via Docker Hub [Docker Hub](https://hub.docker.com/)
+Faça download do Metasploitable2 via [Docker Hub](https://hub.docker.com/)
 ```
 sudo docker pull tleemcjr/metasploitable2
 ```
