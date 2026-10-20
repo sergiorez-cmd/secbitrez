@@ -9,7 +9,7 @@ Gere um checklist de hardening para uma instância EC2 rodando [Ubuntu 22.04 LTS
 ```
 ### Prompts para Gerar Payloads e Shell Reverso
 ```
-Gere 3 variações de payloads para testar uma vulnerabilidade de SQL Injection em um campo de login que usa [BANCO_DE_DADOS SQLite]. Inclua técnicas de Union-based, Time-based e Out-of-band, considerando que a aplicação filtra os caracteres 'OR' e 'AND'.
+Gere 3 variações de payloads para testar uma vulnerabilidade de SQL Injection em um campo de login que usa [BANCO_DE_DADOS SQLite]. Inclua técnicas de Boolean-blind, Time-based e Out-of-band, considerando que a aplicação filtra os caracteres 'OR' e 'AND'.
 ```
 ```
 Crie 5 possíveis payloads para um ataque Cross-Site Scripting (XSS) DOM-based em uma aplicação que usa [FRAMEWORK, AngularJS]. O ataque deve ser capaz de exfiltrar cookies e tokens de sessão para um endpoint controlado pelo atacante, contornando filtros de HTML sanitizers comuns.
