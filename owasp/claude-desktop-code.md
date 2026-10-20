@@ -2,7 +2,10 @@
 
 1° __Obs: Faça upload do arquivo main.js__
 
-2° __Prompt =__ ```Assuma a personalidade de um especialista em DevSecOps e Cybersecurity. Analise este código JavaScript e identifique vulnerabilidades de segurança.```
+2° __Prompt =__ 
+```
+Assuma a personalidade de um especialista em DevSecOps e Cybersecurity. Analise este código JavaScript e identifique vulnerabilidades de segurança.
+```
  
 ## Resumo
 
@@ -133,5 +136,5 @@ Posso fazer a mesma análise do **painel de administração** (`administration`,
 
 ° __Prompt =__ 
 ```
-Gere um relatório com as vulnerabilidades encontradas para ser apresentado no formato pdf.
+Gere um relatório formal com as vulnerabilidades encontradas para ser exportado no formato PDF.
 ```
