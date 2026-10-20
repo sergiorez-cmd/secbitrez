@@ -77,14 +77,8 @@ Embora seja comum rodar ferramentas de pentest como `root` no Kali Linux (já qu
 
 ## 3. Desempenho em Cenários Reais
 
-
-| Coluna 1 | Coluna 2 | Coluna 3 |
-| --- | --- | --- |
-| Dado A1 | Dado A2 | Dado A3 |
-| Dado B1 | Dado B2 | Dado B3 |
-
-
 | Operação | Método Manual Tradicional | IA HexStrike v6.0 | Melhoria |
+| --- | --- | --- | --- |
 | **Enumeração de Subdomínios** | 2–4 horas | 5–10 minutos | 24x mais rápido |
 | **Varredura de Vulnerabilidades** | 4–8 horas | 15–30 minutos | 16x mais rápido |
 | **Testes de Segurança em Aplicações Web** | 6–12 horas | 20–45 minutos | 18x mais rápido |
