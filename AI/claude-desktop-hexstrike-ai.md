@@ -52,6 +52,10 @@ hexstrike_server
 ```
 ```
 hexstrike_mcp
+```
+### Testar a integridade do servidor via shell
+```
+curl http://localhost:8888/health
 ``` 
 ### No terminal do Claude-Desktop digite o prompt para verificar se esta tudo OK
 ```
