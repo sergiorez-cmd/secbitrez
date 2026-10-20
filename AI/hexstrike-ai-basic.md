@@ -87,11 +87,11 @@ Embora seja comum rodar ferramentas de pentest como `root` no Kali Linux (já qu
 
 __Métricas de Sucesso__
 
-- Taxa de Detecção de Vulnerabilidades: 98,7% (vs. 85% em testes manuais)
-- Taxa de Falsos Positivos: 2,1% (vs. 15% em scanners tradicionais)
-- Cobertura de Vetores de Ataque: 95% (vs. 70% em testes manuais)
-- Taxa de Sucesso em CTFs: 89% (vs. 65% da média de especialistas humanos)
-- Sucesso em Programas de Bug Bounty: Mais de 15 vulnerabilidades de alto impacto descobertas durante os testes
+- **Taxa de Detecção de Vulnerabilidades:** 98,7% (vs. 85% em testes manuais)
+- **Taxa de Falsos Positivos:** 2,1% (vs. 15% em scanners tradicionais)
+- **Cobertura de Vetores de Ataque:** 95% (vs. 70% em testes manuais)
+- **Taxa de Sucesso em CTFs:** 89% (vs. 65% da média de especialistas humanos)
+- **Sucesso em Programas de Bug Bounty:** Mais de 15 vulnerabilidades de alto impacto descobertas durante os testes
 
 ---
 
