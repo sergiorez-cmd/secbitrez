@@ -131,4 +131,7 @@ __Como só analisei o cliente, estes pontos precisam de teste em ambiente autori
 
 Posso fazer a mesma análise do **painel de administração** (`administration`, `accounting` e os endpoints `/rest/admin`) ou montar um plano de testes DAST/ZAP para validar esses pontos.
 
-° __Prompt =__ ```Gere um relatório com as vulnerabilidades encontradas para ser apresentado no formato pdf.```
+° __Prompt =__ 
+```
+Gere um relatório com as vulnerabilidades encontradas para ser apresentado no formato pdf.
+```
