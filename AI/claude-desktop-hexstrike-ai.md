@@ -46,10 +46,11 @@ Insira as seguintes configurações no inicio do arquivo
 ```
 Reinicie o kali linux 
 
-### Execute o servidor MCP Hexstrike-ai
+### Executar o servidor MCP Hexstrike-ai
 ```
 hexstrike_server
 ```
+### Executar o cliente MCP
 ```
 hexstrike_mcp
 ```
