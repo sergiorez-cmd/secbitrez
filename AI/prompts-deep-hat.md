@@ -7,7 +7,7 @@ Crie um mapa mental da superfície de ataque externa para uma empresa que usa [A
 ```
 Gere um checklist de hardening para uma instância EC2 rodando [Ubuntu 22.04 LTS] com [HTTPS, FTP, SSH]. Foque em: 1) Segurança de Rede (Security Groups, NACLs), 2) Gestão de Identidade e Acesso (IAM), 3) Monitoramento e Logs, e 4) Criptografia de dados em repouso e em trânsito.
 ```
-### Prompts para Gerar Payloads e Shell Reverso
+### Prompts para Gerar Payloads SQLi. XSS e Shell Reverso
 ```
 Gere 3 variações de payloads para testar uma vulnerabilidade de SQL Injection em um campo de login que usa [BANCO_DE_DADOS SQLite]. Inclua técnicas de Boolean-blind, Time-based e Out-of-band, considerando que a aplicação filtra os caracteres 'OR' e 'AND'.
 ```
