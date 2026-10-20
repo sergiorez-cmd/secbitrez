@@ -4,7 +4,10 @@
 
 Debian/Ubuntu
 ```
-apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
+```
+```
+sudo apt autoremove -y && sudo apt autoclean
 ```
 RHEL/Rocky/Oracle
 ```
