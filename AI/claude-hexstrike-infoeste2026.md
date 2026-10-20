@@ -52,7 +52,20 @@ Por favor, utilize as ferramentas MCP hexstrike-ai para:
 6. Faça algumas recomendações de hardening
 7. Gere um relatório formal das descobertas
 ```
-
 ---
+Sempre que terminar seus testes, é uma boa prática pausar ou parar o container para que ele não consuma recursos ou fique vulnerável em segundo plano.
 
+• Para parar o container:
+```bash
+sudo docker stop metasploitable
+```
+• Para iniciar novamente (quando for testar de novo):
+```bash
+sudo docker start metasploitable
+```
+
+• Para ver o status atual (se está rodando ou parado):
+```bash
+sudo docker ps -a
+```
 
