@@ -1,6 +1,9 @@
 # Mapa Mental de Superfície de Ataque do Juice-Shop
 
-__Prompt =__ ```Crie um mapa mental da superfície de ataque externa para uma empresa que usa [AWS, Express, Angular, Node.js, SQLite]. Liste vetores de ataque prováveis, desde o CDN até o banco de dados, identificando pontos de falha comuns em cada camada.```
+__Prompt =__ 
+```
+Crie um mapa mental da superfície de ataque externa para uma empresa que usa [AWS, Express, Angular, Node.js, SQLite]. Liste vetores de ataque prováveis, desde o CDN até o banco de dados, identificando pontos de falha comuns em cada camada.
+```
 
 Usei o stack do seu exemplo (AWS, Express, Angular, Node.js). Se o real for diferente, me diga e eu adapto.
 
