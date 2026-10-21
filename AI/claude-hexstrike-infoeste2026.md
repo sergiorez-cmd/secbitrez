@@ -52,6 +52,14 @@ Por favor, utilize as ferramentas MCP hexstrike-ai para:
 6. Faça algumas recomendações de hardening
 7. Gere um relatório formal das descobertas
 ```
+Prompt = 
+```
+Explore a porta 1524 com o serviço ingreslock
+```
+Prompt = 
+```
+Verifique a vulnerabilidade distccd (3632) com script do Nmap
+```
 ---
 Sempre que terminar seus testes, é uma boa prática pausar ou parar o container para que ele não consuma recursos ou fique vulnerável em segundo plano.
 
