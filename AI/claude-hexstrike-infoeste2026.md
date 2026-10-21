@@ -71,7 +71,10 @@ sudo docker stop metasploitable
 ```bash
 sudo docker start metasploitable
 ```
-
+• Para acessar o container:
+```bash
+sudo docker attach metasploitable
+```
 • Para ver o status atual (se está rodando ou parado):
 ```bash
 sudo docker ps -a
