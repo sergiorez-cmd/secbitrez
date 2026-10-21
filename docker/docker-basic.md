@@ -32,9 +32,9 @@ $ sudo docker ps (Listar containers em execução)
 
 $ sudo docker ps -a (Listar todos containers criados)
 
-$ sudo docker [stop,restart,start] [number_id] (Gerenciar estado de um container)
+$ sudo docker [stop,restart,start] [number_id/name-image] (Gerenciar estado de um container)
 
-$ sudo docker attach [number_id] (Acessar interace de um container)
+$ sudo docker attach [number_id/name-image] (Acessar interface de um container)
 
 $ sudo docker rm [number_id] (Remover um container)
 
