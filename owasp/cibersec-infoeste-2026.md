@@ -127,7 +127,7 @@ https://github.com/juice-shop/juice-shop
 
 Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma técnica de reconhecimento em segurança da informação utilizada para descobrir pastas, arquivos e endpoints ocultos em um servidor web. O processo consiste no envio em massa de requisições HTTP combinando a URL alvo com uma lista de termos predefinidos (chamada de wordlist). Se o servidor retornar um código que indique a existência do recurso (como 200 OK ou 403 Forbidden), a ferramenta mapeia esse caminho como existente.
 
-- [ ] Acessar documentos confidenciais via ataque de força bruta de diretórios (Dica: Dirb, Feroxbuster).
+- [ ] Acessar documentos confidenciais via ataque de força bruta de diretórios (Dica: Scan Furtivo/Modo Seguro via Dirb, Feroxbuster).
 ```
 dirb http://localhost:3000 -t 2 -z 1500 -o dir-juice.txt
 ```
