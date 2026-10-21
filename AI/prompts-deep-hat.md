@@ -9,21 +9,22 @@ Gere um checklist de hardening para uma instância EC2 rodando [Ubuntu 22.04 LTS
 ```
 ### Prompts para Gerar Payloads SQLi. XSS e Shell Reverso
 ```
-Gere 3 variações de payloads para testar uma vulnerabilidade de SQL Injection em um campo de login que usa [BANCO_DE_DADOS SQLite]. Inclua técnicas de Boolean-blind, Time-based e Out-of-band, considerando que a aplicação filtra os caracteres 'OR' e 'AND'.
+Crie 3 variações de payloads para testar uma vulnerabilidade de SQL Injection em um campo de login que usa [BANCO_DE_DADOS SQLite]. Inclua técnicas de Boolean-blind, Time-based e Out-of-band, considerando que a aplicação filtra os caracteres 'OR' e 'AND'.
 ```
 ```
-gerar um documento Markdown completo e profissional, pronto para ser copiado para um Wiki, GitHub ou relatório. Ele deve incluir:
+Crie um documento Markdown completo e profissional, pronto para ser copiado para um Wiki, GitHub ou relatório.
+Ele deve incluir:
 
-    Título e Metadados
-    Contexto (SQLite, filtros OR/AND)
-    As 3 técnicas com payloads e explicações
-    Tabela resumo
-    Notas de implementação
+    1-Título e Metadados
+    2-Contexto (SQLite, filtros OR/AND)
+    3-As 3 técnicas com payloads e explicações
+    4-Tabela resumo
+    5-Notas de implementação
 
 ```
 ```
 Crie 5 possíveis payloads para um ataque Cross-Site Scripting (XSS) DOM-based em uma aplicação que usa [FRAMEWORK, AngularJS]. O ataque deve ser capaz de exfiltrar cookies e tokens de sessão para um endpoint controlado pelo atacante, contornando filtros de HTML sanitizers comuns.
 ```
 ```
-Gere 3 variações de shell reverso para testar vulnerabilidade de execução de comando em servidores Linux. Inclua as seguintes linguagens de script [PHP, Python 3, Java].
+Crie 3 variações de shell reverso para testar vulnerabilidade de execução de comando em servidores Linux. Inclua as seguintes linguagens de script [PHP, Python 3, Java].
 ```
