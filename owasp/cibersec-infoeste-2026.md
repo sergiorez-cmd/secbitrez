@@ -105,7 +105,7 @@ __Dark Web:__ Fóruns ou páginas indexadas em redes específicas (quando invest
 
 - [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board).
 
-- [ ] Redefinir senha do usuário bjorn@owasp.com, utilizando técnicas de OSINT (Dica: github, redes sociais).
+- [ ] Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: github, redes sociais).
 
 https://x.com/bkimminich/status/1594985736650035202
 
