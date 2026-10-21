@@ -20,7 +20,7 @@ Ele deve incluir:
     3-As 3 técnicas com payloads e explicações
     4-Tabela resumo
     5-Notas de implementação
-
+    6-Gere o arquivo final limpo, pronto para salvar
 ```
 ```
 Crie 5 possíveis payloads para um ataque Cross-Site Scripting (XSS) DOM-based em uma aplicação que usa [FRAMEWORK, AngularJS]. O ataque deve ser capaz de exfiltrar cookies e tokens de sessão para um endpoint controlado pelo atacante, contornando filtros de HTML sanitizers comuns.
