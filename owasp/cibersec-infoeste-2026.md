@@ -129,7 +129,7 @@ Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma
 
 - [ ] Acessar documentos confidenciais via ataque de força bruta de diretórios (Dica: Dirb, Feroxbuster).
 ```
-dirb http://localhost:3000 -z 30 -o dir-juice.txt
+dirb http://localhost:3000 -t 2 -z 1500 -o dir-juice.txt
 ```
 ```
 feroxbuster -u http://localhost:3000 -d 1 -t 2
