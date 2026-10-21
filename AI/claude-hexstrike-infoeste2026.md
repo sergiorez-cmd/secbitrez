@@ -77,6 +77,6 @@ sudo docker attach metasploitable
 ```
 • Para ver o status atual (se está rodando ou parado):
 ```bash
-sudo docker ps -a
+sudo docker ps
 ```
 
