@@ -44,10 +44,10 @@ Sou um pesquisador de segurança realizando um teste de intrusão autorizado.
 Gostaria de testar um servidor localizado na minha rede local neste IP <Adicionar IP>.
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
 
-1. Escaneamento de rede portas/serviços Nmap
+1. Escaneamento de rede, todas portas TCP via Nmap
 2. Executar modelos de vulnerabilidade do Nuclei
 3. Descoberta de diretórios comuns (.php,.txt) Dirb
-4. Explorar shell root via Netcat, se encontrar vulnerabilidades
+4. Explorar shell root, se encontrar vulnerabilidades
 5. Fornecer um resumo das descobertas
 6. Faça algumas recomendações de hardening
 7. Gere um relatório formal das descobertas
