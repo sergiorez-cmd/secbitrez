@@ -103,7 +103,7 @@ __Dark Web:__ Fóruns ou páginas indexadas em redes específicas (quando invest
 
 - [ ] Redefinir senhas de usuários emma, john utilizando técnicas de OSINT (Dica: photo-wall, exiftool, google-maps).
 
-- [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board).
+- [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board "password needle in a haystack").
 
 - [ ] Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: github, redes sociais).
 
