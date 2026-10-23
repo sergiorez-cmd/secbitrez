@@ -89,9 +89,9 @@ sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 Prompt = 
 
 ```
-Sou um pesquisador de segurança e gostaria de testar as ferramentas do hexstrike-ai e executar contra uma estância do juice-shop rodando no docker da minha máquina local.
-
-Execute a sequência de testes no caminho http://localhost:3000 via hexstrike-ai: 
+Sou um pesquisador de segurança e gostaria de testar as ferramentas do hexstrike-ai.
+A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina local.
+Execute a sequência de testes no caminho http://localhost:3000: 
 
 1. Recon via Nmap na porta 3000.
 2. Não está autorizado realizar força bruta de diretórios.
