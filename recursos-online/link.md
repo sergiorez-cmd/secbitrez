@@ -13,6 +13,8 @@ https://www.jwt.io
 
 https://tribestream.io/tools/jwt
 
+https://www.jwtsecretgenerator.com/pt-BR
+
 ## OWASP Attacks
 
 https://community.owasp.org/attacks
