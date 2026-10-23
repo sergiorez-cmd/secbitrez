@@ -14,10 +14,6 @@ Verifique o endereço IP atribuido
 ```
 ifconfig
 ```
-Também é possível verificar o endereço IP via comando Docker
-```
-sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' metasploitable
-```
 
 ### Executar servidor Hexstrike-ai e Claude-Desktop
 
@@ -78,5 +74,9 @@ sudo docker attach metasploitable
 • Para ver o status atual (se está rodando ou parado):
 ```bash
 sudo docker ps
+```
+Também é possível verificar o endereço IP via comando Docker
+```
+sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' metasploitable
 ```
 
