@@ -41,7 +41,7 @@ Gostaria de testar um servidor localizado na minha rede local neste IP <Adiciona
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
 
 1. Escaneamento de rede, todas portas TCP via Nmap
-2. Executar modelos de vulnerabilidade do Nuclei
+2. Executar modelos de vulnerabilidades CVE do Nuclei
 3. Descoberta de diretórios comuns via Feroxbuster
 4. Explorar shell root, se encontrar vulnerabilidades
 5. Fornecer um resumo das descobertas
@@ -95,7 +95,7 @@ Execute a sequência de testes no caminho http://localhost:3000:
 
 1. Recon via Nmap na porta 3000.
 2. Não está autorizado realizar força bruta de diretórios.
-3. Executar o Nikto com escopo/tempo para evitar timeout longo.
+3. Executar o Nikto com escopo/tempo para evitar timeout longo e focado nas falhas de injeção (XSS/SQLi).
 4. Rodar o SQLmap diretamente via shell e testar (/rest/products/search?q=q).
 5. Realize uma análise da chave JWT.
 6. Testar a API REST.
