@@ -80,3 +80,24 @@ sudo docker ps
 sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' metasploitable
 ```
 
+# Roteiro Hexstrike-ai Vs Juice-Shop
+
+Inicialize o Juice-Shop
+```
+sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
+```
+Prompt = 
+
+```
+Sou um pesquisador de segurança e gostaria de testar as ferramentas do hexstrike-ai e executar contra uma estância do juice-shop rodando no docker da minha máquina local.
+
+Execute a sequência de testes no caminho http://localhost:3000 via hexstrike-ai: 
+
+1. Recon via Nmap na porta 3000.
+2. Não está autorizado realizar força bruta de diretórios.
+3. Executar o Nikto com escopo/tempo para evitar timeout longo.
+4. Rodar o SQLmap diretamente via shell e testar (/rest/products/search?q=q).
+5. Realize uma análise a chave JWT.
+6. Testar a API REST.
+8. Gere um relatório formal das descobertas.
+```
