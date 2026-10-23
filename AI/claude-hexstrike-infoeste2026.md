@@ -75,7 +75,7 @@ sudo docker attach metasploitable
 ```bash
 sudo docker ps
 ```
-Também é possível verificar o endereço IP via comando Docker
+• Também é possível verificar o endereço IP via comando Docker
 ```
 sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' metasploitable
 ```
