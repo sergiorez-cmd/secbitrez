@@ -97,7 +97,7 @@ Execute a sequência de testes no caminho http://localhost:3000:
 2. Não está autorizado realizar força bruta de diretórios.
 3. Executar o Nikto com escopo/tempo para evitar timeout longo.
 4. Rodar o SQLmap diretamente via shell e testar (/rest/products/search?q=q).
-5. Realize uma análise a chave JWT.
+5. Realize uma análise da chave JWT.
 6. Testar a API REST.
 8. Gere um relatório formal das descobertas.
 ```
