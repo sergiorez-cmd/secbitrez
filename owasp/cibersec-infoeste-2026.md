@@ -25,7 +25,9 @@ __Basic Recon:__
 
 Identificar Stack de Desenvolvimento
 
-Instale no Firefox a extensão Wappalyzer
+https://www.wappalyzer.com
+
+- [ ] Instale no Firefox a extensão Wappalyzer
 
 Enumerar DNS:
 
