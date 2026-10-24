@@ -23,7 +23,7 @@ __Github:__ https://github.com/juice-shop/juice-shop
 
 __Basic Recon:__
 
-Identificar Stack de Desenvolvimento
+Identificar Stack de Desenvolvimento:
 
 https://www.wappalyzer.com
 
