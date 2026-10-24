@@ -36,7 +36,7 @@ https://dnsdumpster.com
 dnsrecon -d juice-shop.herokuapp.com -x dns-juice.xml
 ```
 
-Detectar WAF
+Detectar WAF (Web Application Firewall):
 ```
 wafw00f -a juice-shop.herokuapp.com
 ```
@@ -53,7 +53,7 @@ Identificar tecnologias do Web Server:
 whatweb -v juice-shop.herokuapp.com
 ```
 
-Escanear vulnerabilidades
+Escanear vulnerabilidades:
 ```
 nuclei -u juice-shop.herokuapp.com -rate-limit 15 -concurrency 5 -bulk-size 5 -timeout 5
 ```
