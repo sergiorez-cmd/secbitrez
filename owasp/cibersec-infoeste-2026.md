@@ -23,6 +23,10 @@ __Github:__ https://github.com/juice-shop/juice-shop
 
 __Basic Recon:__
 
+Identificar Stack de Desenvolvimento
+
+Instale no Firefox a extensão Wappalyzer
+
 Enumerar DNS:
 
 https://dnsdumpster.com
