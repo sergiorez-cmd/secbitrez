@@ -19,8 +19,6 @@ O OWASP Juice Shop é uma aplicação web de código aberto propositalmente vuln
 
 __Online:__ https://juice-shop.herokuapp.com
 
-__Github:__ https://github.com/juice-shop/juice-shop
-
 __Basic Recon:__
 
 Identificar Stack de Desenvolvimento:
@@ -59,6 +57,8 @@ nuclei -u juice-shop.herokuapp.com -rate-limit 15 -concurrency 5 -bulk-size 5 -t
 ```
 
 __Executar local:__ 
+
+__Github:__ https://github.com/juice-shop/juice-shop
 ```
 sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 ```
