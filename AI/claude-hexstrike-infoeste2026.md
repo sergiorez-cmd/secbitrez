@@ -41,7 +41,7 @@ Gostaria de testar um servidor localizado na minha rede local neste IP <Adiciona
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
 
 1. Escaneamento de rede, todas portas TCP via Nmap
-2. Executar modelos de vulnerabilidades CVE do Nuclei
+2. Identificar vulnerabilidades bem conhecidas via Nikto
 3. Descoberta de diretórios comuns via Feroxbuster
 4. Explorar shell root, se encontrar vulnerabilidades
 5. Fornecer um resumo das descobertas
