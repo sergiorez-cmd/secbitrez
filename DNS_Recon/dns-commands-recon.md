@@ -16,9 +16,13 @@ dnsrecon -d example.com -t axfr
 ```bash
 dnsrecon -d example.com -t r
 ```
-## Coleta de informações via motores de busca e fontes públicas
+## Coleta de informações via motores de busca e fontes públicas ( baidu, chaos, crtsh, duckduckgo, hackertarget, urlscan)
 ```bash
 theHarvester -d example.com -b crtsh
+```
+## Enumeração de subdmínios
+```bash
+subfinder -d example.com
 ```
 ## Enumeração passiva de subdomínios
 ```bash
