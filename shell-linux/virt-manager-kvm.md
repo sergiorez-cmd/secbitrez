@@ -33,6 +33,7 @@ sudo virsh net-list --all
 ```bash
 sudo nano /etc/network/interfaces
 ```
+Exemplo: (Adaptar conforme seu ambiente de rede)
 ### Primary network interface
 
 auto enp2s0
