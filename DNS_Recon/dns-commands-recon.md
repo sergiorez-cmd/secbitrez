@@ -18,7 +18,7 @@ dnsrecon -d example.com -t r
 ```
 ## Coleta de informações via motores de busca e fontes públicas
 ```bash
-theHarvester -d example.com -b all
+theHarvester -d example.com -b crtsh
 ```
 ## Enumeração passiva de subdomínios
 ```bash
