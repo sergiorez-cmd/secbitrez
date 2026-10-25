@@ -1,31 +1,38 @@
 # KVM Virt-manager Debian 12/13
 
 ## 1° Instalar pacotes
-
-$ grep -E --color '(vmx|svm)' /proc/cpuinfo
-
-$ sudo apt update
-
-$ sudo apt install -y qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
-
-$ systemctl status libvirtd
-
-$ sudo systemctl enable --now libvirtd
-
-$ lsmod | grep -i kvm
-
+```bash
+grep -E --color '(vmx|svm)' /proc/cpuinfo
+```
+```bash
+sudo apt update
+```
+```bash
+sudo apt install -y qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
+```
+```bash
+systemctl status libvirtd
+``` 
+```bash
+sudo systemctl enable --now libvirtd
+```
+```bash
+lsmod | grep -i kvm
+```
 ## 2° Ativar rede virtual
-
-$ sudo virsh net-start default
-
-$ sudo virsh net-autostart default
-
-$ sudo virsh net-list --all
-
+```bash
+sudo virsh net-start default
+```
+```bash
+sudo virsh net-autostart default
+```
+```bash
+sudo virsh net-list --all
+``` 
 ## 3° Criar uma rede local bridge
-
-$ sudo nano /etc/network/interfaces
-
+```bash
+sudo nano /etc/network/interfaces
+```
 ### Primary network interface
 
 auto enp2s0
@@ -53,15 +60,19 @@ broadcast 192.168.1.255
 gateway 192.168.1.1
 
 dns-nameservers 9.9.9.9 1.1.1.1
-
-$ sudo systemctl restart networking.service
-
+```bash
+sudo systemctl restart networking.service
+```
 ## Converter discos virtuais 
-
-$ sudo apt install qemu-utils
-
-$ tar -xvf vm_disk.ova
-
-$ qemu-img convert -p -f vmdk -O qcow2 vm_disk.vmdk new_vm_disk.qcow2
-
-$ qemu-img convert -p -f vhdx -O qcow2 /virtual_disk_directory/vm_disk.vhdx /disk_directory/new_vm_disk.qcow2
+```bash
+sudo apt install qemu-utils
+```
+```bash
+tar -xvf vm_disk.ova
+```
+```bash
+qemu-img convert -p -f vmdk -O qcow2 vm_disk.vmdk new_vm_disk.qcow2
+```
+```bash
+qemu-img convert -p -f vhdx -O qcow2 /virtual_disk_directory/vm_disk.vhdx /disk_directory/new_vm_disk.qcow2
+``
