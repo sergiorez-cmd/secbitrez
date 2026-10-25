@@ -51,9 +51,9 @@ Identificar tecnologias do Web Server:
 whatweb -v juice-shop.herokuapp.com
 ```
 
-Escanear vulnerabilidades:
+Escanear subdiretórios:
 ```
-nuclei -u juice-shop.herokuapp.com -rate-limit 15 -concurrency 5 -bulk-size 5 -timeout 5
+subfinder -d owasp.org
 ```
 
 __Executar local:__ 
