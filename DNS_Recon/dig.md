@@ -46,5 +46,3 @@ Essas flags ajudam a filtrar, formatar ou rastrear a resposta do DNS de maneira 
 * **`dig -x 8.8.8.8`** — Realiza uma busca reversa de DNS, descobrindo qual nome de host está associado a um determinado endereço IP.
 
 ---
-
-Se precisar de ajuda para interpretar algum retorno específico ou montar um comando para um cenário de diagnóstico de propagação de DNS, é só avisar!
