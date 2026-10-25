@@ -93,11 +93,11 @@ Sou um pesquisador de segurança e gostaria de testar as ferramentas do hexstrik
 A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina local.
 Execute a sequência de testes no caminho http://localhost:3000: 
 
-1. Recon via Nmap na porta 3000.
-2. Não está autorizado realizar força bruta de diretórios.
-3. Executar o Nikto com escopo/tempo para evitar timeout longo e focado nas falhas de injeção (XSS/SQLi).
-4. Rodar o SQLmap diretamente via shell e testar (/rest/products/search?q=q).
-5. Realize uma análise da chave JWT.
-6. Testar a API REST.
-7. Gere um relatório formal das descobertas.
+1. Recon via Nmap na porta 3000
+2. Não está autorizado realizar força bruta de diretórios
+3. Rodar o SQLmap via shell e testar (/rest/products/search?q=q)
+4. Realize uma análise da chave JWT
+5. Testar a API REST
+6. Faça algumas recomendações de correções
+7. Gere um relatório formal das descobertas
 ```
