@@ -13,3 +13,5 @@ https://www.talosintelligence.com/vulnerability_reports
 https://www.kali.org/tools/gvm
 
 https://pt-br.tenable.com/products/nessus/nessus-essentials
+
+https://greenbone.github.io/docs/latest/22.4/kali/index.html
