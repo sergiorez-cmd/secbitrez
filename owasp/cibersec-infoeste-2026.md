@@ -161,7 +161,7 @@ https://github.com/danielmiessler/SecLists
 - [ ] Acesse a área de administrador descoberta na inspeção de código main.js.
 
 ```
-wfuzz -c -w Downloads/default-passwords.txt -H "Content-Type: application/json" -d '{"email":"admin@juice-sh.op","password":"FUZZ"}' --sc 200 http://localhost:3000/rest/user/login
+wfuzz -c -w /usr/share/seclists/Passwords/Default-Credentials/default-passwords.txt -H "Content-Type: application/json" -d '{"email":"admin@juice-sh.op","password":"FUZZ"}' --sc 200 http://localhost:3000/rest/user/login
 ```
 ## 7° Broken Access Control
 
