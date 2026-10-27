@@ -1,3 +1,7 @@
+## Framework
+
+https://osintframework.com
+
 ## Usernames
 
 https://whatsmyname.app
