@@ -48,14 +48,14 @@ Quando um analista de segurança analisa a rede de uma empresa, ele usa os dois 
 
 A nota do CVSS é dividida em faixas para facilitar a tomada de decisão:
 
-• 0.0: Nenhuma (None)
+• 0.0: **Nenhuma (None)**
 
-• 0.1 – 3.9: Baixa (Low)
+• 0.1 – 3.9: **Baixa (Low)**
 
-• 4.0 – 6.9: Média (Medium)
+• 4.0 – 6.9: **Média (Medium)**
 
-• 7.0 – 8.9: Alta (High)
+• 7.0 – 8.9: **Alta (High)**
 
-• 9.0 – 10.0: Crítica (Critical)
+• 9.0 – 10.0: **Crítica (Critical)**
 
 
