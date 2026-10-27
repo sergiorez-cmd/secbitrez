@@ -24,6 +24,8 @@ https://www.cve.org
 
 CVE e CVSS são ferramentas complementares, mas com funções totalmente diferentes: enquanto o CVE serve para identificar uma falha, o CVSS serve para medir a gravidade dela.
 
+https://www.first.org/cvss
+
 Pense no CVE como a certidão de nascimento da vulnerabilidade e no CVSS como o boletim médico que diz a gravidade da doença.
 
 ### A diferença detalhada
