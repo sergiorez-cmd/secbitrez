@@ -29,15 +29,10 @@ Pense no CVE como a certidão de nascimento da vulnerabilidade e no CVSS como o 
 ### A diferença detalhada
 
 | Característica	 | CVE (Common Vulnerabilities and Exposures) | CVSS (Common Vulnerability Scoring System) |
-
 | --- | --- | --- |
-
 | O que é? | 	Um identificador único (um nome/código).	| Um sistema de pontuação (uma nota). |
-
 | Objetivo	| Responder: "Qual é a falha específica de que estamos falando?"	| Responder: "O quão urgente e perigosa é essa falha?" |
-
 | Formato | Um código padrão, como CVE-2021-44228.	| Uma nota de 0.0 a 10.0 (junto com um vetor de texto). |
-
 | Quem define?	| A MITRE Corporation e as CNAs autorizadas.	| O FIRST (Forum of Incident Response and Security Teams). |
 
 
