@@ -40,6 +40,7 @@ Pense no CVE como a certidão de nascimento da vulnerabilidade e no CVSS como o 
 Quando um analista de segurança analisa a rede de uma empresa, ele usa os dois conceitos em conjunto:
 
 • __Passo 1 (CVE):__ O scanner de segurança avisa: **"Encontrei a falha CVE-2023-XXXX no seu servidor web".**
+
 • __Passo 2 (CVSS):__ O analista olha a nota CVSS atrelada àquele CVE. Se a nota for 9.8 (Crítica), ele para tudo o que está fazendo para corrigir o problema. Se a nota for 2.5 (Baixa), ele agenda a correção para a próxima janela de manutenção rotineira.
 
 ### As Faixas de Gravidade do CVSS
@@ -47,9 +48,13 @@ Quando um analista de segurança analisa a rede de uma empresa, ele usa os dois 
 A nota do CVSS é dividida em faixas para facilitar a tomada de decisão:
 
 • 0.0: Nenhuma (None)
+
 • 0.1 – 3.9: Baixa (Low)
+
 • 4.0 – 6.9: Média (Medium)
+
 • 7.0 – 8.9: Alta (High)
+
 • 9.0 – 10.0: Crítica (Critical)
 
 
