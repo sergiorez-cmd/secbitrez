@@ -197,7 +197,7 @@ Payloads projetados para provocar atrasos na execução quando processados ​�
 
 - Alternativamente, você pode encontrar a maioria das vulnerabilidades de injeção de SQL de forma rápida e confiável utilizando o Zed Attack Proxy ou Burp Suite Scanner.
 
-- [ ] Faça login de usuários via injeção SQL.
+- [ ] Faça login de usuários via Bypass de autenticação com injeção SQL.
 
             E-mail: ' OR 1=1 --
             E-mail = user@dom.net' --
