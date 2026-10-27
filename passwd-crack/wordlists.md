@@ -1,6 +1,6 @@
 ## Dir Wordlists Kali
 ```
-$ wordlists
+wordlists
 ```
 ```
 ls /usr/share/wordlists/
