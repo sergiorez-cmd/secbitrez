@@ -1,5 +1,7 @@
 https://www.cve.org
 
+https://cwe.mitre.org
+
 https://www.first.org/cvss
 
 https://nvd.nist.gov/vuln
