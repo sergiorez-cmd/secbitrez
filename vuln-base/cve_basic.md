@@ -30,7 +30,7 @@ Pense no CVE como a certidão de nascimento da vulnerabilidade e no CVSS como o 
 
 | Característica	 | CVE (Common Vulnerabilities and Exposures) | CVSS (Common Vulnerability Scoring System) |
 
-|---|---|---|
+| --- | --- | --- |
 
 | O que é? | 	Um identificador único (um nome/código).	| Um sistema de pontuação (uma nota). |
 
