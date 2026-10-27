@@ -53,7 +53,7 @@ whatweb -v juice-shop.herokuapp.com
 
 Escanear subdiretórios:
 ```
-subfinder -d owasp.org
+subfinder -d owasp.org -o sub-dom-owasp.txt
 ```
 
 __Executar local:__ 
@@ -111,9 +111,9 @@ __Dark Web:__ Fóruns ou páginas indexadas em redes específicas (quando invest
 
 - [ ] Redefinir senhas de usuários emma, john utilizando técnicas de OSINT (Dica: photo-wall, exiftool, google-maps).
 
-- [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board "password needle in a haystack", "Protect Ya' Passwordz").
+- [ ] Descobrir senhas de usuários amy, MC SafeSearch utilizando técnicas de OSINT (Dica: hints do Score-Board, google search "password needle in a haystack", "Protect Ya' Passwordz").
 
-- [ ] Redefinir senha do usuário bjoern@owasp.org, utilizando técnicas de OSINT (Dica: github, redes sociais).
+- [ ] Redefinir senha do usuário bjoern, utilizando técnicas de OSINT (Dica: Juice-Shop search lego email, redes sociais).
 
 https://x.com/bkimminich/status/1594985736650035202
 
@@ -152,7 +152,7 @@ https://wiki.zacheller.dev/web-app-pentest/upload-download/error-only-.md-and-.p
 
 Um ataque de força bruta no login é um método em que softwares automatizados testam milhares de combinações de nomes de usuário e senhas em alta velocidade até acertarem a credencial correta para invadir uma conta.
 
-- [ ] Faça login com as credenciais de usuário do administrador sem alterá-las previamente ou aplicar SQL Injection (Dica: brute force, ZAP Attack Fuzz).
+- [ ] Faça login com as credenciais de usuário do administrador sem alterá-las previamente ou aplicar SQL Injection (Dica: brute force, ZAP Attack Fuzz, shell WFUZZ).
 
 - [ ] Faça download de uma wordlist específica com senhas de credenciais padrão (Dica: Password Defaults Credentials).
 
@@ -160,7 +160,9 @@ https://github.com/danielmiessler/SecLists
 
 - [ ] Acesse a área de administrador descoberta na inspeção de código main.js.
 
-
+```
+wfuzz -c -w Downloads/default-passwords.txt -H "Content-Type: application/json" -d '{"email":"admin@juice-sh.op","password":"FUZZ"}' --sc 200 http://localhost:3000/rest/user/login
+```
 ## 7° Broken Access Control
 
 A exploração de falhas no controle de acesso é uma habilidade fundamental dos atacantes. Ferramentas de SAST e DAST (Burp Suite, Zed Attack Proxy) conseguem detectar a ausência de controle de acesso, mas não conseguem verificar se ele é funcional quando está presente. O controle de acesso pode ser detectado por meios manuais ou, possivelmente, por meio de automação para identificar a ausência de controles em determinados frameworks.
