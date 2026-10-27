@@ -88,6 +88,7 @@ __Clique direito:__ Clique com o botão direito em qualquer parte da página e s
 - [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”).
 
 https://coddy.tech/tools/pt/url-encoder
+
 https://www.urlencoder.org
 
 ## 3° OSINT - Redefinir Senhas e Visualizar Dados de Métricas do Servidor
@@ -130,6 +131,7 @@ https://github.com/juice-shop/juice-shop
 - [ ] Decodifique a senha descoberta na url do arquivo de log
 
 https://coddy.tech/tools/pt/url-encoder
+
 https://www.urldecoder.org
 
 
