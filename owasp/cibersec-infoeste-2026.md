@@ -87,6 +87,7 @@ __Clique direito:__ Clique com o botão direito em qualquer parte da página e s
 
 - [ ] Recupere a foto do gato de Bjoern (Dica: código HTML “src”).
 
+https://coddy.tech/tools/pt/url-encoder
 https://www.urlencoder.org
 
 ## 3° OSINT - Redefinir Senhas e Visualizar Dados de Métricas do Servidor
@@ -126,7 +127,10 @@ https://github.com/juice-shop/juice-shop
 
 - [ ] Acesse o site e obtenha o arquivo de log disponível via link pastebin no fórum e procure por “password” no arquivo de log.
 
-- [ ] Decodifique a senha descoberta via https://www.urldecoder.org
+- [ ] Decodifique a senha descoberta na url do arquivo de log
+
+https://coddy.tech/tools/pt/url-encoder
+https://www.urldecoder.org
 
 
 ## 5° Brute Force de Diretórios Web
