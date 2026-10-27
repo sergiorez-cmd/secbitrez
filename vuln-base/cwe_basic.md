@@ -29,7 +29,7 @@ Para entender o ecossistema de cibersegurança, é comum confundir as siglas. A 
 
 Para consultar a base oficial de fraquezas da MITRE, você deve acessar o site oficial do CWE. O catálogo é público, gratuito e atualizado regularmente. 
 
-[CWE Mitre Org](https://cwe.mitre.org/), 
+[CWE Mitre Org](https://cwe.mitre.org/) 
 
 [CWE Mitre About](https://cwe.mitre.org/about/index.html)
 
@@ -41,7 +41,7 @@ Se você já sabe o número da fraqueza ou o nome do termo que está procurando,
 
 • __ID Lookup:__ No canto superior direito da página inicial, há um campo de busca por identificador. Digite o número (ex: 79 ou CWE-79) para ir direto à página explicativa. 
 
-[CWE Mitre] (https://cwe.mitre.org/),
+[CWE Mitre](https://cwe.mitre.org/)
 
 [CWE Lookup](https://inventivehq.com/tools/security/cwe-lookup)
 
@@ -71,7 +71,7 @@ Se o seu objetivo é priorizar o aprendizado ou focar nos maiores riscos do merc
 
 • __Mapeamento OWASP:__ Cruzamento direto do catálogo com frameworks famosos, como o OWASP Top 10. 
 
-[CWE Scoring](https://cwe.mitre.org/scoring/index.html), 
+[CWE Scoring](https://cwe.mitre.org/scoring/index.html)
 
 
 ### O que você encontra em cada registro?
