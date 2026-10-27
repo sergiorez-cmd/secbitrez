@@ -28,6 +28,7 @@ Para entender o ecossistema de cibersegurança, é comum confundir as siglas. A 
 ### Como consultar a base oficial de fraquezas da MITRE?
 
 Para consultar a base oficial de fraquezas da MITRE, você deve acessar o site oficial do CWE. O catálogo é público, gratuito e atualizado regularmente. 
+
 [CWE Mitre Org](https://cwe.mitre.org/), 
 
 [CWE Mitre About](https://cwe.mitre.org/about/index.html)
