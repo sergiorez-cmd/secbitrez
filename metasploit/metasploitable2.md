@@ -1,6 +1,8 @@
 [VM Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2)
 
-[Guide Metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide)
+[Guide Metasploitable2](https://metasploitable2.com)
+
+[Rapid7 Guide Metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide)
 
 [Commands MSFConsole](https://www.offsec.com/metasploit-unleashed/msfconsole-commands)
 
