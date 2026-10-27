@@ -137,9 +137,6 @@ Um ataque de força bruta de diretórios (ou enumeração de diretórios) é uma
 ```
 dirb http://localhost:3000 -z 30 -o dir-juice.txt
 ```
-```
-feroxbuster -u http://localhost:3000 --rate-limit 30 -t 4 -d 1
-```
 - [ ] Faça download dos arquivos (Dica utilize a técnica Poison Null Byte %2500).
 
 https://wiki.zacheller.dev/web-app-pentest/upload-download/error-only-.md-and-.pdf-files-are-allowed
