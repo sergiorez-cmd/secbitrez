@@ -7,7 +7,7 @@ CVE significa Common Vulnerabilities and Exposures (Vulnerabilidades e Exposiç�
 • __Identificador único:__ Quando uma falha é descoberta e validada, ela recebe um código único no formato CVE-AAAA-NNNNN (onde AAAA é o ano do registro e NNNNN é um número sequencial). Exemplo: CVE-2021-44228 (conhecida como Log4Shell). 
 
 • __Padronização:__ Em vez de cada empresa ou pesquisador dar um nome diferente para o mesmo problema, o CVE cria uma linguagem universal para que o mercado de TI saiba exatamente de qual vulnerabilidade se está falando. 
-[
+
 • __Gestão:__ O programa foi criado em 1999 e é mantido pela MITRE Corporation, com o apoio de diversas autoridades de numeração (CNAs) e bases de dados como o National Vulnerability Database (NVD). 
 
 ### Para que servem?
