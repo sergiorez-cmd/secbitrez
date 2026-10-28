@@ -30,7 +30,7 @@ Editar as configurações no arquivo "claude_desktop_config.json"
 
 Insira as seguintes configurações no inicio do arquivo
 
-```
+```json
   "mcpServers": {
     "hexstrike-ai": {
       "command": "hexstrike_mcp",
