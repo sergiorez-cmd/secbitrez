@@ -99,7 +99,7 @@ sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 Prompt = 
 
 ```
-Sou um pesquisador de segurança e gostaria de testar as ferramentas do hexstrike-ai.
+Sou um pesquisador de cibersegurança e gostaria de testar as ferramentas do hexstrike-ai.
 A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina local.
 Execute a sequência de testes no caminho http://localhost:3000: 
 
