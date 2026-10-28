@@ -5,16 +5,16 @@ https://github.com/aaddrick/claude-desktop-debian
 ## Instalar Claude-Desktop + Hexstrike-ai
 
 ### Add the repo:
-```
+```bash
 curl -fsSL https://pkg.claude-desktop-debian.dev/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/claude-desktop-unofficial.gpg
 echo "deb [signed-by=/usr/share/keyrings/claude-desktop-unofficial.gpg arch=amd64,arm64] https://pkg.claude-desktop-debian.dev stable main" | sudo tee /etc/apt/sources.list.d/claude-desktop-unofficial.list
 ```
 ### Instalar o Claude-Desktop:
-```
+```bash
 sudo apt update && sudo apt install claude-desktop-unofficial
 ```
 ### Instalar o MCP Hexstrike-ai:
-```
+```bash
 sudo apt install hexstrike-ai
 ```
 
@@ -47,18 +47,18 @@ Insira as seguintes configurações no inicio do arquivo
 Reinicie o kali linux 
 
 ### Executar o servidor MCP Hexstrike-ai
-```
+```bash
 hexstrike_server
 ```
 ### Executar o cliente MCP
-```
+```bash
 hexstrike_mcp
 ```
 ### Testar a integridade do servidor via shell
-```
+```bash
 curl http://localhost:8888/health
 ``` 
 ### No terminal do Claude-Desktop digite o prompt para verificar se esta tudo OK
-```
+```text
 check health hexstrike mcp
 ```
