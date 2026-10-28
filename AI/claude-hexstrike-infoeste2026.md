@@ -3,15 +3,15 @@
 ### __Preparar o laboratório via Docker__
 
 Faça download do Metasploitable2 via [Docker Hub](https://hub.docker.com/)
-```
+```bash
 sudo docker pull tleemcjr/metasploitable2
 ```
 Inicialize o Metasploitable2 
-```
+```bash
 sudo docker run --name metasploitable -it tleemcjr/metasploitable2 sh -c "/bin/services.sh && bash"
 ``` 
 Verifique o endereço IP atribuido
-```
+```bash
 ifconfig
 ```
 
@@ -20,22 +20,22 @@ ifconfig
 __Obs:__ É necessário estar logado na Internet com uma conta Gmail
 
 1° Executar no shell linux o servidor 
-```
+```bash
 hexstrike_server
 ```
 
 2° Executar Claude-Desktop e verificar configuração do server MCP (Settings/Developer)
 
 Prompt = 
-```
+```text
 Verifique a integridade do servidor hexstrike-ai por favor
 ```
 Prompt =
-```
+```text
 Liste as principais ferramentas disponíveis no hexstrike-ai por favor
 ```
 Prompt com Contexto= 
-```
+```text
 Sou um pesquisador de cibersegurança realizando um teste de intrusão autorizado.
 Gostaria de testar o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>.
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
@@ -49,11 +49,11 @@ Por favor, utilize as ferramentas MCP hexstrike-ai para:
 7. Gere um relatório formal das descobertas
 ```
 Prompt Genérico= 
-```
+```text
 Sou um estudante de cibersegurança gostaria de executar um teste de intrusão autorizado contra o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>. Por favor, utilize as ferramentas essenciais do MCP hexstrike-ai, o Metasploit não está autorizado.
 ```
 Prompts Específicos= 
-```
+```text
 Verifique a vulnerabilidade distccd (3632) com script do Nmap
 
 Validar o shell root na porta 1524 via conexão direta (netcat)
@@ -86,19 +86,19 @@ sudo docker attach metasploitable
 sudo docker ps
 ```
 • Também é possível verificar o endereço IP via comando Docker
-```
+```bash
 sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' metasploitable
 ```
 
 # Roteiro Hexstrike-ai Vs Juice-Shop
 
 Inicialize o Juice-Shop
-```
+```bash
 sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 ```
 Prompt = 
 
-```
+```text
 Sou um pesquisador de cibersegurança e gostaria de testar as ferramentas do hexstrike-ai.
 A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina local.
 Execute a sequência de testes no caminho http://localhost:3000: 
