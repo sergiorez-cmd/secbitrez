@@ -229,7 +229,7 @@ if __name__ == '__main__':
 5° Executar 
 ```bash
 python ./web-srv.py
-``
+```
 6° Acessar o Juice-Shop http://localhost:3000 e logar com algum usuário
 
 7° Acessar o endereço http://127.0.0.1 e clicar no link de Cupom Promocional
