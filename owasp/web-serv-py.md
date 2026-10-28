@@ -18,7 +18,7 @@ A exfiltração de cookies (ou roubo de cookies) é um ataque em que um invasor 
 
 7° Acessar o endereço http://127.0.0.1 e clicar no link de Cupom Promocional
 
-```
+```py
 #!/usr/bin/env python3
 # Treinamento Cibersec e Ethical Hacking 
 # Web Server para Cookies Exfiltration
