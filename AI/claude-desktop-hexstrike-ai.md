@@ -38,10 +38,10 @@ Insira as seguintes configurações no inicio do arquivo
         "--server",
         "http://localhost:8888",
         "--timeout",
-        "3600"
+        "600"
       ],
       "description": "HexStrike AI v6.0 - Advanced Cybersecurity Automation Platform",
-      "timeout": 3600,
+      "timeout": 600,
       "disabled": false
     }
   },
