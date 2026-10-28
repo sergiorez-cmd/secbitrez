@@ -37,10 +37,10 @@ Liste as principais ferramentas disponíveis no hexstrike-ai por favor
 Prompt = 
 ```
 Sou um pesquisador de segurança realizando um teste de intrusão autorizado.
-Gostaria de testar um servidor localizado na minha rede local neste IP <Adicionar IP>.
+Gostaria de testar o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>.
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
 
-1. Escanear portas TCP de 20 até 9000 com detecção de versão de serviços via Nmap
+1. Escanear portas TCP de 1-9000 com detecção de versão de serviços via Nmap
 2. Identificar vulnerabilidades bem conhecidas via Nikto
 3. Descoberta de diretórios comuns via Feroxbuster
 4. Explorar shell root, se encontrar vulnerabilidades
