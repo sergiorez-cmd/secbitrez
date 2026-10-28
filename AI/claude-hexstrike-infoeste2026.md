@@ -34,9 +34,9 @@ Prompt =
 ```
 Liste as principais ferramentas disponíveis no hexstrike-ai por favor
 ```
-Prompt = 
+Prompt com Contexto= 
 ```
-Sou um pesquisador de segurança realizando um teste de intrusão autorizado.
+Sou um pesquisador de cibersegurança realizando um teste de intrusão autorizado.
 Gostaria de testar o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>.
 Por favor, utilize as ferramentas MCP hexstrike-ai para:
 
@@ -48,13 +48,23 @@ Por favor, utilize as ferramentas MCP hexstrike-ai para:
 6. Faça algumas recomendações de hardening
 7. Gere um relatório formal das descobertas
 ```
-Prompt = 
+Prompt Genérico= 
 ```
-Explore a porta 1524 com o serviço ingreslock
+Sou um estudante de cibersegurança gostaria de executar um teste de intrusão autorizado contra o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>. Por favor, utilize as ferramentas essenciais do MCP hexstrike-ai, o Metasploit não está autorizado.
 ```
-Prompt = 
+Prompts Específicos= 
 ```
 Verifique a vulnerabilidade distccd (3632) com script do Nmap
+
+Validar o shell root na porta 1524 via conexão direta (netcat)
+
+Execute o Nikto no Apache (porta 80) e Tomcat (porta 8180) para enumerar vulnerabilidades web
+
+Execute Enum4linux / smbmap na porta 445 para enumerar shares SMB e testar o CVE-2007-2447
+
+Teste FTP anônimo (porta 21) para listar arquivos acessíveis
+
+Execute o Hydra para testar credenciais fracas em SSH/Telnet (usuários padrão do Metasploitable2 são conhecidos: msfadmin/msfadmin)
 ```
 ---
 Sempre que terminar seus testes, é uma boa prática pausar ou parar o container para que ele não consuma recursos ou fique vulnerável em segundo plano.
