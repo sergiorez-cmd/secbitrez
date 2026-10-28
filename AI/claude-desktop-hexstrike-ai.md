@@ -36,12 +36,10 @@ Insira as seguintes configurações no inicio do arquivo
       "command": "hexstrike_mcp",
       "args": [
         "--server",
-        "http://localhost:8888",
-        "--timeout",
-        "600"
+        "http://localhost:8888"
       ],
       "description": "HexStrike AI v6.0 - Advanced Cybersecurity Automation Platform",
-      "timeout": 600,
+      "timeout": 300,
       "disabled": false
     }
   },
