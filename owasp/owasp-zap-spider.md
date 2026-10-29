@@ -1,4 +1,4 @@
-# Diferenças e Guia de Uso: Spiders no OWASP ZAP (Zed Attack Proxy)
+# Guia de Uso: Spiders no OWASP ZAP (Zed Attack Proxy)
 
 Este documento resume o funcionamento do **AJAX Spider** e do **Client Spider** no OWASP ZAP, além de fornecer um guia prático para configuração de autenticação e fluxo de trabalho ideal.
 
