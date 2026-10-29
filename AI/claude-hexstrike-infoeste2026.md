@@ -34,7 +34,7 @@ Prompt =
 ```text
 Liste as principais ferramentas disponíveis no hexstrike-ai por favor
 ```
-Prompt com Contexto= 
+Prompt com Contexto = 
 ```text
 Sou um pesquisador de cibersegurança realizando um teste de intrusão autorizado.
 Gostaria de testar o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>.
@@ -48,11 +48,11 @@ Por favor, utilize as ferramentas MCP hexstrike-ai para:
 6. Faça algumas recomendações de hardening
 7. Gere um relatório formal das descobertas
 ```
-Prompt Genérico= 
+Prompt Genérico = 
 ```text
 Sou um estudante de cibersegurança gostaria de executar um teste de intrusão autorizado contra o metasploitable2 localizado na minha rede local neste IP <Adicionar IP>. Por favor, utilize as ferramentas essenciais do MCP hexstrike-ai, o Metasploit não está autorizado.
 ```
-Prompts Específicos= 
+Prompts Específicos = 
 ```text
 Verifique a vulnerabilidade distccd (3632) com script do Nmap
 
@@ -100,7 +100,7 @@ Prompt =
 ```text
 Verifique o status do servidor hexstrike-ai por favor
 ```
-Prompt com Contexto= 
+Prompt com Contexto = 
 
 ```text
 Sou um pesquisador de cibersegurança e gostaria de testar as ferramentas do hexstrike-ai.
@@ -110,10 +110,15 @@ Execute a sequência de testes no caminho http://localhost:3000:
 1. Recon via Nmap na porta 3000
 2. Não está autorizado realizar força bruta de diretórios
 3. Rodar o SQLmap via shell e testar (/rest/products/search?q=q)
-4. Realize uma análise da chave JWT
-5. Testar a API REST
-6. Faça algumas recomendações de correções
-7. Gere um relatório formal das descobertas
+4. Registrar um usuário de teste e autenticar para obter um JWT token da aplicação
+5. Realize uma análise da chave JWT
+6. Testar a API REST
+7. Faça algumas recomendações de correções
+8. Gere um relatório formal das descobertas
+```
+Prompt =
+```text
+Por favor faça uma estimativa de quanto tempo levou para executar esse teste
 ```
 Prompt Genérico= 
 ```text
