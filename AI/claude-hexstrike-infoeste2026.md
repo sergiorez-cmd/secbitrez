@@ -120,7 +120,7 @@ Prompt =
 ```text
 Por favor faça uma estimativa de quanto tempo levou para executar esse teste
 ```
-Prompt Genérico= 
+Prompt Genérico = 
 ```text
 Sou um estudante de cibersegurança gostaria de executar um teste de vulnerabilidades autorizado contra o Juice-Shop localizado na minha máquina pessoal neste caminho http://localhost:3000. Por favor, utilize as ferramentas essenciais do MCP hexstrike-ai, o Metasploit não está autorizado.
 ```
