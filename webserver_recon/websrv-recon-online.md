@@ -37,3 +37,5 @@ https://learn.microsoft.com/pt-br/iis
 https://reqbin.com/curl
 
 https://curl.se/docs/httpscripting.html
+
+https://www.w3schools.com/tools/tool_http_status.php
