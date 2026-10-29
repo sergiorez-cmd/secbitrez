@@ -39,3 +39,5 @@ https://reqbin.com/curl
 https://curl.se/docs/httpscripting.html
 
 https://www.w3schools.com/tools/tool_http_status.php
+
+https://www.w3schools.com/tools/tool_http_headers.php
