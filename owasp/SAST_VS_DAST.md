@@ -1,5 +1,7 @@
 # Guia de Ferramentas de Segurança de Aplicações para JavaScript
 
+SAST (Static Application Security Testing) e DAST (Dynamic Application Security Testing) são métodos essenciais de teste de segurança de software usados no ciclo de desenvolvimento para encontrar vulnerabilidades e proteger aplicações.
+
 Este guia reúne as principais informações sobre métodos e ferramentas de **SAST**, **DAST** e **SCA** específicas para o ecossistema JavaScript (Node.js, React, Angular, Vue, etc.).
 
 ---
