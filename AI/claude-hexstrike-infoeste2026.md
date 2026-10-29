@@ -97,10 +97,14 @@ Inicialize o Juice-Shop
 sudo docker run --rm -p 3000:3000 bkimminich/juice-shop
 ```
 Prompt = 
+```text
+Verifique o status do servidor hexstrike-ai por favor
+```
+Prompt com Contexto= 
 
 ```text
 Sou um pesquisador de cibersegurança e gostaria de testar as ferramentas do hexstrike-ai.
-A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina local.
+A aplicação alvo esta rodando em uma estância do juice-shop via docker da minha máquina pessoal.
 Execute a sequência de testes no caminho http://localhost:3000: 
 
 1. Recon via Nmap na porta 3000
@@ -110,4 +114,8 @@ Execute a sequência de testes no caminho http://localhost:3000:
 5. Testar a API REST
 6. Faça algumas recomendações de correções
 7. Gere um relatório formal das descobertas
+```
+Prompt Genérico= 
+```text
+Sou um estudante de cibersegurança gostaria de executar um teste de vulnerabilidades autorizado contra o Juice-Shop localizado na minha máquina pessoal neste caminho http://localhost:3000. Por favor, utilize as ferramentas essenciais do MCP hexstrike-ai, o Metasploit não está autorizado.
 ```
