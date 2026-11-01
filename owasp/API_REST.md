@@ -43,9 +43,9 @@ Você pode explorar mais definições conceituais no glossário do MDN Web Docs 
 
 [Restfull API](https://aws.amazon.com/pt/what-is/restful-api/)
 
-Este documento reúne o passo a passo para a criação de uma API RESTful utilizando o ambiente de execução **Node.js**, o framework **Express** para gerenciamento de rotas HTTP, e o banco de dados **SQLite** para persistência local de dados através do padrão de Promises (`async/await`).
-
 ---
+
+Este documento reúne o passo a passo para a criação de uma API RESTful utilizando o ambiente de execução **Node.js**, o framework **Express** para gerenciamento de rotas HTTP, e o banco de dados **SQLite** para persistência local de dados através do padrão de Promises (`async/await`).
 
 ## 1. Configuração do Ambiente e Instalação
 
