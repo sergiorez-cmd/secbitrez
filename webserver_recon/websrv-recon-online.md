@@ -26,6 +26,8 @@ https://web.archive.org
 
 https://mothereff.in
 
+https://beautifytools.com
+
 https://www.w3schools.com
 
 https://httpd.apache.org/docs
