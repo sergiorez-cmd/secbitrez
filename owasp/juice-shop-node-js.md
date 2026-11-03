@@ -53,7 +53,7 @@ npm -v # Deve imprimir "11.20.0".
 
 https://github.com/juice-shop/juice-shop
 
-Faça o download juice-shop-<version>_<node-version>_<os>_x64.zip(ou acesse .tgz) o link anexado à versão mais recente.
+Faça o download juice-shop-version_node-version_OS_x64.tgz via link anexado da versão mais recente.
 
 https://github.com/juice-shop/juice-shop/releases/tag/v20.3.0
 ```bash
