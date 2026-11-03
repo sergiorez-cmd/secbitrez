@@ -68,7 +68,7 @@ cd juice-shop_20.3.0
 ```bash
 npm start
 ```
-Acesse via navegador `http://<IP_Debian13>:3000`
+Execute um navegador web e acesse o endereço `http://<IP_Debian13>:3000`
 
 ### 💡 Dicas importantes para Servidores Virtuais (VPS)
 
