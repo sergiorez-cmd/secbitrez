@@ -1,14 +1,14 @@
 # Juice-Shop via Node.js Servidor Virtual Debian 13
 
-Para rodar o OWASP Juice Shop em um servidor virtual Debian utilizando o Node.js diretamente (sem Docker), você precisará instalar o Node.js, instalar a versão mais recente do GitHub e iniciar o servidor. Para concluir essas tarefas é necessário ter conhecimentos sobre virtualização e criação de máquinas virtuais.
+Para rodar o OWASP Juice-Shop em um servidor virtual Debian utilizando o Node.js diretamente (sem Docker), você precisará instalar o Node.js, instalar a versão mais recente do Juice-Shop via GitHub e iniciar o servidor. Para concluir essas tarefas é necessário ter conhecimentos sobre virtualização e criação de máquinas virtuais.
 
 - [ ] Faça o download do Virtual Box https://www.virtualbox.org
 
 - [ ] Faça o download da imagem de instalação do Debian 13 https://www.debian.org
 
-- [ ] Instale o Virtual Box, em seguida crie uma máquina virtual com a imagem do Debian 13
+- [ ] Instale o Virtual Box, em seguida crie uma máquina virtual com a imagem do Debian 13.
 
-- [ ] Configure a placa de rede do Virtual Box para modo bridge e atribua um IP fixo para o Debian 13 conforme seu ambiente
+- [ ] Configure a placa de rede do Virtual Box para modo bridge e atribua um IP fixo para o Debian 13 conforme seu ambiente.
 
 https://secbitrez.wordpress.com/labs
 
@@ -16,7 +16,7 @@ https://github.com/sergiorez-cmd/secbitrez/blob/main/shell-linux/essential-linux
 
 ## 1. Atualizar o sistema e instalar dependências básicas
 
-Acesse o seu servidor Debian via SSH e execute os comandos abaixo para garantir que o sistema esteja atualizado e com as ferramentas necessárias instaladas:
+Acesse o seu servidor Debian via SSH ou direto do terminal da máquina virtual e execute os comandos abaixo para garantir que o sistema esteja atualizado e com as ferramentas necessárias instaladas:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
@@ -26,7 +26,7 @@ sudo apt install git curl build-essential -y
 
 ## 2. Instalar o Node.js
 
-O OWASP Juice Shop requer uma versão recente do Node.js (atualmente as versões LTS 22, 24 ou 26 funcionam perfeitamente). Vamos instalar a versão estável mais recomendada utilizando o site oficial:
+O OWASP Juice Shop requer uma versão recente do Node.js (atualmente as versões LTS 22, 24 ou 26 funcionam perfeitamente). Vamos instalar a versão estável mais atual recomendada utilizando o site oficial:
 
 https://nodejs.org/pt-br
 
@@ -51,9 +51,7 @@ npm -v # Deve imprimir "11.20.0".
 
 ## 3. Baixar e Configurar o Juice Shop
 
-https://github.com/juice-shop/juice-shop
-
-Faça o download juice-shop-version_node-version_OS_x64.tgz via link anexado da versão mais recente.
+Faça o download do arquivo "juice-shop-version_node-version_OS_x64.tgz" via link anexado da versão mais recente.
 
 https://github.com/juice-shop/juice-shop/releases/tag/v20.3.0
 ```bash
@@ -63,10 +61,14 @@ Descompacte o arquivo.
 ```bash
 tar -xvzf juice-shop-20.3.0_node26_linux_x64.tgz
 ```
-Executar o Juice-Shop `cd juice-shop_20.3.0` e `npm start`
-
+Executar o Juice-Shop 
+```bash
+cd juice-shop_20.3.0 
+```
+```bash
+npm start
+```
 Acesse via browser `http://<IP_Debian13>:3000`
-
 
 ### 💡 Dicas importantes para Servidores Virtuais (VPS)
 
