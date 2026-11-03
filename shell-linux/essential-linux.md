@@ -25,7 +25,7 @@ Debian/Ubuntu
 apt install sudo -y (Somente Debian)
 ```
 ```
-usermod -aG sudo name_user
+sudo usermod -aG sudo name_user
 ```
 RHEL/Rocky/Oracle
 ```
