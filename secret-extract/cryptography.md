@@ -4,6 +4,8 @@ https://www.boxentriq.com/code-breaking/cipher-identifier
 
 https://gchq.github.io/CyberChef
 
+https://www.cipherdecipher.com
+
 https://cryptii.com
 
 https://www.dcode.fr
