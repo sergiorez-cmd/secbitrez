@@ -53,6 +53,7 @@ sudo systemctl status docker
 ```
 ```bash
 sudo systemctl start docker
+```
 ```bash
 sudo docker run hello-world
 ```
