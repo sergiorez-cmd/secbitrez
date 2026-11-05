@@ -10,22 +10,18 @@ Para estruturar uma estratégia sólida de **defesa cibernética**, as principai
 
 * **Wazuh:** Considerado um dos padrões ouro em código aberto para **SIEM (Security Information and Event Management) e XDR**. Ele oferece monitoramento de integridade de arquivos (FIM), detecção de intrusão em hosts (HIDS), análise de logs e resposta automatizada a incidentes.
 
- https://wazuh.com
- 
 * **Snort / Suricata:** Sistemas de Detecção e Prevenção de Intrusão de Rede (**IDS/IPS**). O **Suricata** ganha muito destaque hoje em dia pelo suporte nativo a multithreading e análise avançada de protocolos, inspecionando o tráfego de rede em tempo real em busca de padrões maliciosos.
-  
-https://www.snort.org
-
-https://suricata.io/
 
 ### 2. Visibilidade de Rede e Análise de Tráfego
 
 * **Wireshark / Tshark:** O analisador de pacotes (*packet analyzer*) mais famoso do mundo. Essencial para análises forenses de tráfego, inspeção profunda de pacotes (DPI) e diagnósticos de rede.
+ 
 * **Zeek (antigo Bro):** Mais do que um simples IDS, o Zeek atua como um framework de análise de rede que registra detalhadamente todas as conexões, transações HTTP, DNS e certificados SSL, facilitando investigações complexas.
 
 ### 3. Gestão e Varredura de Vulnerabilidades
 
 * **OpenVAS / GVM (Greenbone Vulnerability Management):** Um dos scanners de vulnerabilidades open source mais completos da indústria. Ele realiza varreduras profundas em redes e sistemas comparando contra uma base de dados de CVEs constantemente atualizada.
+  
 * **Aqua Trivy:** Excelente para o contexto moderno de infraestrutura e nuvem. É um scanner leve e abrangente voltado para **contêineres Docker, arquivos de Infraestrutura como Código (IaC) e dependências de aplicações**, ideal para pipelines de CI/CD (DevSecOps).
 
 ### 4. Perímetros e Redes Seguras (Firewall e VPN)
@@ -35,11 +31,13 @@ https://suricata.io/
 ### 5. Resposta a Incidentes e Forense Digital (DFIR)
 
 * **The Hive & Cortex:** Uma plataforma escalável de resposta a incidentes, colaboração e gerenciamento de casos (*Case Management*), que se integra perfeitamente ao Cortex para automatizar análises de observáveis (como hashes, IPs e domínios) de forma centralizada.
+  
 * **Volatility Framework:** A ferramenta padrão para **análise de memória RAM** voltada a investigações forenses. Permite extrair artefatos ocultos, processos maliciosos e evidências de ataques que operam puramente em memória (*fileless malware*).
 
 ### 6. Rede Privada Virtual (VPN)
 
 * **OpenVPN:** Software de código aberto (open-source) usado para criar redes privadas virtuais (VPN) seguras. Ele protege o tráfego da internet por meio de túneis criptografados baseados em SSL/TLS.
+  
 * **WireGuard:** Protocolo de comunicação e software de código aberto projetado para criar conexões de Rede Privada Virtual (VPN) de ponto a ponto de forma simples, rápida e segura.
 
 ---
@@ -47,6 +45,7 @@ https://suricata.io/
 ### Dicas para Implementação
 
 * **Abordagem em Camadas:** Nenhuma ferramenta isolada resolve todos os problemas. O ideal é combinar visibilidade de rede (Suricata/Zeek), proteção de endpoints/logs (Wazuh) e varredura de vulnerabilidades (OpenVAS/Trivy).
+  
 * **Curva de Aprendizado:** Soluções open source exigem investimento de **tempo e capacitação técnica** da equipe para personalização e ajuste fino de falsos positivos.
 
 
