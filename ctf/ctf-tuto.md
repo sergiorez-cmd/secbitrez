@@ -1,7 +1,5 @@
 # Capture the Flag (CTF) no TryHackMe
 
-Utilize o link https://markdownlivepreview.org/pt-br para visualizar o arquivo.md
-
 Capture the Flag (CTF) no TryHackMe é uma das formas mais populares e eficientes para aprender e praticar invasão de sistemas (hacking/pentest) de forma legalizada. Nessas salas e desafios virtuais, seu objetivo é explorar vulnerabilidades em servidores para encontrar "flags" (geralmente textos no formato flag{conteúdo}) e pontuar. 
 
 
