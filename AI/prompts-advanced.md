@@ -142,7 +142,7 @@ Explique o conceito de cibersegurança sob a perspectiva de um especialista, enf
 
 O ReAct combina prompts de raciocínio e ação, incentivando o modelo a pensar criticamente e a agir com base em seu raciocínio.
 
-Adicione um documento para ser analisado pela IA
+- Adicione um documento para ser analisado pela IA
 ```text
 Analise os seguintes dados deste relatório e identifique as principais tendências. Com base em sua análise, explique o conceito de ameaças cibernéticas para IA, suas causas e seus efeitos.
 ```
@@ -150,6 +150,8 @@ Analise os seguintes dados deste relatório e identifique as principais tendênc
 **Cadeia de pensamentos multimodal (CoT multimodal):**
 
 Integra o raciocínio da cadeia de pensamentos em várias modalidades, como texto, imagens ou áudio.
+
+- Adicione um infográfico para ser analisado pela IA
 ```text
 Analise este infográfico de tendências de ameaças cibernéticas, então explique as ameaças a cibersegurança, suas causas, e seus efeitos passo a passo.
 ```
