@@ -58,6 +58,7 @@ sudo systemctl start docker
 sudo docker run hello-world
 ```
 https://docs.docker.com/engine/install/debian/#os-requirements
+
 ---
 
 ## Usando a Imagem Docker Oficial do Ollama
