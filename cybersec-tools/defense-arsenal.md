@@ -9,7 +9,14 @@ Para estruturar uma estratégia sólida de **defesa cibernética**, as principai
 ### 1. Monitoramento, SIEM e Detecção de Ameaças (SOC / HIDS)
 
 * **Wazuh:** Considerado um dos padrões ouro em código aberto para **SIEM (Security Information and Event Management) e XDR**. Ele oferece monitoramento de integridade de arquivos (FIM), detecção de intrusão em hosts (HIDS), análise de logs e resposta automatizada a incidentes.
+
+ https://wazuh.com
+ 
 * **Snort / Suricata:** Sistemas de Detecção e Prevenção de Intrusão de Rede (**IDS/IPS**). O **Suricata** ganha muito destaque hoje em dia pelo suporte nativo a multithreading e análise avançada de protocolos, inspecionando o tráfego de rede em tempo real em busca de padrões maliciosos.
+  
+https://www.snort.org
+
+https://suricata.io/
 
 ### 2. Visibilidade de Rede e Análise de Tráfego
 
