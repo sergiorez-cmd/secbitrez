@@ -1,4 +1,4 @@
-# Guia de Resolução de Timeout: HexStrike-AI & Nmap/Nuclei Kali Linux
+# Timeout: HexStrike-AI & Nmap/Nuclei Kali Linux
 
 Este guia consolida as configurações necessárias para ajustar e otimizar os limites de tempo (*timeout*) tanto no servidor e cliente do HexStrike-AI quanto nas varreduras do Nmap e Nuclei.
 
