@@ -56,7 +56,7 @@ sudo docker compose up -d
 
 Para garantir que tudo funcione rápido no Debian 13, use o próprio Docker para mandar o Ollama baixar o modelo Llama 3.2 (que é leve e excelente para testes):
 ```bash
-docker exec -it ollama ollama run llama3.2
+docker exec -it ollama ollama run llama3.2:1b
 ```
 Assim que o download terminar e abrir o chat no terminal, você pode digitar /exit para sair.
 
