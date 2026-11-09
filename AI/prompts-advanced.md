@@ -39,7 +39,7 @@ Inclui um pequeno número de exemplos dentro do prompt para demonstrar a tarefa 
 ```text
 Tópico: Cibersegurança
 
-Explicação: A cibersegurança (ou segurança cibernética) é o conjunto de práticas, tecnologias e processos projetados para proteger computadores, servidores, redes, dispositivos móveis e dados contra ataques, danos ou acessos não autorizados.
+Explicação: A cibersegurança (ou segurança cibernética) é o conjunto de práticas, tecnologias e processos projetados para proteger sistemas, computadores, servidores, redes, dispositivos móveis e dados contra ataques, danos ou acessos não autorizados.
 
 Tópico: Vulnerabilidades
 
