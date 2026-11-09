@@ -21,26 +21,41 @@ Por padrão, o Docker armazena todas as imagens, containers e volumes no caminho
 
 1. **Interrompa o serviço do Docker:**
    ```bash
-   sudo systemctl stop docker
+   sudo systemctl stop docker.socket docker containerd
    ```
 
-2. **Crie ou edite o arquivo de configuração:**
-   Abra o arquivo `/etc/docker/daemon.json` com o seu editor de texto preferido (como `nano` ou `vim`) e adicione a chave `"data-root"` apontando para o novo diretório:
+2. **Crie ou edite o arquivo de configuração .json:**
+   Crie o arquivo `/etc/docker/daemon.json` com o seu editor de texto preferido e adicione a chave `"data-root"` apontando para o novo diretório:
+   ```bash
+   mkdir -p /mnt/meu_disco/docker
+   ```
    ```json
    {
      "data-root": "/mnt/meu_disco/docker"
    }
    ```
+3. **Crie ou edite o arquivo de configuração .toml:**
+   Crie o arquivo `/etc/containerd/config.toml` com o seu editor de texto preferido e adicione a chave `root` apontando para o novo diretório:
+```bash
+mkdir -p /mnt/meu_disco/containerd
+```
+```toml
+disabled_plugins = ["cri"]
+root = "/mnt/meu_disco/containerd"
+```
 
-3. **Sincronize os dados antigos para o novo local:**
+5. **Sincronize os dados antigos para o novo local:**
    Para não perder as imagens e containers que você já baixou, copie os arquivos mantendo as permissões originais:
    ```bash
    sudo rsync -aP /var/lib/docker/ /mnt/meu_disco/docker/
    ```
-
-4. **Inicie o serviço do Docker novamente:**
    ```bash
-   sudo systemctl start docker
+   sudo rsync -aP /var/lib/containerd/ /mnt/meu_disco/containerd/
+   ```
+
+6. **Inicie o serviço do Docker novamente:**
+   ```bash
+   sudo systemctl start docker.socket docker containerd
    ```
 
 ---
@@ -66,7 +81,8 @@ Se você precisar declarar explicitamente o driver ou combiná-lo com a mudança
 Após reiniciar o Docker, execute o comando abaixo para certificar-se de que o daemon carregou as novas configurações de diretório e driver com sucesso:
 
 ```bash
-docker info | grep -E "Root Dir|Storage Driver"
+sudo docker info | grep -E "Root Dir|Storage Driver"
+sudo containerd config dump | grep -E "^root"
 ```
 
 O retorno esperado no terminal deverá exibir os novos caminhos e drivers definidos por você.
