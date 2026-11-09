@@ -28,17 +28,6 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   ```
-```bash
-# Add the repository to Apt sources:
-sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
-Types: deb
-URIs: https://download.docker.com/linux/debian
-Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
-Components: stable
-Architectures: $(dpkg --print-architecture)
-Signed-By: /etc/apt/keyrings/docker.asc
-EOF
-```
 - [ ] Atualize os repositórios do Debian 13
 ```bash
 sudo apt update
