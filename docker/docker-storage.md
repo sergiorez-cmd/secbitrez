@@ -36,13 +36,13 @@ Por padrão, o Docker armazena todas as imagens, containers e volumes no caminho
    ```
 3. **Crie ou edite o arquivo de configuração .toml:**
    Crie o arquivo `/etc/containerd/config.toml` com o seu editor de texto preferido e adicione a chave `root` apontando para o novo diretório:
-```bash
-mkdir -p /mnt/meu_disco/containerd
-```
-```toml
-disabled_plugins = ["cri"]
-root = "/mnt/meu_disco/containerd"
-```
+   ```bash
+   mkdir -p /mnt/meu_disco/containerd
+   ```
+   ```toml
+   disabled_plugins = ["cri"]
+   root = "/mnt/meu_disco/containerd"
+   ```
 
 5. **Sincronize os dados antigos para o novo local:**
    Para não perder as imagens e containers que você já baixou, copie os arquivos mantendo as permissões originais:
