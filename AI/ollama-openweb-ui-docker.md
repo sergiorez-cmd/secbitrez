@@ -172,12 +172,12 @@ volumes:
 
 1. Suba os contêineres atualizados:
 ```bash
-docker compose up -d
+sudo docker compose up -d
 ```
 
 2. Para ter a certeza absoluta de que o Ollama está enxergando a sua GPU através do Docker, rode este comando de diagnóstico:
 ```bash
-docker exec -it ollama nvidia-smi
+sudo docker exec -it ollama nvidia-smi
 ```
 
 Se ele exibir o painel da sua placa de vídeo (mostrando o nome da GPU e o consumo de VRAM), a aceleração está funcionando perfeitamente! 
