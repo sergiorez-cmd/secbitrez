@@ -82,7 +82,9 @@ Após reiniciar o Docker, execute o comando abaixo para certificar-se de que o d
 
 ```bash
 sudo docker info | grep -E "Root Dir|Storage Driver"
-sudo containerd config dump | grep -E "^root"
+```
+```bash
+sudo containerd config migrate
 ```
 
 O retorno esperado no terminal deverá exibir os novos caminhos e drivers definidos por você.
