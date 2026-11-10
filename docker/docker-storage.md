@@ -6,11 +6,11 @@ Este guia prático demonstra como localizar e editar o arquivo de configuração
 
 ## 1. Arquivos de Configuração Principais
 
-No Linux, o comportamento do Docker é controlado por dois arquivos principais:
+No Linux, o comportamento do Docker é controlado por três arquivos principais:
 
 *   **`/etc/docker/daemon.json`**: O principal arquivo de configuração do daemon (serviço) do Docker. *Nota: Por padrão, ele não vem criado em instalações limpas.*
 *   **`~/.docker/config.json`**: Guarda as configurações do cliente CLI (como credenciais de login e preferências do usuário).
-
+    **`/etc/containerd/config.toml`**: O principal arquivo de configuração do gerenciador de containers, (baixar imagens, iniciar, parar e interagir com o kernel do sistema operacional). Ele funciona "nos bastidores".
 ---
 
 ## 2. Alterando o Diretório Padrão de Armazenamento (`data-root`)
@@ -34,8 +34,8 @@ Por padrão, o Docker armazena todas as imagens, containers e volumes no caminho
      "data-root": "/mnt/meu_disco/docker"
    }
    ```
-3. **Crie ou edite o arquivo de configuração .toml:**
-   Crie o arquivo `/etc/containerd/config.toml` com o seu editor de texto preferido e adicione a chave `root` apontando para o novo diretório:
+3. **Edite o arquivo de configuração .toml:**
+   Edite o arquivo `/etc/containerd/config.toml` com o seu editor de texto preferido e adicione a chave `root` apontando para o novo diretório:
    ```bash
    mkdir -p /mnt/meu_disco/containerd
    ```
