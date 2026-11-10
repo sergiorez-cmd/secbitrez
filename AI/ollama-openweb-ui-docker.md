@@ -17,6 +17,7 @@ gnome-text-editor docker-compose.yml
 ### Cole o conteúdo abaixo dentro do arquivo:
 ```text
 services:
+  # Servidor LLM Local
   ollama:
     image: ollama/ollama:latest
     container_name: ollama
@@ -26,6 +27,7 @@ services:
       - "11434:11434"
     restart: always
 
+  # Interface Web para Interação Manual e Testes
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
