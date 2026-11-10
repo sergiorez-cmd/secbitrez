@@ -68,6 +68,30 @@ http://localhost:3000
 ```
 Crie sua conta de administrador (os dados ficam salvos localmente na sua máquina) e o modelo llama3.2 já estará disponível no topo da tela para seleção.
 
+### Gerenciar containers 
+
+Para parar os seus containers, execute um dos comandos abaixo diretamente no terminal, dentro da pasta onde está o seu arquivo docker-compose.yml:
+
+⏹️ Apenas parar (mantém os dados e containers salvos)
+
+Para interromper a execução sem apagar nada:
+```bash
+sudo docker compose stop
+```
+
+🧹 Parar e remover (limpa os containers e redes)
+
+Para encerrar e excluir os containers criados pelo Compose, liberando memória:
+```bash
+sudo docker compose down
+```
+
+🗂️ Limpeza total (remover containers e volumes de dados)
+
+Se além dos containers você também quiser apagar os volumes de dados criados por eles (zerar o banco de dados, por exemplo):
+```bash
+sudo docker compose down -v
+```
 ---
 
 ## Configuração 100% otimizada para o Debian 13 com GPU Dedicada NVIDIA:
