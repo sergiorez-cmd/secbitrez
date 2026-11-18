@@ -15,7 +15,7 @@ gnome-text-editor docker-compose.yml
 ```
 
 ### Cole o conteúdo abaixo dentro do arquivo:
-```text
+```yml
 services:
   # Servidor LLM Local
   ollama:
