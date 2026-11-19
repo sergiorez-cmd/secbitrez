@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade -y
 ```
 ```bash
-sudo apt install -y torbrowser-launcher torsocks
+sudo apt install torbrowser-launcher torsocks -y
 ```
 ```bash
 torbrowser-launcher
