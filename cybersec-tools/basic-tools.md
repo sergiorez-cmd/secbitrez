@@ -76,6 +76,8 @@ https://www.wireguard.com
 
 https://protonvpn.com
 
+https://www.vpnbook.com/pt
+
 # Criptografia
 
 https://www.gnupg.org
