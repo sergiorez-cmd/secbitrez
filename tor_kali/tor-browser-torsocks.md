@@ -17,6 +17,9 @@ https://check.torproject.org
 ```text
 https://bgp.he.net
 ```
+```text
+https://ipinfo.io/what-is-my-ip
+```
 ---
 
 ## Utilizando Torsocks no Shell Kali Linux
