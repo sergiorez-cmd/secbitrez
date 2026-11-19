@@ -13,12 +13,16 @@ Abaixo está a lista com as **10 ferramentas mais essenciais e amplamente utiliz
 
 https://nmap.org
 
+---
+
 ### 2. Metasploit Framework
 
 * **Funcionalidade:** O maior e mais conhecido **framework de exploração de vulnerabilidades** do mundo.
 * **Uso principal:** Possui um vasto banco de dados de exploits prontos e payloads. É utilizado por profissionais de segurança para simular ataques reais, testar a resiliência de sistemas e verificar se falhas conhecidas foram devidamente corrigidas.
 
 https://www.metasploit.com
+
+---
 
 ### 3. Burp Suite (Community Edition)
 
@@ -27,12 +31,16 @@ https://www.metasploit.com
 
 https://portswigger.net/burp
 
+---
+
 ### 4. Wireshark
 
 * **Funcionalidade:** O **analisador de pacotes de rede** (sniffer) mais famoso do mundo.
 * **Uso principal:** Captura e exibe em tempo real todo o tráfego que passa por uma interface de rede. É indispensável para inspecionar pacotes de dados detalhadamente, diagnosticar problemas de rede ou investigar atividades suspeitas.
 
 https://www.wireshark.org
+
+---
 
 ### 5. Aircrack-ng
 
@@ -41,12 +49,16 @@ https://www.wireshark.org
 
 https://www.aircrack-ng.org
 
+---
+
 ### 6. John the Ripper
 
 * **Funcionalidade:** Uma ferramenta clássica e poderosa de **quebra de senhas** (*password cracking*).
 * **Uso principal:** Detecta automaticamente tipos de criptografia de senhas (hashes) e realiza ataques de força bruta ou baseados em dicionário para testar a complexidade e a segurança de credenciais armazenadas.
 
 https://www.openwall.com/john
+
+---
 
 ### 7. Hashcat
 
@@ -55,12 +67,16 @@ https://www.openwall.com/john
 
 https://hashcat.net/hashcat
 
+---
+
 ### 8. Hydra
 
 * **Funcionalidade:** Uma ferramenta rápida de **ataque de força bruta voltada para telas de login e serviços de autenticação** em rede.
 * **Uso principal:** Testa de forma automatizada combinações de nomes de usuário e senhas em vários protocolos de comunicação remota, como SSH, FTP, Telnet, HTTP, SMB, entre outros.
 
 https://github.com/vanhauser-thc/thc-hydra
+
+---
 
 ### 9. SQLmap
 
@@ -69,9 +85,13 @@ https://github.com/vanhauser-thc/thc-hydra
 
 https://sqlmap.org
 
+---
+
 ### 10. Maltego
 
 * **Funcionalidade:** Uma ferramenta interativa de **mineração de dados e inteligência de fontes abertas (OSINT)**.
 * **Uso principal:** Coleta informações públicas na internet sobre um alvo (como endereços de e-mail, domínios, infraestruturas de rede, redes sociais e conexões corporativas) e cria representações visuais em forma de grafos para mapear a superfície de ataque.
 
 https://www.maltego.com
+
+---
